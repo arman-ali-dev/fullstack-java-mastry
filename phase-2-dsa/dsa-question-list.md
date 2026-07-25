@@ -35,7 +35,7 @@ Do questions in this order - each topic builds on the previous one.
 22. Maximum product subarray
 23. Trapping rainwater
 24. Jump Game - can you reach the last index
-25. Merge overlapping intervals
+25. Peak Index in a Mountain Array
 
 ---
 
