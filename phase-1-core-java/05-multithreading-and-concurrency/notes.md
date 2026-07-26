@@ -11,6 +11,7 @@ Without multithreading, your Java program does one thing at a time. It finishes 
 Imagine you are building a music app. You click play. The app starts downloading the next song. Without multithreading, the entire app freezes while downloading. You cannot pause, cannot change volume, cannot do anything. That is terrible.
 
 With multithreading:
+
 - One thread plays the current song
 - Another thread downloads the next song in the background
 - Another thread updates the UI
@@ -180,7 +181,7 @@ NEW  -->  RUNNABLE  -->  RUNNING  -->  TERMINATED
                             |---> BLOCKED
                             |---> WAITING
                             |---> TIMED_WAITING
-                            
+
 (BLOCKED, WAITING, TIMED_WAITING all go back to RUNNABLE when condition is met)
 ```
 
@@ -221,6 +222,7 @@ The thread wants to enter a synchronized block but another thread is currently i
 The thread is waiting indefinitely for another thread to do something specific. It will stay in WAITING until another thread explicitly wakes it up.
 
 Caused by:
+
 - t.join() with no timeout - waiting for thread t to finish
 - object.wait() - waiting for notify()
 
@@ -240,6 +242,7 @@ t1.join(); // main thread goes to WAITING state until t1 finishes
 Same as WAITING but with a time limit. Thread wakes up automatically after the time expires even if no one wakes it up.
 
 Caused by:
+
 - Thread.sleep(ms)
 - t.join(ms) with timeout
 - object.wait(ms)
@@ -709,6 +712,7 @@ scheduler.shutdown();
 Threads share the same memory. When two threads read and write the same variable at the same time, things go wrong.
 
 count++ looks like one operation but it is actually three separate steps:
+
 1. Read current value of count from memory
 2. Add 1 to it
 3. Write the new value back to memory
@@ -774,6 +778,7 @@ class Counter {
 Every object in Java has an invisible lock called a monitor lock or intrinsic lock.
 
 When a thread calls a synchronized method:
+
 1. Thread tries to acquire the lock of that object
 2. If lock is available, thread takes it and enters the method
 3. Other threads that try to enter ANY synchronized method of the SAME object are blocked
@@ -997,6 +1002,7 @@ class SharedFlag {
 ### When to use volatile
 
 Use volatile when:
+
 - One thread writes, other threads only read
 - The operation on the variable is a single read or write (not compound)
 - You need visibility but not full synchronization
@@ -1183,6 +1189,7 @@ ref.compareAndSet("updated", "final"); // if "updated", change to "final"
 ### Why ReentrantLock when we have synchronized?
 
 synchronized works well but has limitations:
+
 - You cannot try to acquire lock without waiting (tryLock)
 - You cannot give up waiting after some time
 - You cannot interrupt a thread that is waiting for a lock
@@ -1297,6 +1304,7 @@ lock.hasQueuedThreads();      // true if any threads are waiting
 Regular synchronized or ReentrantLock allows only ONE thread at a time. This is unnecessarily restrictive for read operations. Multiple threads reading simultaneously is perfectly safe - only writing causes problems.
 
 ReadWriteLock has two separate locks:
+
 - Read lock: multiple threads can hold it simultaneously (shared)
 - Write lock: only one thread can hold it, and only when no reader is active (exclusive)
 
