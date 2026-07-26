@@ -2,8 +2,8 @@
 
 ## Pattern
 
-- HashMap (Hashing)
-
+HashMap (Hashing)
+<br>
 The HashMap helps us store numbers we've already seen along with their indices, allowing us to find the required pair in constant time.
 
 ---
