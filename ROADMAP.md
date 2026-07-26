@@ -1,4 +1,4 @@
-# Java Mastery Roadmap
+# Java Full Stack Mastery Roadmap
 
 ## Phase 1 — Core Java
 
@@ -248,7 +248,213 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ---
 
-## Phase 4 — DevOps Tools
+## Phase 4 — Databases (MongoDB + MySQL Deep Dive)
+
+### MongoDB Basics
+
+- Document-oriented model: collections, documents, BSON
+- CRUD operations: insertOne, find, updateOne, deleteOne and their bulk variants
+- Query operators: comparison ($eq, $gt, $lt), logical ($and, $or, $not), element ($exists, $type)
+- Schema design principles: embedding vs referencing
+- Indexes: single-field, compound, and their effect on query performance
+- Aggregation pipeline basics: $match, $group, $project, $sort, $limit
+- Connecting MongoDB with Spring Boot using Spring Data MongoDB
+- MongoTemplate vs MongoRepository
+
+### MySQL — In Depth
+
+- Relational model fundamentals: tables, rows, columns, primary/foreign keys
+- Data types and storage considerations
+- DDL, DML, DQL, DCL, TCL command categories
+- Joins: inner, left, right, full outer, self join, cross join
+- Subqueries and correlated subqueries
+- Aggregate functions: COUNT, SUM, AVG, MIN, MAX with GROUP BY and HAVING
+- Set operations: UNION, UNION ALL, INTERSECT (via workarounds), EXCEPT
+- Normalization: 1NF, 2NF, 3NF, BCNF — and when to denormalize
+- Indexing: B-Tree indexes, composite indexes, covering indexes, index selectivity
+- Query execution plan: reading EXPLAIN output, identifying full table scans
+- Transactions: ACID properties, COMMIT, ROLLBACK, SAVEPOINT
+- Isolation levels: Read Uncommitted, Read Committed, Repeatable Read, Serializable
+- Locking: row-level vs table-level locks, deadlocks and how to avoid them
+- Stored procedures, functions, and triggers
+- Views and materialized view concepts
+- Window functions: ROW_NUMBER, RANK, DENSE_RANK, LEAD, LAG, PARTITION BY
+- Partitioning strategies for large tables
+- Replication basics: master-slave, master-master
+- Connection pooling (HikariCP) with Spring Boot
+- Database migration tools: Flyway, Liquibase
+
+### SQL vs NoSQL
+
+- When to choose relational vs document-based storage
+- Trade-offs: consistency vs flexibility vs scalability
+- Polyglot persistence in real-world applications
+
+---
+
+## Phase 5 — HTML & CSS
+
+### HTML Fundamentals
+
+- Document structure: DOCTYPE, html, head, body
+- Semantic elements: header, nav, main, section, article, aside, footer
+- Text elements, lists, tables
+- Forms: input types, labels, fieldsets, form validation attributes
+- Links, images, and media embedding (audio, video)
+- Attributes: id, class, data-\* attributes
+- Accessibility basics: alt text, ARIA roles, semantic structure for screen readers
+- Meta tags: viewport, charset, SEO-relevant tags
+
+### CSS Fundamentals
+
+- Selectors: type, class, id, attribute, pseudo-class, pseudo-element
+- Specificity and the cascade
+- Box model: content, padding, border, margin
+- Display types: block, inline, inline-block, none
+- Positioning: static, relative, absolute, fixed, sticky
+- Flexbox: container and item properties, common layout patterns
+- CSS Grid: grid-template-columns/rows, grid-area, gap, placing items
+- Responsive design: media queries, mobile-first approach
+- Units: px, %, em, rem, vw, vh and when to use which
+- CSS variables (custom properties)
+- Transitions and animations: keyframes, timing functions
+- Typography: font-family, line-height, letter-spacing, web fonts
+- CSS methodologies: BEM naming convention
+- Preprocessors: SCSS/SASS basics — variables, nesting, mixins
+- Utility-first CSS: Tailwind CSS fundamentals
+
+---
+
+## Phase 6 — JavaScript
+
+### Core JavaScript
+
+- Variables: var, let, const and scoping differences
+- Data types: primitives vs reference types
+- Operators and type coercion
+- Control flow: if-else, switch, ternary
+- Loops: for, while, do-while, for-in, for-of
+- Functions: declarations, expressions, arrow functions, default parameters, rest parameters
+- Hoisting and the temporal dead zone
+- Closures and lexical scope
+- The `this` keyword: behavior in different contexts
+
+### Objects and Arrays
+
+- Object creation, property access, computed properties
+- Array methods: map, filter, reduce, forEach, find, some, every
+- Destructuring: object and array
+- Spread and rest operators
+- Immutability patterns
+
+### Asynchronous JavaScript
+
+- Call stack, event loop, and task queue (macrotasks vs microtasks)
+- Callbacks and callback hell
+- Promises: creation, chaining, Promise.all, Promise.race, Promise.allSettled
+- async/await syntax and error handling with try-catch
+
+### DOM Manipulation
+
+- Selecting elements: querySelector, getElementById, etc.
+- Creating, modifying, and removing DOM elements
+- Event handling: addEventListener, event bubbling and capturing, event delegation
+- Form handling and validation in vanilla JS
+
+### Browser APIs
+
+- Fetch API for HTTP requests
+- LocalStorage vs SessionStorage vs Cookies
+- JSON parsing and stringifying
+
+### ES6+ Features
+
+- Template literals
+- Modules: import/export
+- Classes: constructor, methods, inheritance with extends/super
+- Generators and iterators (conceptual understanding)
+- Optional chaining and nullish coalescing
+
+### Tooling Basics
+
+- npm/yarn package management
+- Understanding package.json
+- Basic bundler concepts (Vite/Webpack)
+
+---
+
+## Phase 7 — React.js
+
+### React Fundamentals
+
+- JSX syntax and how it compiles to JavaScript
+- Functional components vs class components (functional-first approach)
+- Props: passing data, prop types, default props
+- Rendering lists with keys
+- Conditional rendering patterns
+
+### Hooks
+
+- useState: managing local state
+- useEffect: side effects, dependency arrays, cleanup functions
+- useContext: consuming context without prop drilling
+- useRef: DOM references and mutable values
+- useMemo and useCallback: memoization for performance
+- useReducer: managing complex state logic
+- Custom hooks: extracting reusable logic
+
+### Component Design
+
+- Component composition vs inheritance
+- Controlled vs uncontrolled components
+- Lifting state up
+- Container/Presentational component pattern
+
+### Routing
+
+- React Router: Routes, Route, Link, useNavigate, useParams
+- Nested routes and layouts
+- Protected/private routes
+
+### State Management
+
+- Context API for global state
+- Introduction to Redux Toolkit: store, slices, actions, reducers
+- Zustand as a lightweight alternative
+- When to reach for a state management library vs local state
+
+### Forms in React
+
+- Controlled form inputs
+- Form libraries: React Hook Form basics
+- Validation with libraries like Zod or Yup
+
+### API Integration
+
+- Fetching data with useEffect + fetch/axios
+- Introduction to React Query (TanStack Query): caching, refetching, mutations
+- Handling loading and error states
+
+### Performance and Optimization
+
+- React.memo for component memoization
+- Code splitting with React.lazy and Suspense
+- Avoiding unnecessary re-renders
+
+### Testing
+
+- Component testing with React Testing Library
+- Jest basics for unit testing
+
+### Build and Deployment
+
+- Vite as the build tool
+- Environment variables in React apps
+- Production build and static hosting basics
+
+---
+
+## Phase 8 — DevOps and Deployment
 
 ### Docker
 
@@ -269,7 +475,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 ### CI/CD Pipeline
 
 - GitHub Actions basics
-- Writing a workflow for Java app
+- Writing a workflow for a full stack app (backend + frontend)
 - Automated testing and deployment
 - Jenkins basics
 
@@ -279,3 +485,10 @@ This is usually the biggest gap. Companies check DSA before anything else.
 - Redis data structures
 - Spring Boot Redis integration
 - Cache strategies: Write-through, Write-back, Cache-aside
+
+### Hosting and Infrastructure
+
+- Deploying Spring Boot backend (Render/Railway/AWS EC2 basics)
+- Deploying React frontend (Vercel/Netlify)
+- Environment configuration across dev/staging/prod
+- Basics of Nginx as a reverse proxy
