@@ -77,7 +77,7 @@ class Solution {
 ```java
 class Solution {
 public int findDuplicate(int[] nums) {
-Arrays.sort(nums);
+        Arrays.sort(nums);
 
         for (int i = 0; i < nums.length - 1; i++) {
             if (nums[i] == nums[i + 1]) {
@@ -101,8 +101,8 @@ Arrays.sort(nums);
 
 ### Explanation
 
-The brute-force approach is to check every possible subarray. I use three nested loops. The first loop selects the starting index, the second loop selects the ending index, and the third loop calculates the sum of that subarray. After calculating the sum, I update the maximum sum. This approach is correct because it checks every subarray, but its time complexity is O(n³).
-
+The brute-force approach is to compare every element with all the elements after it using two nested loops. If I find two equal elements, I immediately return that duplicate. This approach is simple and works correctly, but it takes O(n²) time because of the nested loops.
 <br>
-
-To make it faster, I use Kadane's Algorithm. The idea is simple. For every element, I decide whether I should start a new subarray from the current element or continue the previous subarray by adding the current element. In my code, currSum stores the current subarray sum. If the current element alone is greater than currSum + current element, I start a new subarray. Otherwise, I add the current element to currSum. After that, I compare currSum with maxSum and update maxSum if needed. Since I go through the array only once, the time complexity becomes O(n) and the space complexity is O(1).
+To improve it, I use a HashSet. While traversing the array, I check whether the current element is already present in the set. If it is, then that element is the duplicate, so I return it immediately. Otherwise, I add the current element to the set and continue. This reduces the time complexity to O(n), but it requires O(n) extra space.
+<br>
+Another approach is sorting the array first. After sorting, duplicate elements become adjacent to each other. Then I simply traverse the array once and compare every element with the next one. If two adjacent elements are equal, I return that value. This approach takes O(n log n) time because of sorting and O(1) extra space if the sorting algorithm is in-place.
