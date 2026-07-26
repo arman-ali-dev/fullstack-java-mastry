@@ -1,4 +1,4 @@
-# Two Sum
+# Min and Max in Array
 
 ## Pattern
 
