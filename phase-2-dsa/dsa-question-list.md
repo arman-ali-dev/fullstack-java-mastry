@@ -18,7 +18,7 @@ Do questions in this order - each topic builds on the previous one.
 8. Remove duplicates from sorted array
 9. Left rotate array by k positions
 10. Find the missing number in array [1 to n]
-11. Find the number that appears once (all others appear twice) - XOR trick
+11. Single Number
 
 **Medium**
 
