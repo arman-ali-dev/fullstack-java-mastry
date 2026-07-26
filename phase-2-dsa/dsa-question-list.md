@@ -22,11 +22,10 @@ Do questions in this order - each topic builds on the previous one.
 
 **Medium**
 
-11. Two Sum - find two numbers that add to target (HashMap approach)
-12. Three Sum - find all triplets that add to zero
-13. Maximum subarray sum - Kadane's algorithm
-14. Best time to buy and sell stock (one transaction)
-15. Best time to buy and sell stock (multiple transactions)
+12. Two Sum - find two numbers that add to target (HashMap approach)
+13. Three Sum - find all triplets that add to zero
+14. Maximum subarray sum - Kadane's algorithm
+15. Best time to buy and sell stock 
 16. Product of array except self (no division)
 17. Find the majority element (appears more than n/2 times)
 18. Sort array of 0s, 1s, and 2s - Dutch National Flag
