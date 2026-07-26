@@ -1,4 +1,4 @@
-# Two Sum
+# Reverse Array
 
 ## Pattern
 
