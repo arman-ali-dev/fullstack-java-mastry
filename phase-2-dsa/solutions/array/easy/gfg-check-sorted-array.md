@@ -1,4 +1,4 @@
-# Two Sum
+# Check Sorted Array
 
 ## Pattern
 
