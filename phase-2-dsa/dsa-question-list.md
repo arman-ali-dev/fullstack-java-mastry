@@ -49,7 +49,7 @@ Do questions in this order - each topic builds on the previous one.
 5. Find the first non-repeating character
 6. Check if two strings are anagrams
 7. Count occurrences of each character (frequency map)
-8. Convert string to integer (implement atoi)
+8. Is Subsequence
 
 **Medium**
 
