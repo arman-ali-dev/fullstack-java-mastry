@@ -1,6 +1,5 @@
 # DSA Question List
 
-These companies expect Easy to Medium level questions.
 Do questions in this order - each topic builds on the previous one.
 
 ---
@@ -8,6 +7,7 @@ Do questions in this order - each topic builds on the previous one.
 ## ARRAYS (Start here - most asked topic)
 
 **Easy**
+
 1. Find the maximum and minimum element in an array
 2. Reverse an array in place
 3. Find the second largest element
@@ -25,7 +25,7 @@ Do questions in this order - each topic builds on the previous one.
 12. Two Sum - find two numbers that add to target (HashMap approach)
 13. Three Sum - find all triplets that add to zero
 14. Maximum subarray sum - Kadane's algorithm
-15. Best time to buy and sell stock 
+15. Best time to buy and sell stock
 16. Product of array except self (no division)
 17. Find the majority element (appears more than n/2 times)
 18. Sort array of 0s, 1s, and 2s - Dutch National Flag
@@ -42,6 +42,7 @@ Do questions in this order - each topic builds on the previous one.
 ## STRINGS (Second most asked)
 
 **Easy**
+
 1. Reverse a string
 2. Check if string is palindrome
 3. Count vowels and consonants
@@ -58,7 +59,7 @@ Do questions in this order - each topic builds on the previous one.
 11. Group anagrams together
 12. Valid parentheses - check if brackets are balanced
 13. Minimum window substring
-14. String compression 
+14. String compression
 15. Longest common prefix in array of strings
 16. Count and say sequence
 17. Reverse words in a string
@@ -203,6 +204,7 @@ Do questions in this order - each topic builds on the previous one.
 ## GRAPHS (Basic to medium - commonly asked)
 
 **Basic**
+
 1. BFS traversal
 2. DFS traversal
 3. Detect cycle in undirected graph - BFS and DFS
@@ -341,6 +343,7 @@ Do 1D DP first. Then 2D. Focus on patterns not memorizing.
 ## REALISTIC TARGETS
 
 you need:
+
 - Arrays and Strings: 100% of Easy, 80% of Medium
 - HashMap: all problems
 - Linked List: all problems
@@ -352,6 +355,7 @@ you need:
 - Heap: top 5 problems
 
 You do NOT need:
+
 - Hard DP like matrix chain multiplication
 - Advanced graph algorithms beyond Dijkstra
 - Segment trees, Fenwick trees
