@@ -58,7 +58,7 @@ Do questions in this order - each topic builds on the previous one.
 11. Group anagrams together
 12. Valid parentheses - check if brackets are balanced
 13. Minimum window substring
-14. String compression - aaabbb becomes a3b3
+14. String compression 
 15. Longest common prefix in array of strings
 16. Count and say sequence
 17. Reverse words in a string
