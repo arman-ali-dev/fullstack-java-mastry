@@ -36,6 +36,7 @@ Do questions in this order - each topic builds on the previous one.
 23. Trapping rainwater
 24. Jump Game - can you reach the last index
 25. Peak Index in a Mountain Array
+26. Square of a Sorted Array
 
 ---
 
