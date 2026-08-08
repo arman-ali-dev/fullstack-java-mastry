@@ -64,7 +64,8 @@ Do questions in this order - each topic builds on the previous one.
 15. Longest common prefix in array of strings
 16. Count and say sequence
 17. Reverse words in a string
-18. Check if string follows the same pattern (word pattern)
+18. Isomorphic Strings
+19. Word Pattern
 
 ---
 
