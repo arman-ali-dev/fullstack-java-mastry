@@ -315,33 +315,6 @@ Union Find                  Connected components, cycle detection
 
 ---
 
-## SUGGESTED ORDER TO FOLLOW
-
-**Week 1-2: Arrays and Strings**
-Do all Easy and Medium from Arrays and Strings.
-These are the most asked and build your foundation.
-
-**Week 3: HashMap + Two Pointers + Sliding Window**
-These three together solve 40% of interview problems.
-
-**Week 4: Linked List + Stack + Queue**
-Important data structures, straightforward questions.
-
-**Week 5: Binary Search + Recursion**
-Binary search pattern is more important than individual problems.
-
-**Week 6: Trees**
-Do all Basic and Medium tree problems.
-Trees appear in almost every interview.
-
-**Week 7: Graphs + Heap**
-Do BFS, DFS, Dijkstra, and top K problems.
-
-**Week 8: Dynamic Programming**
-Do 1D DP first. Then 2D. Focus on patterns not memorizing.
-
----
-
 ## REALISTIC TARGETS
 
 you need:
