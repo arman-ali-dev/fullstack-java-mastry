@@ -1,4 +1,4 @@
-# Two Sum
+# Zero Sum Subarray
 
 ## Pattern
 
