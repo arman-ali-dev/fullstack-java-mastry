@@ -73,7 +73,7 @@ Do questions in this order - each topic builds on the previous one.
 
 1. Two Sum using HashMap
 2. Subarray with zero sum - check if exists
-3. Find the largest subarray with equal 0s and 1s
+3. Contiguous Array
 4. Count subarrays with given XOR
 5. Longest consecutive sequence in array
 6. Top K frequent elements
