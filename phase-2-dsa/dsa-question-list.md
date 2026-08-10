@@ -22,21 +22,22 @@ Do questions in this order - each topic builds on the previous one.
 
 **Medium**
 
-12. Two Sum - find two numbers that add to target (HashMap approach)
-13. Three Sum - find all triplets that add to zero
-14. Maximum subarray sum - Kadane's algorithm
-15. Best time to buy and sell stock
-16. Product of array except self (no division)
-17. Find the majority element (appears more than n/2 times)
-18. Sort array of 0s, 1s, and 2s - Dutch National Flag
-19. Merge two sorted arrays without extra space
-20. Find the subarray with given sum (positive numbers) - GeeksForGeeks
-21. Subarray Sum Equals K
-22. Maximum product subarray
-23. Trapping rainwater
-24. Jump Game - can you reach the last index
-25. Peak Index in a Mountain Array
-26. Square of a Sorted Array
+12. Two Sum
+13. Three Sum
+14. Four Sum
+15. Maximum subarray sum - Kadane's algorithm
+16. Best time to buy and sell stock
+17. Product of array except self (no division)
+18. Find the majority element (appears more than n/2 times)
+19. Sort array of 0s, 1s, and 2s - Dutch National Flag
+20. Merge two sorted arrays without extra space
+21. Find the subarray with given sum (positive numbers) - GeeksForGeeks
+22. Subarray Sum Equals K
+23. Maximum product subarray
+24. Trapping rainwater
+25. Jump Game - can you reach the last index
+26. Peak Index in a Mountain Array
+27. Square of a Sorted Array
 
 ---
 
@@ -73,7 +74,7 @@ Do questions in this order - each topic builds on the previous one.
 
 1. Two Sum using HashMap
 2. Subarray with zero sum - check if exists
-3. Find the largest subarray with equal 0s and 1s
+3. Contiguous Array
 4. Count subarrays with given XOR
 5. Longest consecutive sequence in array
 6. Top K frequent elements
