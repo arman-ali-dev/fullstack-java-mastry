@@ -74,14 +74,16 @@ Do questions in this order - each topic builds on the previous one.
 
 1. Two Sum using HashMap
 2. Subarray with zero sum - check if exists
-3. 3 Sum
-4. Count subarrays with given XOR
-5. Longest consecutive sequence in array
-6. Top K frequent elements
-7. 4 Sum - find quadruplets
-8. Subarray sum equals k - count subarrays
-9. Find all pairs with given difference
-10. First recurring character in string
+3. Intersection of Two Arrays
+4. Intersection of Two Arrays II
+5. Intersection of Multiple Arrays
+6. Count subarrays with given XOR
+7. Longest consecutive sequence in array
+8. Top K frequent elements
+9. 4 Sum - find quadruplets
+10. Subarray sum equals k - count subarrays
+11. Find all pairs with given difference
+12. First recurring character in string
 
 ---
 
