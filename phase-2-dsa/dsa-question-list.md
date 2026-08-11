@@ -80,10 +80,9 @@ Do questions in this order - each topic builds on the previous one.
 6. Count subarrays with given XOR
 7. Longest consecutive sequence in array
 8. Top K frequent elements
-9. 4 Sum - find quadruplets
-10. Subarray sum equals k - count subarrays
-11. Find all pairs with given difference
-12. First recurring character in string
+9. Subarray sum equals k - count subarrays
+10. Find all pairs with given difference
+11. First recurring character in string
 
 ---
 
