@@ -77,12 +77,11 @@ Do questions in this order - each topic builds on the previous one.
 3. Intersection of Two Arrays
 4. Intersection of Two Arrays II
 5. Intersection of Multiple Arrays
-6. Count subarrays with given XOR
-7. Longest consecutive sequence in array
-8. Top K frequent elements
-9. Subarray sum equals k - count subarrays
-10. Find all pairs with given difference
-11. First recurring character in string
+6. Longest Consecutive Sequence
+7. Top K frequent elements
+8. Subarray sum equals k - count subarrays
+9. Find all pairs with given difference
+10. First recurring character in string
 
 ---
 
