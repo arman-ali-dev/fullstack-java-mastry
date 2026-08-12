@@ -25,13 +25,13 @@ For each topic listed below, explain the topic yourself in a clear and beginner-
 21. target
 22. <modelVersion>
 23. Maven Coordinates
-24. <groupId>
-25. <artifactId>
-26. <version>
+24. groupId tag
+25. artifactId tag
+26. version tag
 27. SNAPSHOT
-28. <packaging>
-29. <properties>
-30. <dependencies> 
+28. packaging tag
+29. properties tag
+30. dependencies tag 
 31. Spring Boot Starter
 32. Transitive Dependencies
 33. Maven Plugins
