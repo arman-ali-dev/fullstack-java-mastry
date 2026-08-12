@@ -23,7 +23,7 @@ For each topic listed below, explain the topic yourself in a clear and beginner-
 19. src/test/java
 20. src/test/resources
 21. target
-22. <modelVersion>
+22. modelVersion tag
 23. Maven Coordinates
 24. groupId tag
 25. artifactId tag
