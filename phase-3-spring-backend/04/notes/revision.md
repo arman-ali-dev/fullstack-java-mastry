@@ -127,7 +127,7 @@ n normal Java, we call them objects. In Spring, objects managed by Spring are ca
 - Every Spring bean is an object, but every object is not necessarily a Spring bean
 - But if Spring creates and manages EmailService , then it becomes a Spring bean
 
-``txt
+```txt
 Final Summary
 Dependency Injection helps us design classes that do not create their own
 dependencies.
