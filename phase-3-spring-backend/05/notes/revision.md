@@ -4,25 +4,27 @@ Now OrderService does not create its dependency. It receives the dependency from
 - At the most basic level, every application needs objects.
 - Those objects may also need other objects.
 - So the real questions are:
-    - Who will create these objects?
-    - Who will connect them together?
-    - Who will manage their lifecycle?
+  - Who will create these objects?
+  - Who will connect them together?
+  - Who will manage their lifecycle?
 
 - Without Spring, we usually do this manually.
-    - main() creates objects.
-    - main() connects objects.
-    - main() behaves like a small manual container.
+  - main() creates objects.
+  - main() connects objects.
+  - main() behaves like a small manual container.
 
 - With Spring, this responsibility is shifted to the Spring IoC container.
-    - Spring creates objects.
-    - Spring connects objects.
-    - Spring manages their lifecycle.
-
+  - Spring creates objects.
+  - Spring connects objects.
+  - Spring manages their lifecycle.
 
 ---
+
 To work with Spring Core using annotation-based configuration:
+
 1. Create a Maven project.
 2. Add the spring-context dependency.
+
 - spring-context gives us important container features such as:
 - ApplicationContext
 - Annotation-based configuration
@@ -34,13 +36,14 @@ A Spring Bean is an object whose creation, dependency wiring, and lifecycle are 
 ---
 
 Spring can manage objects mainly through two configuration styles:
+
 1. Annotation-based configuration
 2. XML-based configuration
-
 
 ---
 
 Reflection: Why Student.class Matters
+
 - When we write something like: Student.class
 - we are not creating a Student object.
 - Instead, we are referring to a special object of type Class .
@@ -58,6 +61,7 @@ Annotations -> @Component, @Service, etc.
 ---
 
 Spring does not automatically manage every class in the project. We need to tell Spring which classes are eligible to become beans.
+
 - One common way is by using @Component .
 - But just writing @Component is not enough.
 - Spring also needs to know where it should search for such classes. That is where
@@ -66,48 +70,49 @@ Spring does not automatically manage every class in the project. We need to tell
 ---
 
 ApplicationContext : The Spring IoC Container
+
 - ApplicationContext represents the Spring IoC container.
 - It is responsible for:
-    - Reading configuration
-    - Creating beans
-    - Resolving dependencies
-    - Managing bean lifecycle
-    - Providing beans when requested
+  - Reading configuration
+  - Creating beans
+  - Resolving dependencies
+  - Managing bean lifecycle
+  - Providing beans when requested
 - ApplicationContext is an interface.
 - For annotation-based configuration, we commonly use: AnnotationConfigApplicationContext
 - AnnotationConfigApplicationContext is an implementation of ApplicationContext .
 - It starts a Spring container using Java annotation-based configuration.
 - ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 - This means:
-    - Start the Spring container.
-    - Read instructions from AppConfig.class.
-    - Use annotation-based configuration.
-    - Create and manage beans accordingly.
+  - Start the Spring container.
+  - Read instructions from AppConfig.class.
+  - Use annotation-based configuration.
+  - Create and manage beans accordingly.
 
 ---
 
 AppConfig is a configuration class.
+
 - This class tells Spring:
-    - This is a configuration class.
-    - Scan the package in.coderarmy.
-    - Find classes marked with annotations like @Component.
-    - Create their beans.
-    - Wire their dependencies.
+  - This is a configuration class.
+  - Scan the package in.coderarmy.
+  - Find classes marked with annotations like @Component.
+  - Create their beans.
+  - Wire their dependencies.
 - @Configuration tells Spring that a class contains Spring configuration instructions.
 - When Spring sees this, it understands:
-    - This is not just a normal class.
-    - This class may contain Spring setup instructions.
-    - This class can be a source of bean definitions.
+  - This is not just a normal class.
+  - This class may contain Spring setup instructions.
+  - This class can be a source of bean definitions.
 - A configuration class may contain:
-    - @ComponentScan
-    - @Bean methods
-    - Other configuration-related instructions
+  - @ComponentScan
+  - @Bean methods
+  - Other configuration-related instructions
 - When Spring starts, it needs to know where to search for classes marked with annotations like @Component.
 - This tells Spring:
-    - Start scanning from com.coderarmy.
-    - Also scan its sub-packages.
-    - Find classes marked with @Component, @Service, @Repository, @Controller, etc.\Register them as beans.
-
+  - Start scanning from com.coderarmy.
+  - Also scan its sub-packages.
+  - Find classes marked with @Component, @Service, @Repository, @Controller, etc.\Register them as beans.
 
 ---
 
@@ -123,16 +128,17 @@ After Spring creates and stores beans inside the container, we can ask the conta
 ---
 
 In field injection, Spring directly injects the dependency into a field.
+
 - This works because Spring can use reflection to set the field value.
 - However, field injection is generally not preferred.
 - Reasons:
-    - The dependency is hidden.
-    - The class cannot be easily tested without Spring.
-    - The field cannot be marked as final.
-    - The object can exist in an incomplete state before Spring injects the field.
-
+  - The dependency is hidden.
+  - The class cannot be easily tested without Spring.
+  - The field cannot be marked as final.
+  - The object can exist in an incomplete state before Spring injects the field.
 
 In setter injection, Spring creates the object first and then calls a setter method to provide the dependency.
+
 - Create OrderService object using no-argument constructor.
 - Call setPaymentService().
 - Pass PaymentService into the setter.
@@ -140,14 +146,45 @@ In setter injection, Spring creates the object first and then calls a setter met
 
 ---
 
+When we write: new AnnotationConfigApplicationContext(AppConfig.class);
+<br>
+<br>
 Step 1: Spring Starts the Container
-  - Spring creates an ApplicationContext .
-  - This becomes the IoC container for our application.
 
+- Spring creates an ApplicationContext .
+- This becomes the IoC container for our application.
 
+Step 2: Spring Reads AppConfig.class
 
+- Spring looks at the class passed to it. new AnnotationConfigApplicationContext(AppConfig.class);
+- It understands:
+  - This class contains configuration instructions.
+  - I need to read annotations present on this class.
 
+Step 3: Spring Processes @ComponentScan
 
+- Spring understands: Search inside com.coderarmy and its sub-packages.
 
+Step 4: Spring Finds Component Classes
 
+- Spring searches the given package and finds classes marked with annotations such as:
+  - @Component
+  - @Service
+  - @Repository
+  - @Controller
 
+Step 5: Spring Creates Bean Definitions
+
+- Before creating actual objects, Spring first stores information about those objects. For example, for PaymentService , Spring may store metadata like:
+
+```java
+Bean name -> paymentService
+Bean class -> com.coderarmy.service.PaymentService
+Scope -> singleton
+Dependencies -> none
+Creation strategy -> constructor
+```
+
+This metadata is called a BeanDefinition .
+
+- A BeanDefinition is not the actual object.
