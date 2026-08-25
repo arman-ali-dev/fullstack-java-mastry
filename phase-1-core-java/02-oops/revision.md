@@ -30,3 +30,39 @@ Without OOP, everything is just variables and functions scattered around. There 
 - Same method name, different parameters in the same class. Java decides which one to call based on what you pass.
 - Runtime Polymorphism (Method Overriding) - Parent reference holds a child object. When you call a method, the child's version runs - not the parent's. This is decided at runtime.
 - Abstraction means hiding the internal details and only showing what is necessary.
+- Abstract Class - An abstract class is a class that cannot be instantiated (you cannot create an object of it directly). It can have abstract methods (no body) that child classes must implement.
+- An interface is a pure contract. It only says WHAT to do, not HOW. Every method in an interface is by default public and abstract (before Java 8).
+
+---
+
+```java
+Modifier     Same Class   Same Package   Subclass (same pkg)   Subclass (diff pkg)   Anywhere
+-------------|------------|--------------|---------------------|---------------------|----------
+private      |    YES     |      NO      |         NO          |         NO          |   NO
+default      |    YES     |      YES     |         YES         |         NO          |   NO
+protected    |    YES     |      YES     |         YES         |         YES         |   NO
+public       |    YES     |      YES     |         YES         |         YES         |   YES
+```
+
+---
+
+- static means it belongs to the class, not to any specific object. All objects share the same static field or method.
+- static block - Runs once when the class is loaded, before any object is created.
+
+---
+
+- final variable - value cannot change
+- final method - cannot be overridden in child class
+- final class - cannot be extended
+
+- INSTANCEOF OPERATOR - Checks if an object is an instance of a class.
+
+---
+
+- Upcasting - child object stored in parent reference. Happens automatically. Safe.
+- Downcasting - parent reference converted back to child. Must be done manually. Can throw ClassCastException if wrong.
+
+- Every class in Java automatically extends Object class.
+- INNER CLASSES - A class inside another class.
+- A class without a name, created and used in one place. Common with interfaces and abstract classes.
+- Anonymous class - implement interface without creating a named class
