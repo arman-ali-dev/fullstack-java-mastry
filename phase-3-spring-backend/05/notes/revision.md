@@ -185,6 +185,58 @@ Dependencies -> none
 Creation strategy -> constructor
 ```
 
+Step 6: Spring Creates Bean Objects
+<br>
+<br>
+Step 7: Spring Creates OrderService
+<br>
+<br>
+Step 8: Spring Injects Dependencies
+<br>
+<br>
+Step 9: Our Application Uses the Bean
+
 This metadata is called a BeanDefinition .
 
 - A BeanDefinition is not the actual object.
+- After this, Spring starts creating actual bean objects.
+- Now Spring has a list of bean definitions.
+- If PaymentService has no dependency, Spring can create it easily.
+- To create OrderService, I need PaymentService.
+- This is called dependency resolution.
+- Suppose OrderService needs PaymentService , but Spring does not have any PaymentService bean.
+- Then Spring cannot create OrderService .
+- We may get an error like: No qualifying bean of type 'PaymentService' available
+
+---
+
+- @Primary is used when one implementation should be the default choice
+- If multiple PaymentService beans are available, prefer this one by default.
+- @Qualifier is used when we want to explicitly choose a specific bean.
+- By default, Spring creates the bean name from the class name.
+- We can give a custom name to a component
+- @Qualifier can also be used with field injection.
+- @Qualifier can also be used with setter injection.
+- If both @Primary and @Qualifier are present, @Qualifier gets priority.
+- @Primary gives a default choice.
+- @Qualifier gives a specific choice.
+- Specific choice wins over default choice.
+
+---
+
+- sometimes we cannot use @Component .
+- suppose a class comes from an external library
+- But we may still want Spring to manage its object
+- In such cases, we use @Bean
+
+- Another Case: Custom Object Creation
+- @Bean is used on a method inside a configuration class
+
+- Simple comparison:
+- @Component = Spring finds the class automatically.
+- @Bean = We manually tell Spring how to create the object.
+
+---
+
+- Why do we need AppConfig ? Why not create everything in main() ?
+- Because main() should only start the application.
