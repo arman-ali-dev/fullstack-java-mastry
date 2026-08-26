@@ -58,12 +58,87 @@ How many objects will Spring create for one bean definition?
 - Singleton Scope - Spring creates exactly one object for a bean definition inside the Spring container, stores it, and returns the same object whenever needed. Singleton is the default scope in Spring.
 - Prototype Scope - Spring creates a new object every time that bean is requested from the container. each request gives a new object.
 
+- If we inject a prototype bean into a singleton bean, will the singleton get a new prototype object every time? -- No
 
+---
 
+- Request Scope - Spring creates one bean object for one HTTP request.
+- Session Scope - Spring creates one bean object for one user session.
+- Application Scope - Spring creates one bean object for the entire web application
 
+---
 
+Spring has to answer one important question: When should I create this bean?
+- Eager initialization - Spring creates the bean as soon as the application context starts.
+- Lazy initialization - Do not create the bean during startup. Create it only when someone actually asks for it.
+- Singleton beans are eagerly initialized.
+- Prototype beans are created lazily, when requested.
 
+- **There is another interesting use of @Lazy .**
+- Instead of making the whole bean lazy, we can mark the injection point as lazy.
+- Here, Spring does not inject the real EmailService object immediately. Instead, Spring injects a proxy object.
+- UserService does not receive the real EmailService immediately.
+- UserService receives an object that looks like EmailService.
+- When someone actually calls a method on it,
+- Spring creates or fetches the real EmailService.
 
+- @Lazy on class - Do not create this bean until it is requested
+- @Lazy on injection point - Inject a proxy and resolve the real dependency only when it's method used
+
+- Spring Boot can make the whole application lazy using this property: spring.main.lazy-initialization=true
+- By default: spring.main.lazy-initialization=false
+
+--- 
+
+**Complete Journey of a Spring Bean**
+
+Step 1: Bean Definition Is Created
+- Spring first discovers the bean
+- At this stage, Spring has not necessarily created the actual object
+- The bean definition contains information like:
+1. bean name
+2. class name
+3. scope
+4. dependencies
+5. lazy/eager behavior
+6. lifecycle methods
+
+Step 2: Object Is Created
+- Spring creates the actual object using the constructor.
+
+Step 3: Dependencies Are Injected
+- After object creation, Spring injects the required dependencies.
+
+Step 4: Bean Is Initialized
+- After dependency injection, Spring runs initialization logic
+- This is the stage where we can perform setup tasks such as:
+1. validating configuration
+2. opening resources
+3. loading required data
+4. checking required fields
+
+Initialization can be done using different mechanisms such as:
+
+1. @PostConstruct
+2. InitializingBean
+3. custom init method
+
+Step 5: Bean Is Ready to Use
+- After initialization, the bean is ready.
+- Other beans can use it.
+- The application can now call its methods.
+
+Step 6: Bean Is Destroyed
+- When the Spring container shuts down, singleton beans are destroyed
+- This is where cleanup logic can run, such as:
+1. closing resources
+2. releasing connections
+3. stopping background tasks
+
+Destruction can be handled using:
+1. @PreDestroy
+2. DisposableBean
+3. custom destroy method
 
 
 
