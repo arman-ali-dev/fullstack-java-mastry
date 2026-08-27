@@ -91,10 +91,3 @@ WAR = complete web application package
 
 One Tomcat Can Run Multiple Web Applications
 - External Tomcat can host multiple Java web applications at the same time.
-
-
-
-
-
-
-
