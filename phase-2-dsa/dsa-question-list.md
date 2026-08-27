@@ -111,7 +111,7 @@ Do questions in this order - each topic builds on the previous one.
 
 **Stack**
 
-1. Implement stack using array
+1. Min Stack
 2. Valid parentheses
 3. Next greater element
 4. Previous greater element
