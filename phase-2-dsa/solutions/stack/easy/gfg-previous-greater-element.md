@@ -13,7 +13,6 @@ Monotonic Stack
 ```java
 class Solution {
     public ArrayList<Integer> preGreaterEle(int[] arr) {
-        Map<Integer, Integer> map = new HashMap<>();
         Stack<Integer> stack = new Stack<>();
         ArrayList<Integer> ans = new ArrayList<>();
 
