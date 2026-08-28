@@ -115,10 +115,11 @@ Do questions in this order - each topic builds on the previous one.
 2. Valid parentheses
 3. Next greater element
 4. Previous greater element
-5. Stock span problem
-6. Largest rectangle in histogram
-7. Implement min stack - getMin in O(1)
-8. Evaluate reverse polish notation
+5. Previous smaller element
+6. Stock span problem
+7. Largest rectangle in histogram
+8. Implement min stack - getMin in O(1)
+9. Evaluate reverse polish notation
 
 **Queue**
 
