@@ -117,9 +117,8 @@ Do questions in this order - each topic builds on the previous one.
 4. Previous greater element
 5. Previous smaller element
 6. Stock span problem
-7. Largest rectangle in histogram
-8. Implement min stack - getMin in O(1)
-9. Evaluate reverse polish notation
+7. Implement min stack - getMin in O(1)
+8. Evaluate reverse polish notation
 
 **Queue**
 
