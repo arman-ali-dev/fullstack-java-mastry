@@ -8,3 +8,6 @@ JDBC stands for Java Database Connectivity. It is a standard Java API used to co
 - JDBC driver The JDBC driver provides the database-specific implementation of the JDBC contracts.
 - For MySQL, the official driver is MySQL Connector/J.
 - PostgreSQL PostgreSQL JDBC Driver
+
+
+**Spring JDBC reduces the repetitive infrastructure code required by raw JDBC while keeping SQL under the developer’s control.**
