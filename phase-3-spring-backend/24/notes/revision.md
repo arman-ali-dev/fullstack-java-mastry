@@ -22,4 +22,4 @@ An advice defines what additional behaviour should run, such as logging, securit
 
 Long expressions are often reused across multiple advice methods. Repeating them creates duplication and makes maintenance harder.
 
-- within() - Matches methods declared inside types carrying the specified annotation.
+- @within() - Matches methods declared inside types carrying the specified annotation.
