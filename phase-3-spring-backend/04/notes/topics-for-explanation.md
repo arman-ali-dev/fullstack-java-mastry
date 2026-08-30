@@ -1,20 +1,24 @@
-1. Why Do We Need Spring Core?
-2. If Java already gives us all these features, why do we need Spring Core?
-3. Understanding Dependency
-4. Tight Coupling
-5. Tight Coupling in Code
-6. What Exactly Is Tight Coupling?
-7. First Improvement: Use an Interface
-8. Interface Alone Is Not Enough
-9. Dependency Injection
-10. Object Creation Happens Outside
-11. What Is Dependency Injection?
-12. Benefits of Dependency Injection
-13. Types of Dependency Injection
-14. What Is IoC?
-15. Simple Definition of IoC
-16. Relationship Between IoC and DI
-17. Where Does Spring Fit In?
-18. Spring IoC Container
-19. What Does Spring Core Do?
-20. What Is a Bean?
+Explain each topic in your own words.
+
+1. What Spring Core Actually Does
+2. The Problem: Tight Coupling
+3. First Improvement: Use an Interface
+4. Interface Alone Is Not Enough
+5. Single Responsibility Principle (Why Object Creation in the Wrong Place is a Problem)
+6. The Solution: Dependency Injection
+7. DI vs Dependency Inversion Principle
+8. Benefits of Dependency Injection
+9. Constructor Injection
+10. Why Constructor Injection is Preferred
+11. Setter Injection
+12. Field Injection
+13. Why Field Injection is Discouraged
+14. IoC (Inversion of Control)
+15. IoC vs DI
+16. Why We Need a Container
+17. Spring IoC Container
+18. ApplicationContext
+19. Beans
+20. Stereotype Annotations (@Component, @Service, @Repository, @Controller, @Bean)
+21. Autowiring (@Autowired)
+22. Bean Scope (Singleton)
