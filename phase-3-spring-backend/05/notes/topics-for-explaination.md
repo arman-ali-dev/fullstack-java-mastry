@@ -1,33 +1,32 @@
-1. spring-context
-2. Spring Bean
-3. Dependency Resolution 
-4. How Can Spring Manage Our Objects
-5. Annotation-Based Configuration
-6. XML-Based Configuration
-7. Reflection: Why Student.class Matters
-8. Telling Spring Which Classes to Manage
-9. ApplicationContext : The Spring IoC Container
+Explain each topic in your own words.
+
+1. Recap: Who Creates the Objects (main() vs Spring IoC Container)
+2. Setting Up Spring Core (spring-context dependency)
+3. Two Configuration Styles (Annotation-based vs XML-based)
+4. XML-based Configuration
+5. Reflection: Why Student.class Matters
+6. Reflection's Role in Spring
+7. Telling Spring Which Classes to Manage (@Component)
+8. ApplicationContext: The Spring IoC Container
+9. ApplicationContext vs BeanFactory
 10. AnnotationConfigApplicationContext
-11. AppConfig.class
+11. AppConfig: The Configuration Class
 12. @Configuration
 13. @ComponentScan
-14. @Component vs @ComponentScan
-15. What Does getBean() Mean?
-16. Types of Dependency Injection in Spring
-17. Why Constructor Injection Is Preferred
-18. What Happens Internally When Spring Starts?
-19. Why Does Spring Create Bean Definitions First?
-20. What If No Matching Bean Exists?
-21. What If Multiple Matching Beans Exist?
-22. Using @Primary
-23. Using @Qualifier
-24. Custom Bean Names with @Component
-25. @Qualifier with Field Injection
-26. @Qualifier with Setter Injection
-27. What If Both @Primary and @Qualifier Are Used?
-28. Why Do We Need @Bean ?
-29. Custom Bean Name with @Bean
-30. @Bean with Dependencies
-31. @Component vs @Bean
-32. Dependency Resolution with @Bean
-33. Why Not Put Everything in main() ?
+14. Getting a Bean from the Container (getBean())
+15. Constructor Injection (Detailed)
+16. Field Injection (Detailed)
+17. Setter Injection (Detailed)
+18. Step-by-Step: What Happens When the Container Starts
+19. BeanDefinition
+20. Dependency Resolution
+21. Missing Dependency Error
+22. Default Bean Naming
+23. Custom Bean Naming
+24. @Primary
+25. @Qualifier
+26. @Primary vs @Qualifier Priority
+27. NoUniqueBeanDefinitionException
+28. @Bean (When @Component Isn't Possible)
+29. @Component vs @Bean
+30. Why Do We Need AppConfig
