@@ -29,15 +29,16 @@ Do questions in this order - each topic builds on the previous one.
 16. Best time to buy and sell stock
 17. Product of array except self (no division)
 18. Find the majority element (appears more than n/2 times)
-19. Sort array of 0s, 1s, and 2s - Dutch National Flag
-20. Merge two sorted arrays without extra space
-21. Find the subarray with given sum (positive numbers) - GeeksForGeeks
-22. Subarray Sum Equals K
-23. Maximum product subarray
-24. Trapping rainwater
-25. Jump Game - can you reach the last index
-26. Peak Index in a Mountain Array
-27. Square of a Sorted Array
+19. majority element II
+20. Sort array of 0s, 1s, and 2s - Dutch National Flag
+21. Merge two sorted arrays without extra space
+22. Find the subarray with given sum (positive numbers) - GeeksForGeeks
+23. Subarray Sum Equals K
+24. Maximum product subarray
+25. Trapping rainwater
+26. Jump Game - can you reach the last index
+27. Peak Index in a Mountain Array
+28. Square of a Sorted Array
 
 ---
 
