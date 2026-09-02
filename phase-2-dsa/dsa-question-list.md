@@ -125,9 +125,10 @@ Do questions in this order - each topic builds on the previous one.
 
 9. Implement queue using two stacks
 10. Implement stack using two queues
-11. First non-repeating character in stream
-12. Sliding window maximum - deque approach
-13. BFS of graph uses queue - covered in graphs section
+11. First non-repeating character in string
+12. First non-repeating character in stream
+13. Sliding window maximum - deque approach
+14. BFS of graph uses queue - covered in graphs section
 
 ---
 
