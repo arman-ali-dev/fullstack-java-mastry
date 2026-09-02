@@ -26,15 +26,18 @@ Spring Boot's auto-generated `user` (with a random password) is fine for quick t
 
 ---
 
-## 3. UserDetails — Why Spring Security Doesn't Know Your Database
+## 3. UserDetails — Spring Security ko Aapke Database ka Structure Pata Nahi Hota
 
-Every app designs its database differently — different table names, different column names. Spring Security can't force everyone to use the same structure.
+Har app apna database alag tarike se design karti hai — table names alag, column names alag (username/email, password/pwd, role/userType). Spring Security sabko ek hi structure follow karne ke liye force nahi kar sakta, kyunki wo ek generic framework hai jo har tarah ke project me use hota hai.
 
-So instead, Spring Security defines a **standard interface** called `UserDetails`. Your app's own database model gets **adapted** into this standard shape, so Spring Security can work with it — no matter how your database actually looks.
+Isiliye Spring Security ek standard interface deta hai jiska naam hai UserDetails. Aapke app ka apna database model (jaisa bhi ho) is standard shape me adapt/convert kiya jata hai, taaki Spring Security uske saath kaam kar sake — chahe aapka actual database kaisa bhi dikhta ho.
 
 ```
-Your app's database model → Adapter → Spring Security's UserDetails
+Aapka database model → Adapter → Spring Security ka UserDetails
 ```
+
+Simple words me: Table structure jo bhi ho, ek "adapter" class use karke usko UserDetails ke fixed format me convert kar diya jata hai — uske baad Spring Security authentication ka poora kaam khud handle kar leta hai.
+
 
 ### UserDetails contains:
 1. **Identity** → `getUsername()`
