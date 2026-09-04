@@ -1,4 +1,4 @@
-# Spring Security — Filter Architecture & Authentication Flow (My Notes)
+# Spring Security — Filter Architecture & Authentication Flow 
 
 ---
 
