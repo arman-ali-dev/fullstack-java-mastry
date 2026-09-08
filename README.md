@@ -1,6 +1,6 @@
 # Fullstack Java Mastery
 
-A structured, in-depth learning repository covering Core Java, Data Structures & Algorithms, Backend Development (Spring), and Full Stack Web Development (HTML, CSS, JavaScript, React, Databases).
+A structured, in-depth learning repository covering Core Java, Data Structures & Algorithms, Backend Development (Spring), Microservices, Databases, and Full Stack Web Development (HTML, CSS, JavaScript, React) plus DevOps.
 
 This repo documents my complete journey from Java fundamentals to becoming a full stack java engineer — with notes, code, and hands-on practice at every phase.
 
@@ -11,13 +11,17 @@ The complete phase-wise roadmap with topics, subtopics, and progress checklist i
 
 ## Repository Structure
 
-| Folder                   | Description                                                   |
-| ------------------------ | ------------------------------------------------------------- |
-| `phase-1-core-java`      | Java fundamentals, OOP, collections, exception handling, etc. |
-| `phase-2-dsa`            | Data Structures & Algorithms with Java                        |
-| `phase-3-spring-backend` | Backend development using Spring / Spring Boot                |
-| `phase-4-frontend`       | HTML, CSS, JavaScript, React                                  |
-| `phase-5-database`       | SQL, database design, integration                             |
+| Folder                     | Description                                                    |
+| --------------------------- | --------------------------------------------------------------- |
+| `phase-1-core-java`         | Java fundamentals, OOP, collections, exception handling, etc.   |
+| `phase-2-dsa`                | Data Structures & Algorithms with Java                          |
+| `phase-3-spring-backend`     | Backend development using Spring / Spring Boot                  |
+| `phase-4-database`           | MongoDB + MySQL — schema design, queries, transactions           |
+| `phase-5-microservices`      | Microservices — communication, discovery, gateway, resilience    |
+| `phase-6-html-css`           | HTML and CSS fundamentals, responsive design                    |
+| `phase-7-javascript`         | Core JavaScript, DOM, async, ES6+                                |
+| `phase-8-react`              | React fundamentals, hooks, routing, state management             |
+| `phase-9-devops`             | Docker, Kubernetes, CI/CD, Redis, hosting                        |
 
 ## How to Navigate
 
