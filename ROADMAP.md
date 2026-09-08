@@ -228,24 +228,6 @@ This is usually the biggest gap. Companies check DSA before anything else.
 - Integration testing with TestContainers
 - Contract testing basics (Spring Cloud Contract)
 
-### API Gateway
-
-- Spring Cloud Gateway
-- Routing and filters
-- Rate limiting
-- Load balancing concepts
-
-### Microservices
-
-- Service decomposition
-- Eureka service discovery
-- Feign client for inter-service communication
-- Config server
-- Circuit breaker with Resilience4j
-- Distributed tracing (Sleuth/Micrometer Tracing + Zipkin)
-- Saga pattern and distributed transactions
-- API composition and BFF (Backend for Frontend) pattern
-
 ---
 
 ## Phase 4 — Databases (MongoDB + MySQL Deep Dive)
@@ -292,7 +274,81 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ---
 
-## Phase 5 — HTML & CSS
+## Phase 5 — Microservices
+
+### Foundations
+
+- Monolith vs Microservices: trade-offs, when to use which
+- Service decomposition strategies: domain-driven design, bounded context
+- Database per service pattern, and why shared databases break the model
+- Synchronous vs asynchronous communication between services
+
+### Inter-Service Communication
+
+- REST-based communication between services
+- Feign Client: declarative REST calls
+- WebClient for non-blocking service-to-service calls
+- gRPC basics (when and why it is preferred over REST)
+
+### Service Discovery and Load Balancing
+
+- Client-side service discovery: Netflix Eureka
+- Spring Cloud LoadBalancer for client-side load balancing
+- Service registration and health checks
+
+### API Gateway
+
+- Spring Cloud Gateway: routing and predicates
+- Gateway filters (pre/post filters)
+- Rate limiting at the gateway
+- Centralized cross-cutting concerns at the gateway (auth, logging)
+
+### Centralized Configuration
+
+- Spring Cloud Config Server
+- Externalizing configuration across services
+- Dynamic refresh with @RefreshScope
+
+### Resilience and Fault Tolerance
+
+- Circuit Breaker pattern with Resilience4j
+- Retry, Rate Limiter, Bulkhead, Time Limiter patterns
+- Fallback methods and graceful degradation
+- Timeout handling between services
+
+### Observability
+
+- Centralized logging concepts (correlation IDs across services)
+- Distributed tracing: Micrometer Tracing (Sleuth) with Zipkin
+- Health monitoring with Spring Boot Actuator across services
+
+### Data Consistency Across Services
+
+- Distributed transactions problem (why 2PC does not scale well)
+- Saga pattern: choreography-based vs orchestration-based
+- Eventual consistency concepts
+- Outbox pattern for reliable event publishing
+
+### Security in Microservices
+
+- Centralized authentication with OAuth2/JWT at the gateway
+- Token propagation between services
+- Introduction to Keycloak as an identity provider
+
+### Architectural Patterns
+
+- API composition pattern
+- Backend for Frontend (BFF) pattern
+- Strangler Fig pattern (migrating monolith to microservices)
+
+### Testing Microservices
+
+- Contract testing with Spring Cloud Contract
+- Integration testing across services with TestContainers
+
+---
+
+## Phase 6 — HTML & CSS
 
 ### HTML Fundamentals
 
@@ -325,7 +381,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ---
 
-## Phase 6 — JavaScript
+## Phase 7 — JavaScript
 
 ### Core JavaScript
 
@@ -383,7 +439,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ---
 
-## Phase 7 — React.js
+## Phase 8 — React.js
 
 ### React Fundamentals
 
@@ -454,7 +510,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ---
 
-## Phase 8 — DevOps and Deployment
+## Phase 9 — DevOps and Deployment
 
 ### Docker
 
