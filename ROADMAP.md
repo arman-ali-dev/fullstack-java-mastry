@@ -245,44 +245,67 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ### MySQL 
 
-- Relational model: tables, rows, columns
-- Primary Key / Foreign Key
-- Data Types
-- DDL, DML, DQL, DCL, TCL
+#### Database Fundamentals
+- Database
+- DBMS
+- Types of Databases
+- Relational DB with Example
+- Non-Relational DB with Example
+- SQL
+- MySQL
+- Table
+- Column
+- Row
+- Creating Our First Database
+- Creating Our First Table
+- SQL Datatypes
+- Database Related Queries
+- Table Related Queries
+- Keys — Primary Key and Foreign Key
 - Constraints
-- Relationships
-- Normalization: 1NF, 2NF, 3NF, BCNF
-- Denormalization
-- Views
-- SELECT, INSERT, UPDATE, DELETE
-- WHERE, ORDER BY, LIMIT
-- Aggregate functions: COUNT, SUM, AVG, MIN, MAX
-- GROUP BY / HAVING
-- Joins: INNER, LEFT, RIGHT, FULL OUTER, SELF, CROSS
-- Subqueries
-- Correlated Subqueries
-- UNION / UNION ALL
-- INTERSECT / EXCEPT
-- Window Functions: ROW_NUMBER, RANK, DENSE_RANK, LEAD, LAG, PARTITION BY
-- Indexing
-- B-Tree Indexes
+- Revisiting Foreign Keys
+- Cascading Foreign Keys
+- Normalization — 1NF, 2NF, 3NF
+
+#### SQL Basics & CRUD
+- SELECT Command
+- INSERT Command
+- SELECT Command in Detail
+- WHERE Clause
+- Operators
+- LIMIT Clause
+- ORDER BY Clause
+- Aggregate Functions
+- GROUP BY Clause
+- HAVING Clause
+- General Order of SQL Commands
+- UPDATE Command
+- DELETE Command
+- Practice Questions
+
+#### SQL Advanced Querying
+- ALTER Command
+- CHANGE and MODIFY Commands
+- TRUNCATE Command
+- JOINS in SQL
+- UNION in SQL
+- SQL Subqueries
+- MySQL Views
+- Practice Questions
+- Composite Queries / Combining Multiple SQL Concepts
+
+#### Database Performance & Important Concepts
+- Indexes — Basic Concept
 - Composite Indexes
-- Covering Indexes
-- Index Selectivity
+- EXPLAIN — Basic Query Execution Plan
 - Transactions
-- ACID
-- COMMIT / ROLLBACK / SAVEPOINT
-- Isolation Levels
-- Locking
-- Deadlocks
-- Stored Procedures
-- Functions
-- Triggers
-- Partitioning
-- Replication
-- Materialized Views
-- Connection Pooling / HikariCP
-- Flyway / Liquibase
+- ACID Properties
+- COMMIT
+- ROLLBACK
+- SAVEPOINT
+- Isolation Levels — Basic Understanding
+- Row-Level vs Table-Level Locking — Basic Understanding
+- Deadlocks — Basic Understanding
 
 ### SQL vs NoSQL
 
