@@ -1,87 +1,137 @@
-# Database Fundamentals — Notes
+# Database Fundamentals
 
-## 1. Database
+## Database
 
-- Organized collection of data stored electronically
-- Data is stored so it can be easily accessed, managed, updated
+### What is it?
+A place where data is stored in an organized way, so it can be saved, searched, and updated easily.
 
-## 2. DBMS (Database Management System)
+### Example
+A "Students" database that stores names, ages, and marks of students.
 
-- Software that lets you create, manage, and interact with databases
-- User → DBMS → Database (DBMS sits between user and actual data)
-- Examples: MySQL, Oracle, MongoDB, PostgreSQL, SQL Server
+---
 
-## 3. Types of Databases
+## DBMS (Database Management System)
 
-- **Relational (SQL)** → data in tables (rows & columns)
-- **Non-Relational (NoSQL)** → data in flexible formats (documents, key-value, graphs)
-- Others: Hierarchical, Network, Object-oriented (less common today)
+### What is it?
+Software that manages the database. You never talk to the database directly — you talk to the DBMS, and it handles the data for you.
 
-## 4. Relational Database (with Example)
+### Why do we use it?
+It handles storing, retrieving, updating, and securing data, so you don't have to manage raw files yourself.
 
-- Stores data in **tables**, tables are linked using **keys**
-- Follows a fixed schema (structure defined beforehand)
-- Example: `Students` table linked to `Courses` table via `student_id`
-- Examples of RDBMS: MySQL, PostgreSQL, Oracle, SQL Server
+### Important Point
+Examples: MySQL, PostgreSQL, Oracle, MongoDB. As a developer, your app connects to the DBMS, not the raw data files.
 
-## 5. Non-Relational Database (with Example)
+---
 
-- No fixed table structure → flexible/dynamic schema
-- Types: Document-based, Key-Value, Column-based, Graph-based
-- Example: MongoDB stores data as JSON-like documents
+## Types of Databases
 
+### What is it?
+- **Relational (SQL)** → data stored in tables (rows & columns)
+- **Non-Relational (NoSQL)** → data stored in flexible formats (documents, key-value pairs, etc.)
+
+### Important Point
+As a full-stack dev, you'll mostly use relational DBs (MySQL/PostgreSQL) with Spring Boot apps, but NoSQL (like MongoDB) is common too.
+
+---
+
+## Relational Database (with Example)
+
+### What is it?
+Stores data in tables that are connected to each other using keys. Has a fixed structure (schema) — every row in a table has the same columns.
+
+### Example
+A `Students` table connected to a `Courses` table using `student_id`.
+
+### Important Point
+Best when your data has clear relationships (e.g., a student has many orders, an order belongs to one student).
+
+---
+
+## Non-Relational Database (with Example)
+
+### What is it?
+Stores data without a fixed table structure. Data can be stored as documents (like JSON), key-value pairs, etc.
+
+### Example
+MongoDB stores a student like this:
 ```json
 { "name": "Arman", "course": "Cloud Computing" }
 ```
 
-- Good for unstructured/fast-changing data
+### Important Point
+Good when your data structure keeps changing or doesn't fit neatly into rows/columns.
 
-## 6. SQL (Structured Query Language)
+---
 
-- Language used to talk to relational databases
-- Used to: create, read, update, delete data (CRUD)
-- Categories:
-  - **DDL** (Data Definition) → CREATE, ALTER, DROP
-  - **DML** (Data Manipulation) → INSERT, UPDATE, DELETE
-  - **DQL** (Data Query) → SELECT
-  - **DCL** (Data Control) → GRANT, REVOKE
+## SQL (Structured Query Language)
 
-## 7. MySQL
+### What is it?
+The language used to communicate with relational databases — to create, read, update, and delete data.
 
-- Open-source RDBMS that uses SQL
-- Widely used for websites/apps (works well with PHP, Node.js, etc.)
-- Client-server model → MySQL server stores data, client sends queries
+### Why do we use it?
+Every relational DB (MySQL, PostgreSQL, Oracle) understands SQL, so learning it once lets you work with any of them.
 
-## 8. Table
+### Important Point
+Main categories:
+- **DDL** – define structure (CREATE, ALTER, DROP)
+- **DML** – manage data (INSERT, UPDATE, DELETE)
+- **DQL** – query data (SELECT)
 
-- Basic unit of storage in relational DB
-- Made up of **rows** and **columns**
-- Each table represents one entity (e.g., `Students`, `Orders`)
+---
 
-## 9. Column
+## MySQL
 
-- Represents one attribute/field of data (e.g., `name`, `age`)
-- Has a fixed data type (int, varchar, date, etc.)
-- Also called a **field**
+### What is it?
+A popular open-source relational database that uses SQL. Works on a client-server model — the server stores the data, and clients (your app) send queries to it.
 
-## 10. Row
+### Important Point
+Very commonly paired with Java/Spring Boot backends in full-stack projects.
 
-- One single record/entry in a table
-- Contains actual data values for each column
-- Also called a **tuple** or **record**
+---
 
-## 11. Creating Our First Database
+## Table
 
+### What is it?
+The basic structure that holds data in a relational database. Made of rows and columns. One table usually represents one "thing" (entity) — like `Students`, `Orders`, `Products`.
+
+---
+
+## Column
+
+### What is it?
+Represents one property/attribute of the data (e.g., `name`, `age`). Each column has a fixed datatype.
+
+### Important Point
+Also called a "field."
+
+---
+
+## Row
+
+### What is it?
+One single record of data in a table — all the column values for one entry.
+
+### Important Point
+Also called a "record" or "tuple."
+
+---
+
+## Creating Our First Database
+
+### Example
 ```sql
 CREATE DATABASE school;
 USE school;
 ```
 
-- `CREATE DATABASE` → makes new database
-- `USE` → selects which database to work in
+### Important Point
+`CREATE DATABASE` makes a new database, `USE` tells MySQL which database you want to work in.
 
-## 12. Creating Our First Table
+---
 
+## Creating Our First Table
+
+### Example
 ```sql
 CREATE TABLE students (
     id INT,
@@ -90,45 +140,60 @@ CREATE TABLE students (
 );
 ```
 
-- Define table name + columns + datatypes inside `()`
+### Important Point
+You define the table name, and then list each column with its datatype.
 
-## 13. SQL Datatypes
+---
 
-- **Numeric** → INT, FLOAT, DOUBLE, DECIMAL
-- **String** → VARCHAR(n), CHAR(n), TEXT
-- **Date/Time** → DATE, TIME, DATETIME, TIMESTAMP
-- **Boolean** → BOOLEAN (stored as TINYINT in MySQL)
-- Choose datatype based on kind + size of data expected
+## SQL Datatypes
 
-## 14. Database Related Queries
+### What is it?
+Defines what kind of value a column can hold.
 
+### Important Point
+Common ones you'll actually use:
+- `INT` → whole numbers
+- `VARCHAR(n)` → text (max n characters)
+- `DATE` / `DATETIME` → dates and timestamps
+- `DECIMAL` / `FLOAT` → numbers with decimals (e.g., price)
+- `BOOLEAN` → true/false
+
+---
+
+## Database Related Queries
+
+### Example
 ```sql
 SHOW DATABASES;        -- list all databases
-CREATE DATABASE db1;   -- create new
-USE db1;               -- switch to db
-DROP DATABASE db1;     -- delete database
+CREATE DATABASE db1;   -- create new database
+USE db1;               -- switch to a database
+DROP DATABASE db1;     -- delete a database
 ```
 
-## 15. Table Related Queries
+---
 
+## Table Related Queries
+
+### Example
 ```sql
-SHOW TABLES;                  -- list tables in current db
-DESCRIBE students;            -- show table structure
-ALTER TABLE students ADD COLUMN email VARCHAR(100);  -- add column
-DROP TABLE students;          -- delete table
+SHOW TABLES;                  -- list tables in current database
+DESCRIBE students;            -- see table structure
+ALTER TABLE students ADD COLUMN email VARCHAR(100);  -- add a column
+DROP TABLE students;          -- delete a table
 ```
 
-## 16. Keys — Primary Key and Foreign Key
+---
 
-- **Primary Key (PK)**
-  - Uniquely identifies each row in a table
-  - Cannot be NULL, cannot repeat
-  - Example: `id` in `students` table
-- **Foreign Key (FK)**
-  - Column that refers to Primary Key of another table
-  - Used to create relationship between two tables
-  - Example: `student_id` in `Orders` table refers to `id` in `Students` table
+## Keys — Primary Key and Foreign Key
 
+### What is it?
+- **Primary Key (PK)** → uniquely identifies each row in a table. Cannot be NULL or repeated.
+- **Foreign Key (FK)** → a column in one table that points to the Primary Key of another table, creating a relationship between them.
+
+### Why do we use it?
+PK ensures every row is unique and identifiable. FK connects related tables together (e.g., linking an order to the student who placed it).
+
+### Example
 ```sql
 CREATE TABLE students (
     id INT PRIMARY KEY,
@@ -142,60 +207,85 @@ CREATE TABLE orders (
 );
 ```
 
-## 17. Constraints
+### Important Point
+This is one of the most important concepts in relational databases — it's how tables relate to each other, which is exactly how JPA/Hibernate entity relationships work later.
 
-- Rules applied on columns to control what data can go in
-- Common constraints:
-  - `NOT NULL` → value must be given
-  - `UNIQUE` → no duplicate values allowed
-  - `PRIMARY KEY` → unique + not null (identifier)
-  - `FOREIGN KEY` → links to another table
-  - `DEFAULT` → sets default value if none given
-  - `CHECK` → value must satisfy a condition
+---
 
-## 18. Revisiting Foreign Keys
+## Constraints
 
-- FK maintains **referential integrity** → child table data must match parent table
-- Can't insert a value in FK column that doesn't exist in the parent's PK
-- Can't delete a parent row if child rows still reference it (unless cascading is set)
+### What is it?
+Rules on a column that control what data is allowed.
 
-## 19. Cascading Foreign Keys
+### Important Point
+- `NOT NULL` → value is required
+- `UNIQUE` → no duplicate values
+- `PRIMARY KEY` → unique + not null (identifier)
+- `FOREIGN KEY` → links to another table
+- `DEFAULT` → sets a default value
+- `CHECK` → value must meet a condition
 
-- Defines what happens to child rows when parent row is updated/deleted
-- Options:
-  - `ON DELETE CASCADE` → delete child rows automatically when parent deleted
-  - `ON UPDATE CASCADE` → update child rows automatically when parent key updated
-  - `ON DELETE SET NULL` → set FK to NULL when parent deleted
-  - `ON DELETE RESTRICT` → block deletion if child rows exist (default-like behavior)
+---
 
+## Revisiting Foreign Keys
+
+### What is it?
+A foreign key keeps data consistent between two tables (called referential integrity).
+
+### Important Point
+- You can't insert a value in the FK column unless it already exists in the parent table.
+- You normally can't delete a parent row if child rows are still linked to it (unless cascading rules are set — see next topic).
+
+---
+
+## Cascading Foreign Keys
+
+### What is it?
+Rules that decide what happens to child table rows when the related parent row is updated or deleted.
+
+### Why do we use it?
+Without cascading, deleting a parent row with linked child rows would give an error. Cascading automates what should happen instead.
+
+### Example
 ```sql
 FOREIGN KEY (student_id) REFERENCES students(id)
 ON DELETE CASCADE
 ON UPDATE CASCADE;
 ```
 
-## 20. Normalization — 1NF, 2NF, 3NF
+### Important Point
+- `ON DELETE CASCADE` → deletes child rows automatically
+- `ON DELETE SET NULL` → sets FK to NULL instead of deleting
+- `ON DELETE RESTRICT` → blocks the delete if child rows exist (safer, default-like behavior)
 
-- Process of organizing data to reduce **redundancy** and avoid **anomalies**
+---
 
-**1NF (First Normal Form)**
+## Normalization — 1NF, 2NF, 3NF
 
-- Each column has atomic (single) values → no multiple values in one cell
-- Each row must be unique
+### What is it?
+A way of organizing tables to avoid duplicate data and keep the database clean.
 
-**2NF (Second Normal Form)**
+### Why do we use it?
+Reduces repeated data and prevents issues when inserting, updating, or deleting records.
 
-- Must satisfy 1NF
-- No **partial dependency** → non-key column should depend on the WHOLE primary key (matters when PK is composite/multiple columns)
+### Important Point
+- **1NF** → each column holds only one value (no lists inside a cell), each row is unique
+- **2NF** → 1NF + every non-key column depends on the WHOLE primary key (matters only when PK has multiple columns)
+- **3NF** → 2NF + no non-key column depends on another non-key column (every column should depend only on the primary key)
 
-**3NF (Third Normal Form)**
+---
 
-- Must satisfy 2NF
-- No **transitive dependency** → non-key column should not depend on another non-key column
-- Every non-key column should depend only on the primary key
+## MUST REMEMBER
+- DBMS manages the database; you interact through it (via SQL for relational DBs).
+- Relational DB = tables + fixed schema; NoSQL = flexible structure (e.g., MongoDB documents).
+- Table = rows (records) + columns (fields).
+- Basic SQL commands: `CREATE`, `USE`, `SHOW`, `DESCRIBE`, `ALTER`, `DROP`.
+- Primary Key = unique row identifier. Foreign Key = links two tables together.
+- Constraints (`NOT NULL`, `UNIQUE`, `DEFAULT`, `CHECK`) control what data is valid.
+- Cascading (`ON DELETE CASCADE`, etc.) controls what happens to related rows on delete/update.
+- Normalization (1NF → 2NF → 3NF) removes duplicate data and keeps tables clean — important for good database design.
 
-**Why normalize?**
-
-- Avoids duplicate data
-- Avoids update/insert/delete anomalies
-- Keeps database clean and consistent
+## CAN LOOK UP LATER
+- Exact syntax of every SQL datatype (just remember the common ones: INT, VARCHAR, DATE, DECIMAL, BOOLEAN).
+- Full list of cascading options — you'll rarely need more than CASCADE, SET NULL, RESTRICT.
+- Deeper NoSQL database types (key-value, graph, column-based) — know they exist, don't need details now.
