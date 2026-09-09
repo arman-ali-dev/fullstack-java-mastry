@@ -245,26 +245,44 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ### MySQL — In Depth
 
-- Relational model fundamentals: tables, rows, columns, primary/foreign keys
-- Data types and storage considerations
-- DDL, DML, DQL, DCL, TCL command categories
-- Joins: inner, left, right, full outer, self join, cross join
-- Subqueries and correlated subqueries
-- Aggregate functions: COUNT, SUM, AVG, MIN, MAX with GROUP BY and HAVING
-- Set operations: UNION, UNION ALL, INTERSECT (via workarounds), EXCEPT
-- Normalization: 1NF, 2NF, 3NF, BCNF — and when to denormalize
-- Indexing: B-Tree indexes, composite indexes, covering indexes, index selectivity
-- Query execution plan: reading EXPLAIN output, identifying full table scans
-- Transactions: ACID properties, COMMIT, ROLLBACK, SAVEPOINT
-- Isolation levels: Read Uncommitted, Read Committed, Repeatable Read, Serializable
-- Locking: row-level vs table-level locks, deadlocks and how to avoid them
-- Stored procedures, functions, and triggers
-- Views and materialized view concepts
-- Window functions: ROW_NUMBER, RANK, DENSE_RANK, LEAD, LAG, PARTITION BY
-- Partitioning strategies for large tables
-- Replication basics: master-slave, master-master
-- Connection pooling (HikariCP) with Spring Boot
-- Database migration tools: Flyway, Liquibase
+- Relational model: tables, rows, columns
+- Primary Key / Foreign Key
+- Data Types
+- DDL, DML, DQL, DCL, TCL
+- Constraints
+- Relationships
+- Normalization: 1NF, 2NF, 3NF, BCNF
+- Denormalization
+- Views
+- SELECT, INSERT, UPDATE, DELETE
+- WHERE, ORDER BY, LIMIT
+- Aggregate functions: COUNT, SUM, AVG, MIN, MAX
+- GROUP BY / HAVING
+- Joins: INNER, LEFT, RIGHT, FULL OUTER, SELF, CROSS
+- Subqueries
+- Correlated Subqueries
+- UNION / UNION ALL
+- INTERSECT / EXCEPT
+- Window Functions: ROW_NUMBER, RANK, DENSE_RANK, LEAD, LAG, PARTITION BY
+- Indexing
+- B-Tree Indexes
+- Composite Indexes
+- Covering Indexes
+- Index Selectivity
+- Transactions
+- ACID
+- COMMIT / ROLLBACK / SAVEPOINT
+- Isolation Levels
+- Locking
+- Deadlocks
+- Stored Procedures
+- Functions
+- Triggers
+- Partitioning
+- Replication
+- Materialized Views
+- Connection Pooling / HikariCP
+- Flyway / Liquibase
 
 ### SQL vs NoSQL
 
