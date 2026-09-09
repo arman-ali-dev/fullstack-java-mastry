@@ -243,7 +243,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 - Connecting MongoDB with Spring Boot using Spring Data MongoDB
 - MongoTemplate vs MongoRepository
 
-### MySQL — In Depth
+### MySQL 
 
 - Relational model: tables, rows, columns
 - Primary Key / Foreign Key
