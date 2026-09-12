@@ -39,6 +39,7 @@ Do questions in this order - each topic builds on the previous one.
 26. Jump Game - can you reach the last index
 27. Peak Index in a Mountain Array
 28. Square of a Sorted Array
+29. Search in 2D Array II
 
 ---
 
@@ -139,11 +140,10 @@ Do questions in this order - each topic builds on the previous one.
 4. Find minimum in rotated sorted array
 5. Find peak element
 6. Search a 2D matrix
-7. Kth smallest element in sorted matrix
-8. Find square root using binary search
-9. Aggressive cows - binary search on answer
-10. Book allocation problem - binary search on answer
-11. Median of two sorted arrays
+7. Find square root using binary search
+8. Aggressive cows - binary search on answer
+9. Book allocation problem - binary search on answer
+10. Median of two sorted arrays
 
 ---
 
