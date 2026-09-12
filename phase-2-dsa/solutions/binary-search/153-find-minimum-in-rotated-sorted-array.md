@@ -1,4 +1,4 @@
-# Binary Search
+# Find Minimum in Sorted Rotated Array
 
 ## Pattern
 
