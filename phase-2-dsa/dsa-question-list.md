@@ -40,6 +40,7 @@ Do questions in this order - each topic builds on the previous one.
 27. Peak Index in a Mountain Array
 28. Square of a Sorted Array
 29. Search in 2D Array II
+30. Two Sum II
 
 ---
 
