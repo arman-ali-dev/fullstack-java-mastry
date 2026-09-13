@@ -141,9 +141,10 @@ Do questions in this order - each topic builds on the previous one.
 5. Find peak element
 6. Search a 2D matrix
 7. Find square root using binary search
-8. Aggressive cows - binary search on answer
-9. Book allocation problem - binary search on answer
-10. Median of two sorted arrays
+8. Search Insert Position
+9. Aggressive cows - binary search on answer
+10. Book allocation problem - binary search on answer
+11. Median of two sorted arrays
 
 ---
 
