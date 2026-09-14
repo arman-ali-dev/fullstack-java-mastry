@@ -168,40 +168,42 @@ Do questions in this order - each topic builds on the previous one.
 
 **Basic**
 
-1. Inorder, Preorder, Postorder traversal - recursive and iterative
-2. Level order traversal (BFS)
-3. Height of binary tree
-4. Check if tree is balanced
-5. Check if two trees are identical
-6. Mirror a binary tree
-7. Diameter of binary tree
-8. Count nodes in complete binary tree
+1. Binary Tree Preorder Traversal
+2. Binary Tree Inorder Traversal
+3. Binary Tree Postorder Traversal
+4. Level order traversal (BFS)
+5. Height of binary tree
+6. Check if tree is balanced
+7. Check if two trees are identical
+8. Mirror a binary tree
+9. Diameter of binary tree
+10. Count nodes in complete binary tree
 
 **Medium**
 
-9. Lowest common ancestor of two nodes
-10. Path sum - does path from root to leaf equal target
-11. All paths from root to leaf with given sum
-12. Serialize and deserialize binary tree
-13. Right view of binary tree
-14. Left view of binary tree
-15. Top view and bottom view of binary tree
-16. Vertical order traversal
-17. Zigzag level order traversal
-18. Maximum path sum in binary tree
-19. Construct tree from inorder and preorder
-20. Flatten binary tree to linked list
+11. Lowest common ancestor of two nodes
+12. Path sum - does path from root to leaf equal target
+13. All paths from root to leaf with given sum
+14. Serialize and deserialize binary tree
+15. Right view of binary tree
+16. Left view of binary tree
+17. Top view and bottom view of binary tree
+18. Vertical order traversal
+19. Zigzag level order traversal
+20. Maximum path sum in binary tree
+21. Construct tree from inorder and preorder
+22. Flatten binary tree to linked list
 
 **BST specific**
 
-21. Search in BST
-22. Insert in BST
-23. Delete node from BST
-24. Validate BST
-25. Kth smallest element in BST
-26. Inorder successor in BST
-27. Convert sorted array to BST
-28. LCA in BST
+23. Search in BST
+24. Insert in BST
+25. Delete node from BST
+26. Validate BST
+27. Kth smallest element in BST
+28. Inorder successor in BST
+29. Convert sorted array to BST
+30. LCA in BST
 
 ---
 
