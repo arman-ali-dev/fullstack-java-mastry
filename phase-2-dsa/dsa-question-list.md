@@ -178,6 +178,7 @@ Do questions in this order - each topic builds on the previous one.
 8. Mirror a binary tree
 9. Diameter of binary tree
 10. Count nodes in complete binary tree
+11. Subtree of Another Tree
 
 **Medium**
 
