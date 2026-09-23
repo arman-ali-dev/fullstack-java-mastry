@@ -3,10 +3,10 @@
 Do questions in this order - each topic builds on the previous one.
 
 **Legend**
-- `LC 123` = LeetCode problem number
-- `GFG` = LeetCode par available nahi hai, GeeksForGeeks par karo
-- `≈` = LeetCode par closest version hai (exact same question nahi, thoda variation hai)
-- `(Premium)` = LeetCode Premium chahiye
+- LC 123 = LeetCode problem number
+- GFG = The question is not available on LeetCode, so solve it on GeeksForGeeks
+- ≈ = A similar version is available on LeetCode, but it is not exactly the same question
+- (Premium) = LeetCode Premium is required
 
 ---
 
