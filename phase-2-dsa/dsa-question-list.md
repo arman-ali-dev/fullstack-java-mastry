@@ -2,45 +2,51 @@
 
 Do questions in this order - each topic builds on the previous one.
 
+**Legend**
+- `LC 123` = LeetCode problem number
+- `GFG` = LeetCode par available nahi hai, GeeksForGeeks par karo
+- `≈` = LeetCode par closest version hai (exact same question nahi, thoda variation hai)
+- `(Premium)` = LeetCode Premium chahiye
+
 ---
 
 ## ARRAYS (Start here - most asked topic)
 
 **Easy**
 
-1. Find the maximum and minimum element in an array
-2. Reverse an array in place
-3. Find the second largest element
-4. Check if array is sorted
-5. Move all zeros to the end (maintain order of other elements)
-6. Find Duplicate
-7. Find all duplicates in an array
-8. Remove duplicates from sorted array
-9. Left rotate array by k positions
-10. Find the missing number in array [1 to n]
-11. Single Number
+1. Find the maximum and minimum element in an array — GFG
+2. Reverse an array in place — GFG
+3. Find the second largest element — GFG
+4. Check if array is sorted — GFG
+5. Move Zeroes — LC 283
+6. Find the Duplicate Number — LC 287
+7. Find All Duplicates in an Array — LC 442
+8. Remove Duplicates from Sorted Array — LC 26
+9. Rotate Array (left rotate by k) — LC 189 ≈ (LeetCode par right rotate hai, left rotate GFG par)
+10. Missing Number — LC 268 ≈ (LeetCode par range 0 to n hai, 1 to n version GFG par)
+11. Single Number — LC 136
 
 **Medium**
 
-12. Two Sum
-13. Three Sum
-14. Four Sum
-15. Maximum subarray sum - Kadane's algorithm
-16. Best time to buy and sell stock
-17. Product of array except self (no division)
-18. Find the majority element (appears more than n/2 times)
-19. majority element II
-20. Sort array of 0s, 1s, and 2s - Dutch National Flag
-21. Merge two sorted arrays without extra space
-22. Find the subarray with given sum (positive numbers) - GeeksForGeeks
-23. Subarray Sum Equals K
-24. Maximum product subarray
-25. Trapping rainwater
-26. Jump Game - can you reach the last index
-27. Peak Index in a Mountain Array
-28. Square of a Sorted Array
-29. Search in 2D Array II
-30. Two Sum II
+12. Two Sum — LC 1
+13. 3Sum — LC 15
+14. 4Sum — LC 18
+15. Maximum Subarray (Kadane's algorithm) — LC 53
+16. Best Time to Buy and Sell Stock — LC 121
+17. Product of Array Except Self — LC 238
+18. Majority Element — LC 169
+19. Majority Element II — LC 229
+20. Sort Colors (Dutch National Flag) — LC 75
+21. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
+22. Subarray with given sum (positive numbers) — GFG
+23. Subarray Sum Equals K — LC 560
+24. Maximum Product Subarray — LC 152
+25. Trapping Rain Water — LC 42
+26. Jump Game — LC 55
+27. Peak Index in a Mountain Array — LC 852
+28. Squares of a Sorted Array — LC 977
+29. Search a 2D Matrix II — LC 240
+30. Two Sum II - Input Array Is Sorted — LC 167
 
 ---
 
@@ -48,41 +54,41 @@ Do questions in this order - each topic builds on the previous one.
 
 **Easy**
 
-1. Reverse a string
-2. Check if string is palindrome
-3. Count vowels and consonants
-4. Remove all spaces from a string
-5. Find the first non-repeating character
-6. Check if two strings are anagrams
-7. Count occurrences of each character (frequency map)
-8. Is Subsequence
+1. Reverse String — LC 344
+2. Valid Palindrome — LC 125 ≈ (LeetCode par alphanumeric-only check hai)
+3. Count vowels and consonants — GFG
+4. Remove all spaces from a string — GFG
+5. First Unique Character in a String — LC 387
+6. Valid Anagram — LC 242
+7. Count occurrences of each character (frequency map) — GFG
+8. Is Subsequence — LC 392
 
 **Medium**
 
-9. Longest substring without repeating characters - sliding window
-10. Longest palindromic substring
-11. Group anagrams together
-12. Valid parentheses - check if brackets are balanced
-13. Minimum window substring
-14. String compression
-15. Longest common prefix in array of strings
-16. Count and say sequence
-17. Reverse words in a string
-18. Isomorphic Strings
-19. Word Pattern
+9. Longest Substring Without Repeating Characters (sliding window) — LC 3
+10. Longest Palindromic Substring — LC 5
+11. Group Anagrams — LC 49
+12. Valid Parentheses — LC 20
+13. Minimum Window Substring — LC 76
+14. String Compression — LC 443
+15. Longest Common Prefix — LC 14
+16. Count and Say — LC 38
+17. Reverse Words in a String — LC 151
+18. Isomorphic Strings — LC 205
+19. Word Pattern — LC 290
 
 ---
 
 ## HASHMAP AND HASHING (Very important for product companies)
 
-1. Two Sum using HashMap
-2. Subarray with zero sum - check if exists
-3. Intersection of Two Arrays
-4. Intersection of Two Arrays II
-5. Intersection of Multiple Arrays
-6. Longest Consecutive Sequence
-7. Jewels and Stones
-8. First recurring character in string
+1. Two Sum (using HashMap) — LC 1
+2. Subarray with zero sum - check if exists — GFG
+3. Intersection of Two Arrays — LC 349
+4. Intersection of Two Arrays II — LC 350
+5. Intersection of Multiple Arrays — LC 2248
+6. Longest Consecutive Sequence — LC 128
+7. Jewels and Stones — LC 771
+8. First Letter to Appear Twice (first recurring character) — LC 2351
 
 ---
 
@@ -90,23 +96,23 @@ Do questions in this order - each topic builds on the previous one.
 
 **Easy**
 
-1. Reverse a linked list
-2. Find middle of linked list
-3. Detect cycle in linked list - Floyd's algorithm
-4. Find start of cycle
-5. Remove nth node from end
-6. Check if linked list is palindrome
-7. Remove duplicates from sorted linked list
+1. Reverse Linked List — LC 206
+2. Middle of the Linked List — LC 876
+3. Linked List Cycle (Floyd's algorithm) — LC 141
+4. Linked List Cycle II (find start of cycle) — LC 142
+5. Remove Nth Node From End of List — LC 19
+6. Palindrome Linked List — LC 234
+7. Remove Duplicates from Sorted List — LC 83
 
 **Medium**
 
-8. Merge two sorted linked lists
-9. Add two numbers represented as linked lists
-10. Flatten a multilevel linked list
-11. Copy list with random pointer
-12. Swap Nodes in Pairs
-13. LRU Cache implementation using LinkedList and HashMap
-14. Intersection point of two linked lists
+8. Merge Two Sorted Lists — LC 21
+9. Add Two Numbers — LC 2
+10. Flatten a Multilevel Doubly Linked List — LC 430
+11. Copy List with Random Pointer — LC 138
+12. Swap Nodes in Pairs — LC 24
+13. LRU Cache (LinkedList + HashMap) — LC 146
+14. Intersection of Two Linked Lists — LC 160
 
 ---
 
@@ -114,53 +120,53 @@ Do questions in this order - each topic builds on the previous one.
 
 **Stack**
 
-1. Implement Stack using Arrays
-2. Valid parentheses
-3. Next greater element
-4. Previous greater element
-5. Previous smaller element
-6. Stock span problem
-7. Implement min stack - getMin in O(1)
-8. Evaluate reverse polish notation
+1. Implement Stack using Arrays — GFG
+2. Valid Parentheses — LC 20
+3. Next Greater Element I — LC 496
+4. Previous greater element — GFG
+5. Previous smaller element — GFG
+6. Online Stock Span — LC 901
+7. Min Stack (getMin in O(1)) — LC 155
+8. Evaluate Reverse Polish Notation — LC 150
 
 **Queue**
 
-9. Implement queue using two stacks
-10. Implement stack using two queues
-11. First non-repeating character in string
-12. First non-repeating character in stream
+9. Implement Queue using Stacks — LC 232
+10. Implement Stack using Queues — LC 225
+11. First Unique Character in a String (first non-repeating character) — LC 387
+12. First non-repeating character in stream — GFG
 13. BFS of graph uses queue - covered in graphs section
 
 ---
 
 ## BINARY SEARCH (Pattern is more important than problems)
 
-1. Binary search in sorted array - basic
-2. Find first and last position of element in sorted array
-3. Search in rotated sorted array
-4. Find minimum in rotated sorted array
-5. Find peak element
-6. Search a 2D matrix
-7. Find square root using binary search
-8. Search Insert Position
-9. Aggressive cows - binary search on answer
-10. Book allocation problem - binary search on answer
-11. Median of two sorted arrays
+1. Binary Search — LC 704
+2. Find First and Last Position of Element in Sorted Array — LC 34
+3. Search in Rotated Sorted Array — LC 33
+4. Find Minimum in Rotated Sorted Array — LC 153
+5. Find Peak Element — LC 162
+6. Search a 2D Matrix — LC 74
+7. Sqrt(x) — LC 69
+8. Search Insert Position — LC 35
+9. Aggressive cows (binary search on answer) — GFG
+10. Book allocation problem (binary search on answer) — GFG (LeetCode par same pattern: LC 410 Split Array Largest Sum)
+11. Median of Two Sorted Arrays — LC 4
 
 ---
 
 ## RECURSION AND BACKTRACKING (Medium priority)
 
-1. Subsets of a set
-2. Permutations of a string or array
-3. Combination sum - pick numbers that add to target
-4. Combination sum 2 - each number can be used once
-5. Word search in 2D grid
-6. N Queens problem
-7. Sudoku solver
-8. Letter combinations of phone number
-9. Palindrome partitioning
-10. Rat in a maze
+1. Subsets — LC 78
+2. Permutations — LC 46
+3. Combination Sum — LC 39
+4. Combination Sum II — LC 40
+5. Word Search — LC 79
+6. N-Queens — LC 51
+7. Sudoku Solver — LC 37
+8. Letter Combinations of a Phone Number — LC 17
+9. Palindrome Partitioning — LC 131
+10. Rat in a maze — GFG
 
 ---
 
@@ -168,42 +174,42 @@ Do questions in this order - each topic builds on the previous one.
 
 **Basic**
 
-1. Binary Tree Preorder Traversal
-2. Binary Tree Inorder Traversal
-3. Binary Tree Postorder Traversal
-4. Level order traversal (BFS)
-5. Height of binary tree
-6. Check if tree is balanced
-7. Check if two trees are identical
-8. Mirror a binary tree
-9. Diameter of binary tree
-10. Subtree of Another Tree
+1. Binary Tree Preorder Traversal — LC 144
+2. Binary Tree Inorder Traversal — LC 94
+3. Binary Tree Postorder Traversal — LC 145
+4. Binary Tree Level Order Traversal (BFS) — LC 102
+5. Maximum Depth of Binary Tree (height) — LC 104
+6. Balanced Binary Tree — LC 110
+7. Same Tree — LC 100
+8. Invert Binary Tree (mirror) — LC 226
+9. Diameter of Binary Tree — LC 543
+10. Subtree of Another Tree — LC 572
 
 **Medium**
 
-11. Lowest common ancestor of two nodes
-12. Path sum - does path from root to leaf equal target
-13. All paths from root to leaf with given sum
-14. Serialize and deserialize binary tree
-15. Right view of binary tree
-16. Left view of binary tree
-17. Top view and bottom view of binary tree
-18. Vertical order traversal
-19. Zigzag level order traversal
-20. Maximum path sum in binary tree
-21. Construct tree from inorder and preorder
-22. Flatten binary tree to linked list
+11. Lowest Common Ancestor of a Binary Tree — LC 236
+12. Path Sum — LC 112
+13. Path Sum II (all root-to-leaf paths with given sum) — LC 113
+14. Serialize and Deserialize Binary Tree — LC 297
+15. Binary Tree Right Side View — LC 199
+16. Left view of binary tree — GFG
+17. Top view and bottom view of binary tree — GFG
+18. Vertical Order Traversal of a Binary Tree — LC 987
+19. Binary Tree Zigzag Level Order Traversal — LC 103
+20. Binary Tree Maximum Path Sum — LC 124
+21. Construct Binary Tree from Preorder and Inorder Traversal — LC 105
+22. Flatten Binary Tree to Linked List — LC 114
 
 **BST specific**
 
-23. Search in BST
-24. Insert in BST
-25. Delete node from BST
-26. Validate BST
-27. Kth smallest element in BST
-28. Inorder successor in BST
-29. Convert sorted array to BST
-30. LCA in BST
+23. Search in a Binary Search Tree — LC 700
+24. Insert into a Binary Search Tree — LC 701
+25. Delete Node in a BST — LC 450
+26. Validate Binary Search Tree — LC 98
+27. Kth Smallest Element in a BST — LC 230
+28. Inorder Successor in BST — LC 285 (Premium) / GFG
+29. Convert Sorted Array to Binary Search Tree — LC 108
+30. Lowest Common Ancestor of a Binary Search Tree — LC 235
 
 ---
 
@@ -211,24 +217,24 @@ Do questions in this order - each topic builds on the previous one.
 
 **Basic**
 
-1. BFS traversal
-2. DFS traversal
-3. Detect cycle in undirected graph - BFS and DFS
-4. Detect cycle in directed graph - DFS
-5. Topological sort - BFS (Kahn's algo) and DFS
-6. Number of islands
-7. Number of connected components
-8. Bipartite check
+1. BFS traversal — GFG
+2. DFS traversal — GFG
+3. Detect cycle in undirected graph (BFS and DFS) — GFG
+4. Detect cycle in directed graph (DFS) — GFG
+5. Topological sort (Kahn's algo and DFS) — GFG
+6. Number of Islands — LC 200
+7. Number of Connected Components in an Undirected Graph — LC 323 (Premium) — free alternative: LC 547 Number of Provinces
+8. Is Graph Bipartite? — LC 785
 
 **Medium**
 
-9. Shortest path in unweighted graph - BFS
-10. Dijkstra's algorithm - shortest path weighted graph
-11. Find if path exists between two nodes
-12. Clone a graph
-13. Course schedule - can you finish all courses (cycle detection)
-14. Word ladder - BFS shortest transformation
-15. Surrounded regions
+9. Shortest path in unweighted graph (BFS) — GFG
+10. Dijkstra's algorithm - shortest path weighted graph — GFG (LeetCode par practice: LC 743 Network Delay Time)
+11. Find if Path Exists in Graph — LC 1971
+12. Clone Graph — LC 133
+13. Course Schedule (cycle detection) — LC 207
+14. Word Ladder (BFS shortest transformation) — LC 127
+15. Surrounded Regions — LC 130
 
 ---
 
@@ -236,40 +242,40 @@ Do questions in this order - each topic builds on the previous one.
 
 **1D DP**
 
-1. Climbing stairs
-2. House robber
-3. House robber 2 - circular
-4. Jump game - can you reach end
-5. Jump game 2 - minimum jumps
-6. Coin change - minimum coins
-7. Coin change 2 - number of ways
-8. Word break
-9. Decode ways
+1. Climbing Stairs — LC 70
+2. House Robber — LC 198
+3. House Robber II (circular) — LC 213
+4. Jump Game (can you reach end) — LC 55
+5. Jump Game II (minimum jumps) — LC 45
+6. Coin Change (minimum coins) — LC 322
+7. Coin Change II (number of ways) — LC 518
+8. Word Break — LC 139
+9. Decode Ways — LC 91
 
 **2D DP**
 
-10. Unique paths in grid
-11. Minimum path sum in grid
-12. Longest common subsequence
-13. Edit distance
-14. 0/1 Knapsack
-15. Partition equal subset sum
-16. Longest increasing subsequence
-17. Matrix chain multiplication
-18. Palindrome partitioning 2 - minimum cuts
+10. Unique Paths — LC 62
+11. Minimum Path Sum — LC 64
+12. Longest Common Subsequence — LC 1143
+13. Edit Distance — LC 72
+14. 0/1 Knapsack — GFG
+15. Partition Equal Subset Sum — LC 416
+16. Longest Increasing Subsequence — LC 300
+17. Matrix chain multiplication — GFG
+18. Palindrome Partitioning II (minimum cuts) — LC 132
 
 ---
 
 ## HEAP / PRIORITY QUEUE (Medium priority)
 
-1. Kth largest element in array
-2. Kth smallest element in array
-3. Top K frequent elements
-4. Merge K sorted lists
-5. Find median from data stream
-6. K closest points to origin
-7. Task scheduler
-8. Reorganize string - no two adjacent same characters
+1. Kth Largest Element in an Array — LC 215
+2. Kth smallest element in array — GFG
+3. Top K Frequent Elements — LC 347
+4. Merge k Sorted Lists — LC 23
+5. Find Median from Data Stream — LC 295
+6. K Closest Points to Origin — LC 973
+7. Task Scheduler — LC 621
+8. Reorganize String (no two adjacent same characters) — LC 767
 
 ---
 
@@ -277,23 +283,23 @@ Do questions in this order - each topic builds on the previous one.
 
 **Two Pointers**
 
-1. Two sum in sorted array
-2. Three sum
-3. Container with most water
-4. Trapping rainwater
-5. Remove duplicates from sorted array
-6. Move zeros
-7. Valid palindrome with allowed character removal
-8. Sort colors - Dutch national flag
+1. Two Sum II - Input Array Is Sorted — LC 167
+2. 3Sum — LC 15
+3. Container With Most Water — LC 11
+4. Trapping Rain Water — LC 42
+5. Remove Duplicates from Sorted Array — LC 26
+6. Move Zeroes — LC 283
+7. Valid Palindrome II (allowed character removal) — LC 680
+8. Sort Colors (Dutch national flag) — LC 75
 
 **Sliding Window**
 
-9. Maximum sum subarray of size k
-10. Longest substring without repeating characters
-11. Longest substring with at most k distinct characters
-12. Minimum window substring
-13. Count occurrences of anagram in string
-14. Maximum of all subarrays of size k - deque
+9. Maximum sum subarray of size k — GFG
+10. Longest Substring Without Repeating Characters — LC 3
+11. Longest Substring with At Most K Distinct Characters — LC 340 (Premium)
+12. Minimum Window Substring — LC 76
+13. Find All Anagrams in a String (count occurrences of anagram) — LC 438 ≈ (LeetCode par indices return karne hain, count GFG par)
+14. Sliding Window Maximum (deque) — LC 239
 
 ---
 
@@ -316,26 +322,3 @@ Binary Search on Answer     Min/max optimization problems
 Topological Sort            Dependency ordering, course schedule
 Union Find                  Connected components, cycle detection
 ```
-
----
-
-## REALISTIC TARGETS
-
-you need:
-
-- Arrays and Strings: 100% of Easy, 80% of Medium
-- HashMap: all problems
-- Linked List: all problems
-- Stack/Queue: all problems
-- Binary Search: all problems
-- Trees: 100% of Basic, 70% of Medium
-- Graphs: all Basic, 50% of Medium
-- DP: 1D DP fully, 2D DP top patterns
-- Heap: top 5 problems
-
-You do NOT need:
-
-- Hard DP like matrix chain multiplication
-- Advanced graph algorithms beyond Dijkstra
-- Segment trees, Fenwick trees
-- Advanced string algorithms like KMP, Z algorithm
