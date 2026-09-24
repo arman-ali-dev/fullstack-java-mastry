@@ -29,25 +29,25 @@ Do questions in this order - each topic builds on the previous one.
 
 **Medium**
 
-12. Two Sum — LC 1
-13. 3Sum — LC 15
-14. 4Sum — LC 18
-15. Maximum Subarray (Kadane's algorithm) — LC 53
-16. Best Time to Buy and Sell Stock — LC 121
-17. Product of Array Except Self — LC 238
-18. Majority Element — LC 169
-19. Majority Element II — LC 229
-20. Sort Colors (Dutch National Flag) — LC 75
-21. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
-22. Subarray with given sum (positive numbers) — GFG
-23. Subarray Sum Equals K — LC 560
-24. Maximum Product Subarray — LC 152
-25. Trapping Rain Water — LC 42
-26. Jump Game — LC 55
-27. Peak Index in a Mountain Array — LC 852
-28. Squares of a Sorted Array — LC 977
-29. Search a 2D Matrix II — LC 240
-30. Two Sum II - Input Array Is Sorted — LC 167
+13. Two Sum — LC 1
+14. 3Sum — LC 15
+15. 4Sum — LC 18
+16. Maximum Subarray (Kadane's algorithm) — LC 53
+17. Best Time to Buy and Sell Stock — LC 121
+18. Product of Array Except Self — LC 238
+19. Majority Element — LC 169
+20. Majority Element II — LC 229
+21. Sort Colors (Dutch National Flag) — LC 75
+22. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
+23. Subarray with given sum (positive numbers) — GFG
+24. Subarray Sum Equals K — LC 560
+25. Maximum Product Subarray — LC 152
+26. Trapping Rain Water — LC 42
+27. Jump Game — LC 55
+28. Peak Index in a Mountain Array — LC 852
+29. Squares of a Sorted Array — LC 977
+30. Search a 2D Matrix II — LC 240
+31. Two Sum II - Input Array Is Sorted — LC 167
 
 ---
 
@@ -68,17 +68,17 @@ Do questions in this order - each topic builds on the previous one.
 
 **Medium**
 
-9. Longest Substring Without Repeating Characters (sliding window) — LC 3
-10. Longest Palindromic Substring — LC 5
-11. Group Anagrams — LC 49
-12. Valid Parentheses — LC 20
-13. Minimum Window Substring — LC 76
-14. String Compression — LC 443
-15. Longest Common Prefix — LC 14
-16. Count and Say — LC 38
-17. Reverse Words in a String — LC 151
-18. Isomorphic Strings — LC 205
-19. Word Pattern — LC 290
+11. Longest Substring Without Repeating Characters (sliding window) — LC 3
+12. Longest Palindromic Substring — LC 5
+13. Group Anagrams — LC 49
+14. Valid Parentheses — LC 20
+15. Minimum Window Substring — LC 76
+16. String Compression — LC 443
+17. Longest Common Prefix — LC 14
+18. Count and Say — LC 38
+19. Reverse Words in a String — LC 151
+20. Isomorphic Strings — LC 205
+21. Word Pattern — LC 290
 
 ---
 
