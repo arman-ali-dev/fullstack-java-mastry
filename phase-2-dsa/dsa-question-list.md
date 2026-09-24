@@ -25,6 +25,7 @@ Do questions in this order - each topic builds on the previous one.
 9. Rotate Array (left rotate by k) — LC 189 ≈ (LeetCode par right rotate hai, left rotate GFG par)
 10. Missing Number — LC 268 ≈ (LeetCode par range 0 to n hai, 1 to n version GFG par)
 11. Single Number — LC 136
+12. Running Sum of 1d Array - LC 1480
 
 **Medium**
 
@@ -62,6 +63,8 @@ Do questions in this order - each topic builds on the previous one.
 6. Valid Anagram — LC 242
 7. Count occurrences of each character (frequency map) — GFG
 8. Is Subsequence — LC 392
+9. Robot Return to Origin - LC 657
+10. Check If Two String Arrays are Equivalent - LC 1662
 
 **Medium**
 
