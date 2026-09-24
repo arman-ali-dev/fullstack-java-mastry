@@ -25,28 +25,29 @@ Do questions in this order - each topic builds on the previous one.
 10. Missing Number — LC 268 ≈ (LeetCode par range 0 to n hai, 1 to n version GFG par)
 11. Single Number — LC 136
 12. Running Sum of 1d Array - LC 1480
+13. Maximum Number of Words Found in Sentences - LC 2114
 
 **Medium**
 
-13. Two Sum — LC 1
-14. 3Sum — LC 15
-15. 4Sum — LC 18
-16. Maximum Subarray (Kadane's algorithm) — LC 53
-17. Best Time to Buy and Sell Stock — LC 121
-18. Product of Array Except Self — LC 238
-19. Majority Element — LC 169
-20. Majority Element II — LC 229
-21. Sort Colors (Dutch National Flag) — LC 75
-22. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
-23. Subarray with given sum (positive numbers) — GFG
-24. Subarray Sum Equals K — LC 560
-25. Maximum Product Subarray — LC 152
-26. Trapping Rain Water — LC 42
-27. Jump Game — LC 55
-28. Peak Index in a Mountain Array — LC 852
-29. Squares of a Sorted Array — LC 977
-30. Search a 2D Matrix II — LC 240
-31. Two Sum II - Input Array Is Sorted — LC 167
+14. Two Sum — LC 1
+15. 3Sum — LC 15
+16. 4Sum — LC 18
+17. Maximum Subarray (Kadane's algorithm) — LC 53
+18. Best Time to Buy and Sell Stock — LC 121
+19. Product of Array Except Self — LC 238
+20. Majority Element — LC 169
+21. Majority Element II — LC 229
+22. Sort Colors (Dutch National Flag) — LC 75
+23. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
+24. Subarray with given sum (positive numbers) — GFG
+25. Subarray Sum Equals K — LC 560
+26. Maximum Product Subarray — LC 152
+27. Trapping Rain Water — LC 42
+28. Jump Game — LC 55
+29. Peak Index in a Mountain Array — LC 852
+30. Squares of a Sorted Array — LC 977
+31. Search a 2D Matrix II — LC 240
+32. Two Sum II - Input Array Is Sorted — LC 167
 
 ---
 
