@@ -39,15 +39,13 @@ Do questions in this order - each topic builds on the previous one.
 21. Majority Element II — LC 229
 22. Sort Colors (Dutch National Flag) — LC 75
 23. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
-24. Subarray with given sum (positive numbers) — GFG
-25. Subarray Sum Equals K — LC 560
-26. Maximum Product Subarray — LC 152
-27. Trapping Rain Water — LC 42
-28. Jump Game — LC 55
-29. Peak Index in a Mountain Array — LC 852
-30. Squares of a Sorted Array — LC 977
-31. Search a 2D Matrix II — LC 240
-32. Two Sum II - Input Array Is Sorted — LC 167
+24. Maximum Product Subarray — LC 152
+25. Trapping Rain Water — LC 42
+26. Jump Game — LC 55
+27. Peak Index in a Mountain Array — LC 852
+28. Squares of a Sorted Array — LC 977
+29. Search a 2D Matrix II — LC 240
+30. Two Sum II - Input Array Is Sorted — LC 167
 
 ---
 
