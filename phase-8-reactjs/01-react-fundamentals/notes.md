@@ -1,4 +1,4 @@
-# React Fundamentals — Notes (Simple Version)
+# React Fundamentals — Notes 
 
 ## 1. JSX syntax and compilation
 
