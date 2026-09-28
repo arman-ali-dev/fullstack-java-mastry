@@ -30,6 +30,12 @@ Composition ko inheritance se better kyun mana jata hai:
 - Composition me components independent rehte hain, aur unhe alag-alag tarike se combine kiya ja sakta hai — zyada flexible aur reusable
 - JavaScript (aur JSX) composition ko naturally support karta hai — props aur children ke through hi ye ho jata hai, koi special syntax nahi chahiye
 
+composition ke andr basically chhote components combine hoke ek bada components banate hai isme koi component dusre kisi component ko extend nhi karta like inheritance bas us dusre component ko use kar leta hai as a props ya children 
+<br>
+bas isko hi composition kahte hai 
+<br>
+react me class component me inheriharitance hota hai lekin sirf React.Component ko inherit karne ke liye - react ke feature jaise state ka use karne ke lie 
+
 ## 2. Controlled vs uncontrolled components
 
 Ye pattern mostly **form inputs** (jaise `<input>`, `<textarea>`) ke context me use hota hai.
