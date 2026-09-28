@@ -506,6 +506,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 - Controlled vs uncontrolled components
 - Lifting state up
 - Container/Presentational component pattern
+- Folder structure / project architecture: feature-based vs type-based organization, scaling component structure as the app grows
 
 ### Routing
 
@@ -529,14 +530,26 @@ This is usually the biggest gap. Companies check DSA before anything else.
 ### API Integration
 
 - Fetching data with useEffect + fetch/axios
+- Axios interceptors: attaching JWT tokens, refresh-token flow, centralized error handling
 - Introduction to React Query (TanStack Query): caching, refetching, mutations
 - Handling loading and error states
+- API service layer: organizing API calls into a reusable layer instead of scattering fetch/axios calls across components
+
+### Error Handling
+
+- Error Boundaries: catching render-time errors in the component tree, fallback UI
+- Difference between Error Boundaries and try-catch in async code
 
 ### Performance and Optimization
 
 - React.memo for component memoization
 - Code splitting with React.lazy and Suspense
 - Avoiding unnecessary re-renders
+
+### Debugging Tools
+
+- React DevTools: inspecting component tree, props, and state
+- Profiler tab: identifying unnecessary re-renders and performance bottlenecks
 
 ### Testing
 
