@@ -197,7 +197,7 @@ Do questions in this order - each topic builds on the previous one.
 16. Left view of binary tree — GFG
 17. Top view of binary tree — GFG
 18. bottom view of binary tree — GFG
-19. Vertical Order Traversal of a Binary Tree — LC 987
+19. Vertical Tree Traversal — GFG
 20. Binary Tree Zigzag Level Order Traversal — LC 103
 21. Binary Tree Maximum Path Sum — LC 124
 22. Construct Binary Tree from Preorder and Inorder Traversal — LC 105
