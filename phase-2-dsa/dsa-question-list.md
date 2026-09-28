@@ -195,12 +195,13 @@ Do questions in this order - each topic builds on the previous one.
 14. Serialize and Deserialize Binary Tree — LC 297
 15. Binary Tree Right Side View — LC 199
 16. Left view of binary tree — GFG
-17. Top view and bottom view of binary tree — GFG
-18. Vertical Order Traversal of a Binary Tree — LC 987
-19. Binary Tree Zigzag Level Order Traversal — LC 103
-20. Binary Tree Maximum Path Sum — LC 124
-21. Construct Binary Tree from Preorder and Inorder Traversal — LC 105
-22. Flatten Binary Tree to Linked List — LC 114
+17. Top view of binary tree — GFG
+18. bottom view of binary tree — GFG
+19. Vertical Order Traversal of a Binary Tree — LC 987
+20. Binary Tree Zigzag Level Order Traversal — LC 103
+21. Binary Tree Maximum Path Sum — LC 124
+22. Construct Binary Tree from Preorder and Inorder Traversal — LC 105
+23. Flatten Binary Tree to Linked List — LC 114
 
 **BST specific**
 
