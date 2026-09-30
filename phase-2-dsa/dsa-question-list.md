@@ -200,7 +200,7 @@ Do questions in this order - each topic builds on the previous one.
 19. Vertical Tree Traversal — GFG
 20. Binary Tree Zigzag Level Order Traversal — LC 103
 21. Nodes at K Distance from Root - GFG
-22. Construct Binary Tree from Preorder and Inorder Traversal — LC 105
+22. Binary Tree Paths - LC 257
 23. Flatten Binary Tree to Linked List — LC 114
 
 **BST specific**
