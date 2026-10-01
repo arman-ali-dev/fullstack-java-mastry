@@ -64,20 +64,21 @@ Do questions in this order - each topic builds on the previous one.
 9. Robot Return to Origin - LC 657
 10. Check If Two String Arrays are Equivalent - LC 1662
 11. Shuffle String - LC 1528
+12. Check If a Word Occurs As a Prefix of Any Word in a Sentence - LC 1455
 
 **Medium**
 
-12. Longest Substring Without Repeating Characters (sliding window) — LC 3
-13. Longest Palindromic Substring — LC 5
-14. Group Anagrams — LC 49
-15. Valid Parentheses — LC 20
-16. Minimum Window Substring — LC 76
-17. String Compression — LC 443
-18. Longest Common Prefix — LC 14
-19. Count and Say — LC 38
-20. Reverse Words in a String — LC 151
-21. Isomorphic Strings — LC 205
-22. Word Pattern — LC 290
+13. Longest Substring Without Repeating Characters (sliding window) — LC 3
+14. Longest Palindromic Substring — LC 5
+15. Group Anagrams — LC 49
+16. Valid Parentheses — LC 20
+17. Minimum Window Substring — LC 76
+18. String Compression — LC 443
+19. Longest Common Prefix — LC 14
+20. Count and Say — LC 38
+21. Reverse Words in a String — LC 151
+22. Isomorphic Strings — LC 205
+23. Word Pattern — LC 290
 
 ---
 
