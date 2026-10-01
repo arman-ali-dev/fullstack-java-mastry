@@ -26,26 +26,27 @@ Do questions in this order - each topic builds on the previous one.
 11. Single Number — LC 136
 12. Running Sum of 1d Array - LC 1480
 13. Maximum Number of Words Found in Sentences - LC 2114
+14. Kids With the Greatest Number of Candies - LC 1431
 
 **Medium**
 
-14. Two Sum — LC 1
-15. 3Sum — LC 15
-16. 4Sum — LC 18
-17. Maximum Subarray (Kadane's algorithm) — LC 53
-18. Best Time to Buy and Sell Stock — LC 121
-19. Product of Array Except Self — LC 238
-20. Majority Element — LC 169
-21. Majority Element II — LC 229
-22. Sort Colors (Dutch National Flag) — LC 75
-23. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
-24. Maximum Product Subarray — LC 152
-25. Trapping Rain Water — LC 42
-26. Jump Game — LC 55
-27. Peak Index in a Mountain Array — LC 852
-28. Squares of a Sorted Array — LC 977
-29. Search a 2D Matrix II — LC 240
-30. Two Sum II - Input Array Is Sorted — LC 167
+15. Two Sum — LC 1
+16. 3Sum — LC 15
+17. 4Sum — LC 18
+18. Maximum Subarray (Kadane's algorithm) — LC 53
+19. Best Time to Buy and Sell Stock — LC 121
+20. Product of Array Except Self — LC 238
+21. Majority Element — LC 169
+22. Majority Element II — LC 229
+23. Sort Colors (Dutch National Flag) — LC 75
+24. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
+25. Maximum Product Subarray — LC 152
+26. Trapping Rain Water — LC 42
+27. Jump Game — LC 55
+28. Peak Index in a Mountain Array — LC 852
+29. Squares of a Sorted Array — LC 977
+30. Search a 2D Matrix II — LC 240
+31. Two Sum II - Input Array Is Sorted — LC 167
 
 ---
 
