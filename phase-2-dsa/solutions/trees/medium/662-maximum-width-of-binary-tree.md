@@ -11,52 +11,47 @@ Binary Tree BFS + Complete Binary Tree Indexing
 ### Code
 
 ```java
-public class Codec {
+class Pair {
+    int idx;
+    TreeNode node;
 
-    public void encode(TreeNode root, StringBuilder sb) {
-        if (root == null) {
-            sb.append("null");
-            sb.append(",");
-            return;
-        }
-
-        sb.append(root.val);
-        sb.append(",");
-
-        encode(root.left, sb);
-        encode(root.right, sb);
-    }
-
-    public String serialize(TreeNode root) {
-        StringBuilder sb = new StringBuilder();
-        encode(root, sb);
-
-        return sb.toString();
-    }
-
-    public TreeNode deserialize(String data) {
-        String[] values = data.split(",");
-        int[] idx = {0};
-        return build(values, idx);
-    }
-
-    public TreeNode build(String[] values, int[] idx) {
-        String value = values[idx[0]];
-        idx[0]++;
-
-        if (value.equals("null")) {
-            return null;
-        }
-
-        TreeNode node = new TreeNode(Integer.parseInt(value));
-
-        node.left = build(values, idx);
-        node.right = build(values, idx);
-
-        return node;
+    public Pair(int idx, TreeNode node) {
+        this.idx = idx;
+        this.node = node;
     }
 }
 
+class Solution {
+    public int widthOfBinaryTree(TreeNode root) {
+        Deque<Pair> deque = new ArrayDeque<>();
+        int maxWidth = 0;
+
+        deque.add(new Pair(0, root));
+
+        while (deque.size() > 0) {
+            int firstIndex = deque.peek().idx;
+            int lastIndex = deque.peekLast().idx;
+
+            maxWidth = Math.max(maxWidth, lastIndex - firstIndex + 1);
+
+            int size = deque.size();
+
+            for (int i = 0; i < size; i++) {
+                Pair curr = deque.pop();
+
+                if (curr.node.left != null) {
+                    deque.add(new Pair(curr.idx * 2 + 1, curr.node.left));
+                }
+
+                if (curr.node.right != null) {
+                    deque.add(new Pair(curr.idx * 2 + 2, curr.node.right));
+                }
+            }
+        }
+
+        return maxWidth;
+    }
+}
 ```
 
 ### Time Complexity
