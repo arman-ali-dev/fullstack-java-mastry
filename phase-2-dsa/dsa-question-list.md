@@ -201,7 +201,8 @@ Do questions in this order - each topic builds on the previous one.
 20. Binary Tree Zigzag Level Order Traversal — LC 103
 21. Nodes at K Distance from Root - GFG
 22. Binary Tree Paths - LC 257
-23. Flatten Binary Tree to Linked List — LC 114
+23. Maximum Width of Binary Tree - LC 662
+24. Flatten Binary Tree to Linked List — LC 114
 
 **BST specific**
 
