@@ -28,6 +28,8 @@ Do questions in this order - each topic builds on the previous one.
 13. Maximum Number of Words Found in Sentences - LC 2114
 14. Kids With the Greatest Number of Candies - LC 1431
 15. How Many Numbers Are Smaller Than the Current Number - LC 1365
+16. Distribute Candies - LC 575
+
 
 **Medium**
 
