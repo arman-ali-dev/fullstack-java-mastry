@@ -220,7 +220,7 @@ Do questions in this order - each topic builds on the previous one.
 27. Kth Smallest Element in a BST — LC 230
 28. Inorder Successor in BST — LC 285 (Premium) / GFG
 29. Predecessor and Successor in BST - GFG
-30. Convert Sorted Array to Binary Search Tree — LC 108
+30. Construct Binary Search Tree from Preorder Traversal — LC 1008
 31. Lowest Common Ancestor of a Binary Search Tree — LC 235
 
 ---
