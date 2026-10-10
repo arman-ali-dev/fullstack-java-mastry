@@ -52,6 +52,7 @@ Do questions in this order - each topic builds on the previous one.
 33. Squares of a Sorted Array — LC 977
 34. Search a 2D Matrix II — LC 240
 35. Two Sum II - Input Array Is Sorted — LC 167
+36. Remove Duplicates from Sorted Array II - LC 80
 
 ---
 
