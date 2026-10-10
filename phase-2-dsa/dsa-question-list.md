@@ -86,6 +86,7 @@ Do questions in this order - each topic builds on the previous one.
 21. Reverse Words in a String — LC 151
 22. Isomorphic Strings — LC 205
 23. Word Pattern — LC 290
+24. Backspace String Compare - LC 844
 
 ---
 
