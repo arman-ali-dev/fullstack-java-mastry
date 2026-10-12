@@ -72,22 +72,23 @@ Do questions in this order - each topic builds on the previous one.
 10. Check If Two String Arrays are Equivalent - LC 1662
 11. Shuffle String - LC 1528
 12. Check If a Word Occurs As a Prefix of Any Word in a Sentence - LC 1455
+13. Reverse Only Letters - LC 917
 
 **Medium**
 
-13. Longest Substring Without Repeating Characters (sliding window) — LC 3
-14. Longest Palindromic Substring — LC 5
-15. Group Anagrams — LC 49
-16. Valid Parentheses — LC 20
-17. Minimum Window Substring — LC 76
-18. String Compression — LC 443
-19. Longest Common Prefix — LC 14
-20. Count and Say — LC 38
-21. Reverse Words in a String — LC 151
-22. Isomorphic Strings — LC 205
-23. Word Pattern — LC 290
-24. Backspace String Compare - LC 844
-25. Find the Difference - LC 389
+14. Longest Substring Without Repeating Characters (sliding window) — LC 3
+15. Longest Palindromic Substring — LC 5
+16. Group Anagrams — LC 49
+17. Valid Parentheses — LC 20
+18. Minimum Window Substring — LC 76
+19. String Compression — LC 443
+20. Longest Common Prefix — LC 14
+21. Count and Say — LC 38
+22. Reverse Words in a String — LC 151
+23. Isomorphic Strings — LC 205
+24. Word Pattern — LC 290
+25. Backspace String Compare - LC 844
+26. Find the Difference - LC 389
 
 ---
 
