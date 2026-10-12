@@ -233,22 +233,23 @@ Do questions in this order - each topic builds on the previous one.
 
 1. BFS traversal — GFG
 2. DFS traversal — GFG
-3. Detect cycle in undirected graph (BFS and DFS) — GFG
-4. Detect cycle in directed graph (DFS) — GFG
-5. Topological sort (Kahn's algo and DFS) — GFG
-6. Number of Islands — LC 200
-7. Number of Connected Components in an Undirected Graph — LC 323 (Premium) — free alternative: LC 547 Number of Provinces
-8. Is Graph Bipartite? — LC 785
+3. Detect cycle in undirected graph (DFS) — GFG
+4. Detect cycle in undirected graph (BFS) — GFG
+5. Detect cycle in directed graph (DFS) — GFG
+6. Topological sort (Kahn's algo and DFS) — GFG
+7. Number of Islands — LC 200
+8. Number of Connected Components in an Undirected Graph — LC 323 (Premium) — free alternative: LC 547 Number of Provinces
+9. Is Graph Bipartite? — LC 785
 
 **Medium**
 
-9. Shortest path in unweighted graph (BFS) — GFG
-10. Dijkstra's algorithm - shortest path weighted graph — GFG (LeetCode par practice: LC 743 Network Delay Time)
-11. Find if Path Exists in Graph — LC 1971
-12. Clone Graph — LC 133
-13. Course Schedule (cycle detection) — LC 207
-14. Word Ladder (BFS shortest transformation) — LC 127
-15. Surrounded Regions — LC 130
+10. Shortest path in unweighted graph (BFS) — GFG
+11. Dijkstra's algorithm - shortest path weighted graph — GFG (LeetCode par practice: LC 743 Network Delay Time)
+12. Find if Path Exists in Graph — LC 1971
+13. Clone Graph — LC 133
+14. Course Schedule (cycle detection) — LC 207
+15. Word Ladder (BFS shortest transformation) — LC 127
+16. Surrounded Regions — LC 130
 
 ---
 
