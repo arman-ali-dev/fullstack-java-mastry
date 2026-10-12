@@ -87,6 +87,7 @@ Do questions in this order - each topic builds on the previous one.
 22. Isomorphic Strings — LC 205
 23. Word Pattern — LC 290
 24. Backspace String Compare - LC 844
+25. Find the Difference - LC 389
 
 ---
 
