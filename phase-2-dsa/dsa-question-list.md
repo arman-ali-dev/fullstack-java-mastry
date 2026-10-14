@@ -238,10 +238,11 @@ Do questions in this order - each topic builds on the previous one.
 3. Detect cycle in undirected graph (DFS) — GFG
 4. Detect cycle in undirected graph (BFS) — GFG
 5. Detect cycle in directed graph (DFS) — GFG
-6. Topological sort (Kahn's algo and DFS) — GFG
-7. Number of Islands — LC 200
-8. Number of Connected Components in an Undirected Graph — LC 323 (Premium) — free alternative: LC 547 Number of Provinces
-9. Is Graph Bipartite? — LC 785
+6. Number of Islands - LC 200
+7. Topological sort (Kahn's algo and DFS) — GFG
+8. Number of Islands — LC 200
+9. Number of Connected Components in an Undirected Graph — LC 323 (Premium) — free alternative: LC 547 Number of Provinces
+10. Is Graph Bipartite? — LC 785
 
 **Medium**
 
