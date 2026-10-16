@@ -1,34 +1,16 @@
-#### 1. What is Collection in Java?
-A Collection in Java is a group of objects treated as a single unit. The Java Collection Framework (JCF) provides a set of interfaces and classes to efficiently store, retrieve, manipulate, and process groups of objects.
+#### Q.1 What is the Collection Framework?
+The Java Collections Framework is a set of classes and interfaces. It is used to efficiently store, retrieve and manage a group of objects. It provides us with ready-made data structures and algorithms. It is in the java.util package
 
-- Part of the java.util package.
-- Provides reusable data structures and algorithms.
+##### Follow up Q.1 Why do we use the Collections Framework? Why not write our own data structures?
 
-#### 2. What is a Framework in Java?
-A Java framework is a pre-built collection of classes and interfaces that provides a ready-made structure to develop applications. It defines a reusable architecture where developers can extend or use existing components instead of writing everything from scratch.
-<br>
-<br>
-Some Popular Java Frameworks:
-1. Spring Framework: Used for building enterprise-level applications
-2. Hibernate: Used for object-relational mapping between Java objects and databases
+We can write our own data structures but it would very time consuming. and library's data structures are tested and optimized and let's suppose sir we have 2 team members and 1 create data structure and second one don't know about that structure that what is the insertion type of new data structure and which principal it follows but all members familiar with library's data structure. 
 
-#### 3. What is the difference between Array and Collection in Java?
-Arrays and Collections are both used to store multiple elements, but they differ in terms of size, flexibility, performance, and functionality. Arrays have a fixed size, whereas Collections are dynamic and provide many utility methods.
+#### Q3. How does ArrayList work internally? What happens when it becomes full?
 
-#### 4. What are the various interfaces used in Java Collections Framework?
-The Java Collection Framework provides several interfaces that define different ways to store and manage data. These interfaces act as the foundation for various collection classes.
-<br>
-<br>
-Main Collection Interfaces
+ArrayList is a dynamic array. internally an array is maintained. its default capacity is 10. when the arraylist becomes full then a new array is created by 1.5x capacity then old elements are copied into new array. and we can also define its capacity by its constructor.
 
-1. Collection: Root interface for all collections.
-2. List: Ordered collection that allows duplicate elements.
-3. Set: Collection that stores only unique elements.
-4. Queue: Stores elements for processing, generally in FIFO order.
-5. Deque: Double-ended queue supporting insertion and deletion from both ends.
-6. Map: Stores data as key-value pairs (not part of the Collection hierarchy).
+##### follow up Q.1 - What is the time complexity of the add() method in ArrayList?
+add() method is very fast because it adds element in the next empty index. there is no need to search for anything. but one add's call is very expensive when arraylist becomes full at that time there is need to copy all elements into new array.
 
-#### 5. Explain the hierarchy of the Collection framework in Java.
-The Java Collection Framework is a set of classes and interfaces in the java.util package that provides a standardized way to store and manipulate groups of objects. 
-<br>
-At the top, we have the Iterable interface, which is extended by the Collection interface. The Collection interface has three main interfaces: List, Set, and Queue. List is implemented by classes like ArrayList, LinkedList and vector. Set is implemented by HashSet and SortedSet. Queue has implementations like PriorityQueue, LinkedList and Deque.
+##### follow up Q.2 - Suppose you already know that 10,000 elements are going to be added. How would you create an ArrayList for better performance, and why?
+If I know the ArrayList is going to have 10,000 elements, I can set its capacity to 10,000 in the constructor. I do not want to create a new array again and again. When I add 10,000 elements one by one, many new arrays are created, so it is an expensive operation. That is why I pass the capacity in the constructor. Then the array is created only once, and no resizes happen.
