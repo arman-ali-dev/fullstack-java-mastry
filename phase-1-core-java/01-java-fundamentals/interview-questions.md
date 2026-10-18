@@ -46,17 +46,52 @@ Local variables do not get default values because Java ensures we to initialize 
 
 ---
 
-5. Why should you not use `double` or `float` for money calculations, and what should you use instead?
+#### 5. Why should you not use `double` or `float` for money calculations, and what should you use instead?
 
 We should not use float or double for money calculations because they can produce small precision errors when representing decimal numbers.
 <br>
 Instead, we should use BigDecimal because it provides accurate decimal arithmetic, which is important for financial calculations.
 
-6. What is the difference between widening and narrowing type casting? What does `double r = 5 / 2;` print and why?
-7. What happens when an `int` overflows in Java?
-8. What is the difference between pre-increment (`++x`) and post-increment (`x++`)?
-9. What is the difference between `&&` and `&`, and what is short-circuit evaluation?
-10. What is the difference between `==` and `equals()` for Strings, and what is the String pool?
+---
+
+### 6. What is the difference between widening and narrowing type casting?
+Widening type casting means converting a smaller data type into a larger data type. It happens automatically in Java when the conversion is safe.
+<br>
+Narrowing type casting means converting a larger data type into a smaller data type. It usually requires explicit casting because some data may be lost.
+
+---
+
+#### 7. What happens when an `int` overflows in Java?
+
+When an int overflows in Java, its value wraps around because an int has a fixed size of 32 bits.
+The maximum value of an int is already defined. If we add 1 to this value, it becomes minimum value of integer.
+Java does not automatically throw an exception when an integer overflows.
+
+---
+
+#### 8. What is the difference between pre-increment (`++x`) and post-increment (`x++`)?
+Pre-increment (++x) increments the value first and then uses the updated value.
+<br>
+Post-increment (x++) uses the current value first and then increments it.
+
+---
+
+#### 9. What is the difference between float and double?
+Float and double are primitive data types in Java used to store decimal numbers.
+- float: Uses 32 bits and provides approximately 6–7 decimal digits of precision.
+- double: Uses 64 bits and provides approximately 15–16 decimal digits of precision.
+
+---
+
+#### 10. What is the difference between `==` and `equals()` for Strings, and what is the String pool?
+== operator: It compares the references of two String objects to check whether they refer to the same object.
+<br>
+equals() method: It compares the actual content of two Strings.
+<br>
+String Pool: The String Pool is a special area of memory where Java reuses String literals to save memory. If the same literal already exists in the pool, Java can reuse that String object.
+
+---
+
 11. Why is `String` immutable in Java, and what are the benefits?
 12. What is the difference between `String`, `StringBuilder`, and `StringBuffer`?
 13. What are wrapper classes, and what are autoboxing and unboxing?
