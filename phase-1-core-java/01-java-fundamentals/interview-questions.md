@@ -1,6 +1,6 @@
 ## Must Prepare
 
-1. Explain the structure of a Java program. Why is the main method `public static void main(String[] args)`?
+#### 1. Explain the structure of a Java program. Why is the main method `public static void main(String[] args)`?
 
 A Java program generally contains a package declaration, import statements, a class and the main method.
 <br>
@@ -13,7 +13,9 @@ The execution of a Java program starts from the main() method.
 
 So, public static void main(String[] args) is the entry point of a java program.
 
-2. What is the difference between JDK, JRE, and JVM?
+--- 
+
+#### 2. What is the difference between JDK, JRE, and JVM?
 
 JDK, JRE, and JVM are three important components of Java.
 
@@ -23,7 +25,9 @@ JDK, JRE, and JVM are three important components of Java.
 
 The relationship is: JDK contains the JRE, and the JRE contains the JVM in the traditional Java architecture.
 
-3. What are the primitive data types in Java, and how do they differ from reference types?
+---
+
+#### 3. What are the primitive data types in Java, and how do they differ from reference types?
 
 Java has 8 primitive data types: byte, short, int, long, float, double, char, and boolean. Primitive types store simple values directly, such as numbers, characters, and true or false values.
 <br>
@@ -32,11 +36,15 @@ Reference types refer to objects
 
 The main difference is that primitive variables hold primitive values, whereas reference variables hold references to objects or arrays. Primitive types have fixed sizes, while size of reference types depends on object. 
 
-4. What are the default values of instance variables, and why don't local variables get default values?
+---
+
+#### 4. What are the default values of instance variables, and why don't local variables get default values?
 
 Instance variables get default values automatically when an object is created. For example, numeric types get 0, boolean gets false, and reference types get null.
 <br>
 Local variables do not get default values because Java ensures we to initialize them before using them. This helps prevent the use of uninitialized variables.
+
+---
 
 5. Why should you not use `double` or `float` for money calculations, and what should you use instead?
 
