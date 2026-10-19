@@ -93,16 +93,83 @@ String Pool: The String Pool is a special area of memory where Java reuses Strin
 ---
 
 11. Why is `String` immutable in Java, and what are the benefits?
+String is immutable in Java, which means its value cannot be changed after the object is created.
+<br>
+<br>
+The main benefits of String immutability are:
+1. Security: Strings are used in sensitive operations, such as file paths and database connections. Immutability prevents their values from being changed unexpectedly.
+2. String Pool: Immutable Strings can be safely shared and reused from the String Pool.
+3. Thread safety: Multiple threads can access the same String object without worrying about its value being modified.
+
+---
+  
 12. What is the difference between `String`, `StringBuilder`, and `StringBuffer`?
+String, StringBuilder, and StringBuffer are used to work with text in Java, but they differ in mutability and thread safety.
+- String: Immutable. Once created, its content cannot be changed.
+- StringBuilder: Mutable and not thread-safe. It is generally faster and preferred when modifying strings within a single thread.
+- StringBuffer: Mutable and thread-safe because its methods are synchronized. It can be useful when the same buffer is shared across multiple threads.
+
+---
+
 13. What are wrapper classes, and what are autoboxing and unboxing?
+Wrapper classes are classes that represent primitive data types as objects in Java. Java has eight wrapper classes corresponding to it's primitive types.
+<br>
+Autoboxing is the automatic conversion of a primitive value into its corresponding wrapper object.
+<br>
+Unboxing is the automatic conversion of a wrapper object into its corresponding primitive value.
+
+---
+
 14. Why does `Integer a = 127, b = 127; a == b` return true, but the same with 128 returns false?
+Java caches Integer objects for values from -128 to 127 by default. Therefore, when we assign 127 to two Integer variables, both variables can refer to the same cached object, so a == b returns true.
+
+For 128, which is outside the default cache range, Java typically creates separate objects, so a == b returns false.
+
 15. Is Java pass-by-value or pass-by-reference? Explain with a primitive and an object example.
+Java is always pass-by-value, not pass-by-reference.
+<br>
+When we pass an object to a method, Java passes a copy of the reference. Both references can point to the same object, so changes to the object's fields can be visible outside the method.
+
+When we pass a primitive variable to a method, Java passes a copy of its value. Changes made inside the method do not affect the original variable.
+
+---
+
 16. What is the difference between local, instance, and static variables in terms of scope, lifetime, and default values?
+In Java, local, instance, and static variables differ in scope, lifetime, and default values.
+- Local variables are declared inside a method or block. Their scope is limited to that method or block, and they exist while that execution context is active. They do not receive default values; we must initialize them before use.
+- Instance variables are declared inside a class but outside methods, without the static keyword. Each object has its own copy. They exist as part of the object and receive default values.
+- Static variables are declared using the static keyword. They belong to the class and are shared among its instances. They are initialized when the class is initialized and receive default values.”
+
+---
+
 17. When can unboxing cause a `NullPointerException`?
+Unboxing can cause a NullPointerException when we try to convert a null wrapper object into its corresponding primitive type. This happens because a primitive type cannot store null.
+<br>
+To avoid this, we should check whether the wrapper object is null before unboxing it
+
+---
+
 18. How many objects are created by `String s = new String("hello");`?
-19. Which data types does `switch` support, and how does a switch expression (Java 14+) differ from the classic switch statement?
-20. What is the difference between an array and an `ArrayList`?
-21. What are varargs, and what are their restrictions?
-22. How do you write a generic class or method with a bounded type parameter (`T extends Number`)?
-23. What is type erasure in Java generics?
-24. What are common practical uses of bitwise operators (e.g., checking odd/even, multiply/divide by 2)?
+
+String s = new String("hello"); can create one or two String objects, depending on whether the literal "hello" already exists in the String Pool.
+<br>
+If the literal is not already in the pool, one String object is created in the pool for the literal, and another String object is created on the heap by new String().
+<br>
+If the literal already exists in the pool, only the new object created by new String() is needed.”
+
+19. What is the difference between an array and an `ArrayList`?
+An array has a fixed size, whereas an ArrayList can grow dynamically. An array can store both primitives and objects, while an ArrayList stores objects and uses wrapper classes for primitive values. Arrays use the length property, whereas ArrayList uses the size() method. We can access array elements using indexes, and we can also access ArrayList elements using indexes.
+
+20. What are varargs, and what are their restrictions?
+Varargs, or variable-length arguments, allow a method to accept zero or more arguments of the same type. We use three dots (...) to declare varargs in Java.
+<br>
+<br>
+Restrictions:
+1. A method can have only one varargs parameter.
+2. The varargs parameter must be the last parameter in the method declaration.
+3. Varargs are treated as an array inside the method.
+4. We can pass zero, one, or multiple arguments to a varargs parameter.
+
+21. How do you write a generic class or method with a bounded type parameter (`T extends Number`)?
+22. What is type erasure in Java generics?
+23. What are common practical uses of bitwise operators (e.g., checking odd/even, multiply/divide by 2)?
