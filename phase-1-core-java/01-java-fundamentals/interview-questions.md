@@ -163,12 +163,13 @@ An array has a fixed size, whereas an ArrayList can grow dynamically. An array c
 20. What are varargs, and what are their restrictions?
 Varargs, or variable-length arguments, allow a method to accept zero or more arguments of the same type. We use three dots (...) to declare varargs in Java.
 <br>
-<br>
 Restrictions:
 1. A method can have only one varargs parameter.
 2. The varargs parameter must be the last parameter in the method declaration.
 3. Varargs are treated as an array inside the method.
 4. We can pass zero, one, or multiple arguments to a varargs parameter.
+
+---
 
 21. How do you write a generic class or method with a bounded type parameter (`T extends Number`)?
 22. What is type erasure in Java generics?
