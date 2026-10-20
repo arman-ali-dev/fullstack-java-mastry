@@ -242,19 +242,11 @@ Do questions in this order - each topic builds on the previous one.
 7. Number of Islands — LC 200
 8. Course Schedule - LC 207
 9. Number of Connected Components in an Undirected Graph — LC 323 (Premium) — free alternative: LC 547 Number of Provinces
-10. Is Graph Bipartite? — LC 785
 
 **Medium**
 
 10. Flood Fill - LC 733
 11. Course Schedule II - 210
-12. Shortest path in unweighted graph (BFS) — GFG
-13. Dijkstra's algorithm - shortest path weighted graph — GFG (LeetCode par practice: LC 743 Network Delay Time)
-14. Find if Path Exists in Graph — LC 1971
-15. Clone Graph — LC 133
-16. Course Schedule (cycle detection) — LC 207
-17. Word Ladder (BFS shortest transformation) — LC 127
-18. Surrounded Regions — LC 130
 
 ---
 
