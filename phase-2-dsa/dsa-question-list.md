@@ -242,9 +242,6 @@ Do questions in this order - each topic builds on the previous one.
 7. Number of Islands — LC 200
 8. Course Schedule - LC 207
 9. Number of Connected Components in an Undirected Graph — LC 323 (Premium) — free alternative: LC 547 Number of Provinces
-
-**Medium**
-
 10. Flood Fill - LC 733
 11. Course Schedule II - 210
 
