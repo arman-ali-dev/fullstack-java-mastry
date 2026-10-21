@@ -92,7 +92,7 @@ String Pool: The String Pool is a special area of memory where Java reuses Strin
 
 ---
 
-11. Why is `String` immutable in Java, and what are the benefits?
+#### 11. Why is `String` immutable in Java, and what are the benefits?
 String is immutable in Java, which means its value cannot be changed after the object is created.
 <br>
 <br>
@@ -103,7 +103,7 @@ The main benefits of String immutability are:
 
 ---
   
-12. What is the difference between `String`, `StringBuilder`, and `StringBuffer`?
+#### 12. What is the difference between `String`, `StringBuilder`, and `StringBuffer`?
 String, StringBuilder, and StringBuffer are used to work with text in Java, but they differ in mutability and thread safety.
 - String: Immutable. Once created, its content cannot be changed.
 - StringBuilder: Mutable and not thread-safe. It is generally faster and preferred when modifying strings within a single thread.
@@ -111,7 +111,7 @@ String, StringBuilder, and StringBuffer are used to work with text in Java, but 
 
 ---
 
-13. What are wrapper classes, and what are autoboxing and unboxing?
+#### 13. What are wrapper classes, and what are autoboxing and unboxing?
 Wrapper classes are classes that represent primitive data types as objects in Java. Java has eight wrapper classes corresponding to it's primitive types.
 <br>
 Autoboxing is the automatic conversion of a primitive value into its corresponding wrapper object.
@@ -120,12 +120,12 @@ Unboxing is the automatic conversion of a wrapper object into its corresponding 
 
 ---
 
-14. Why does `Integer a = 127, b = 127; a == b` return true, but the same with 128 returns false?
+#### 14. Why does `Integer a = 127, b = 127; a == b` return true, but the same with 128 returns false?
 Java caches Integer objects for values from -128 to 127 by default. Therefore, when we assign 127 to two Integer variables, both variables can refer to the same cached object, so a == b returns true.
 
 For 128, which is outside the default cache range, Java typically creates separate objects, so a == b returns false.
 
-15. Is Java pass-by-value or pass-by-reference? Explain with a primitive and an object example.
+#### 15. Is Java pass-by-value or pass-by-reference? Explain with a primitive and an object example.
 Java is always pass-by-value, not pass-by-reference.
 <br>
 When we pass an object to a method, Java passes a copy of the reference. Both references can point to the same object, so changes to the object's fields can be visible outside the method.
@@ -134,7 +134,7 @@ When we pass a primitive variable to a method, Java passes a copy of its value. 
 
 ---
 
-16. What is the difference between local, instance, and static variables in terms of scope, lifetime, and default values?
+#### 16. What is the difference between local, instance, and static variables in terms of scope, lifetime, and default values?
 In Java, local, instance, and static variables differ in scope, lifetime, and default values.
 - Local variables are declared inside a method or block. Their scope is limited to that method or block, and they exist while that execution context is active. They do not receive default values; we must initialize them before use.
 - Instance variables are declared inside a class but outside methods, without the static keyword. Each object has its own copy. They exist as part of the object and receive default values.
@@ -142,14 +142,14 @@ In Java, local, instance, and static variables differ in scope, lifetime, and de
 
 ---
 
-17. When can unboxing cause a `NullPointerException`?
+#### 17. When can unboxing cause a `NullPointerException`?
 Unboxing can cause a NullPointerException when we try to convert a null wrapper object into its corresponding primitive type. This happens because a primitive type cannot store null.
 <br>
 To avoid this, we should check whether the wrapper object is null before unboxing it
 
 ---
 
-18. How many objects are created by `String s = new String("hello");`?
+#### 18. How many objects are created by `String s = new String("hello");`?
 
 String s = new String("hello"); can create one or two String objects, depending on whether the literal "hello" already exists in the String Pool.
 <br>
@@ -160,7 +160,7 @@ If the literal already exists in the pool, only the new object created by new St
 19. What is the difference between an array and an `ArrayList`?
 An array has a fixed size, whereas an ArrayList can grow dynamically. An array can store both primitives and objects, while an ArrayList stores objects and uses wrapper classes for primitive values. Arrays use the length property, whereas ArrayList uses the size() method. We can access array elements using indexes, and we can also access ArrayList elements using indexes.
 
-20. What are varargs, and what are their restrictions?
+#### 20. What are varargs, and what are their restrictions?
 Varargs, or variable-length arguments, allow a method to accept zero or more arguments of the same type. We use three dots (...) to declare varargs in Java.
 <br>
 Restrictions:
@@ -171,6 +171,15 @@ Restrictions:
 
 ---
 
-21. How do you write a generic class or method with a bounded type parameter (`T extends Number`)?
-22. What is type erasure in Java generics?
-23. What are common practical uses of bitwise operators (e.g., checking odd/even, multiply/divide by 2)?
+#### 21. How do you write a generic class or method with a bounded type parameter (`T extends Number`)?
+We can use a bounded type parameter in Java generics by using the extends keyword. It restricts the type parameter to a specific class or its subclasses.
+<br>
+For example, T extends Number means that T can be Integer, Double, Float, or another subclass of Number. It cannot be String because String does not extend Number.
+
+---
+
+#### 22. What is type erasure in Java generics?
+
+Type erasure is a process in Java in which the compiler removes generic type information during compilation to maintain compatibility with older Java versions.
+<br>
+For example, List<String> and List<Integer> both become the raw type List at runtime. The compiler uses type information during compilation to check type safety, but most generic type information is not available at runtime.
