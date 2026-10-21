@@ -35,11 +35,11 @@ class Solution {
 
 ### Time Complexity
 
-- O(n × 2ⁿ)
+- O(N × N!)
 
 ### Space Complexity
 
-- O(n)
+- O(N²)
 
 ### Explanation
 
