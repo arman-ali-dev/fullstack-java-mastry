@@ -20,20 +20,21 @@ Do questions in this order - each topic builds on the previous one.
 4. Check if array is sorted — GFG
 5. Count Pairs Whose Sum is Less than Target - LC 2824
 6. Max Consecutive Ones - LC 485
-7. Move Zeroes — LC 283
-8. Find the Duplicate Number — LC 287
-9. Find All Duplicates in an Array — LC 442
-10. Remove Duplicates from Sorted Array — LC 26
-11. Rotate Array (left rotate by k) — LC 189 ≈ (LeetCode par right rotate hai, left rotate GFG par)
-12. Missing Number — LC 268 ≈ (LeetCode par range 0 to n hai, 1 to n version GFG par)
-13. Single Number — LC 136
-14. Running Sum of 1d Array - LC 1480
-15. Maximum Number of Words Found in Sentences - LC 2114
-16. Kids With the Greatest Number of Candies - LC 1431
-17. How Many Numbers Are Smaller Than the Current Number - LC 1365
-18. Distribute Candies - LC 575
-19. Matrix Diagonal Sum - LC 1572
-20. Find Numbers with Even Number of Digits - LC 1295
+7. Maximum Average Subarray I - LC 643
+8. Move Zeroes — LC 283
+9. Find the Duplicate Number — LC 287
+10. Find All Duplicates in an Array — LC 442
+11. Remove Duplicates from Sorted Array — LC 26
+12. Rotate Array (left rotate by k) — LC 189 ≈ (LeetCode par right rotate hai, left rotate GFG par)
+13. Missing Number — LC 268 ≈ (LeetCode par range 0 to n hai, 1 to n version GFG par)
+14. Single Number — LC 136
+15. Running Sum of 1d Array - LC 1480
+16. Maximum Number of Words Found in Sentences - LC 2114
+17. Kids With the Greatest Number of Candies - LC 1431
+18. How Many Numbers Are Smaller Than the Current Number - LC 1365
+19. Distribute Candies - LC 575
+20. Matrix Diagonal Sum - LC 1572
+21. Find Numbers with Even Number of Digits - LC 1295
 
 **Medium**
 
