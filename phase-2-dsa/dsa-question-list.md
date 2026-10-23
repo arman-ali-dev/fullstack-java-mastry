@@ -3,6 +3,7 @@
 Do questions in this order - each topic builds on the previous one.
 
 **Legend**
+
 - LC 123 = LeetCode problem number
 - GFG = The question is not available on LeetCode, so solve it on GeeksForGeeks
 - (Premium) = LeetCode Premium is required
@@ -17,42 +18,43 @@ Do questions in this order - each topic builds on the previous one.
 2. Reverse an array in place — GFG
 3. Find the second largest element — GFG
 4. Check if array is sorted — GFG
-5. Move Zeroes — LC 283
-6. Find the Duplicate Number — LC 287
-7. Find All Duplicates in an Array — LC 442
-8. Remove Duplicates from Sorted Array — LC 26
-9. Rotate Array (left rotate by k) — LC 189 ≈ (LeetCode par right rotate hai, left rotate GFG par)
-10. Missing Number — LC 268 ≈ (LeetCode par range 0 to n hai, 1 to n version GFG par)
-11. Single Number — LC 136
-12. Running Sum of 1d Array - LC 1480
-13. Maximum Number of Words Found in Sentences - LC 2114
-14. Kids With the Greatest Number of Candies - LC 1431
-15. How Many Numbers Are Smaller Than the Current Number - LC 1365
-16. Distribute Candies - LC 575
-17. Matrix Diagonal Sum - LC 1572
-18. Find Numbers with Even Number of Digits - LC 1295
-
+5. Count Pairs Whose Sum is Less than Target - LC 2824
+6. Max Consecutive Ones - LC 485
+7. Move Zeroes — LC 283
+8. Find the Duplicate Number — LC 287
+9. Find All Duplicates in an Array — LC 442
+10. Remove Duplicates from Sorted Array — LC 26
+11. Rotate Array (left rotate by k) — LC 189 ≈ (LeetCode par right rotate hai, left rotate GFG par)
+12. Missing Number — LC 268 ≈ (LeetCode par range 0 to n hai, 1 to n version GFG par)
+13. Single Number — LC 136
+14. Running Sum of 1d Array - LC 1480
+15. Maximum Number of Words Found in Sentences - LC 2114
+16. Kids With the Greatest Number of Candies - LC 1431
+17. How Many Numbers Are Smaller Than the Current Number - LC 1365
+18. Distribute Candies - LC 575
+19. Matrix Diagonal Sum - LC 1572
+20. Find Numbers with Even Number of Digits - LC 1295
 
 **Medium**
 
-19. Two Sum — LC 1
-20. 3Sum — LC 15
-21. 4Sum — LC 18
-22. Maximum Subarray (Kadane's algorithm) — LC 53
-23. Best Time to Buy and Sell Stock — LC 121
-24. Product of Array Except Self — LC 238
-25. Majority Element — LC 169
-26. Majority Element II — LC 229
-27. Sort Colors (Dutch National Flag) — LC 75
-28. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
-29. Maximum Product Subarray — LC 152
-30. Trapping Rain Water — LC 42
-31. Jump Game — LC 55
-32. Peak Index in a Mountain Array — LC 852
-33. Squares of a Sorted Array — LC 977
-34. Search a 2D Matrix II — LC 240
-35. Two Sum II - Input Array Is Sorted — LC 167
-36. Remove Duplicates from Sorted Array II - LC 80
+21. Two Sum — LC 1
+22. 3Sum — LC 15
+23. 4Sum — LC 18
+24. Maximum Subarray (Kadane's algorithm) — LC 53
+25. Best Time to Buy and Sell Stock — LC 121
+26. Product of Array Except Self — LC 238
+27. Majority Element — LC 169
+28. Majority Element II — LC 229
+29. Sort Colors (Dutch National Flag) — LC 75
+30. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
+31. Maximum Product Subarray — LC 152
+32. Trapping Rain Water — LC 42
+33. Jump Game — LC 55
+34. Peak Index in a Mountain Array — LC 852
+35. Squares of a Sorted Array — LC 977
+36. Search a 2D Matrix II — LC 240
+37. Two Sum II - Input Array Is Sorted — LC 167
+38. Remove Duplicates from Sorted Array II - LC 80
 
 ---
 
@@ -60,19 +62,20 @@ Do questions in this order - each topic builds on the previous one.
 
 **Easy**
 
-1. Reverse String — LC 344
-2. Valid Palindrome — LC 125 ≈ (LeetCode par alphanumeric-only check hai)
-3. Count vowels and consonants — GFG
-4. Remove all spaces from a string — GFG
-5. First Unique Character in a String — LC 387
-6. Valid Anagram — LC 242
-7. Count occurrences of each character (frequency map) — GFG
-8. Is Subsequence — LC 392
-9. Robot Return to Origin - LC 657
-10. Check If Two String Arrays are Equivalent - LC 1662
-11. Shuffle String - LC 1528
-12. Check If a Word Occurs As a Prefix of Any Word in a Sentence - LC 1455
-13. Reverse Only Letters - LC 917
+1. Length of Last Word - LC 58
+2. Reverse String — LC 344
+3. Valid Palindrome — LC 125 ≈ (LeetCode par alphanumeric-only check hai)
+4. Count vowels and consonants — GFG
+5. Remove all spaces from a string — GFG
+6. First Unique Character in a String — LC 387
+7. Valid Anagram — LC 242
+8. Count occurrences of each character (frequency map) — GFG
+9. Is Subsequence — LC 392
+10. Robot Return to Origin - LC 657
+11. Check If Two String Arrays are Equivalent - LC 1662
+12. Shuffle String - LC 1528
+13. Check If a Word Occurs As a Prefix of Any Word in a Sentence - LC 1455
+14. Reverse Only Letters - LC 917
 
 **Medium**
 
