@@ -63,36 +63,37 @@ Do questions in this order - each topic builds on the previous one.
 
 **Easy**
 
-1. Length of Last Word - LC 58
-2. Reverse String — LC 344
-3. Valid Palindrome — LC 125 ≈ (LeetCode par alphanumeric-only check hai)
-4. Count vowels and consonants — GFG
-5. Remove all spaces from a string — GFG
-6. First Unique Character in a String — LC 387
-7. Valid Anagram — LC 242
-8. Count occurrences of each character (frequency map) — GFG
-9. Is Subsequence — LC 392
-10. Robot Return to Origin - LC 657
-11. Check If Two String Arrays are Equivalent - LC 1662
-12. Shuffle String - LC 1528
-13. Check If a Word Occurs As a Prefix of Any Word in a Sentence - LC 1455
-14. Reverse Only Letters - LC 917
+1. Reverse Only Letters - LC 917
+2. Length of Last Word - LC 58
+3. Reverse String — LC 344
+4. Valid Palindrome — LC 125 ≈ (LeetCode par alphanumeric-only check hai)
+5. Count vowels and consonants — GFG
+6. Remove all spaces from a string — GFG
+7. First Unique Character in a String — LC 387
+8. Valid Anagram — LC 242
+9. Count occurrences of each character (frequency map) — GFG
+10. Is Subsequence — LC 392
+11. Robot Return to Origin - LC 657
+12. Check If Two String Arrays are Equivalent - LC 1662
+13. Shuffle String - LC 1528
+14. Check If a Word Occurs As a Prefix of Any Word in a Sentence - LC 1455
+15. Reverse Only Letters - LC 917
 
 **Medium**
 
-14. Longest Substring Without Repeating Characters (sliding window) — LC 3
-15. Longest Palindromic Substring — LC 5
-16. Group Anagrams — LC 49
-17. Valid Parentheses — LC 20
-18. Minimum Window Substring — LC 76
-19. String Compression — LC 443
-20. Longest Common Prefix — LC 14
-21. Count and Say — LC 38
-22. Reverse Words in a String — LC 151
-23. Isomorphic Strings — LC 205
-24. Word Pattern — LC 290
-25. Backspace String Compare - LC 844
-26. Find the Difference - LC 389
+15. Longest Substring Without Repeating Characters (sliding window) — LC 3
+16. Longest Palindromic Substring — LC 5
+17. Group Anagrams — LC 49
+18. Valid Parentheses — LC 20
+19. Minimum Window Substring — LC 76
+20. String Compression — LC 443
+21. Longest Common Prefix — LC 14
+22. Count and Say — LC 38
+23. Reverse Words in a String — LC 151
+24. Isomorphic Strings — LC 205
+25. Word Pattern — LC 290
+26. Backspace String Compare - LC 844
+27. Find the Difference - LC 389
 
 ---
 
