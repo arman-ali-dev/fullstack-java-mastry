@@ -96,7 +96,9 @@ When two interfaces provide the same default method, the class that implements b
 Java has four access modifiers: public, protected, default, and private. Public members can be accessed from anywhere, private members can be accessed only within the same class, and default members can be accessed only within the same package. Protected members can be accessed within the same package and also from subclasses in different packages.
 
 #### 15. What does the `static` keyword mean, and why can't a static method access instance members directly?
+
 The static keyword means that a variable or method belongs to the class rather than an object. A static method cannot directly access instance members because instance members belong to a particular object.
+
 ---
 
 16. How is the `final` keyword used with variables, methods, and classes? Does a `final` reference make the object immutable?
