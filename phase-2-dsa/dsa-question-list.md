@@ -81,19 +81,20 @@ Do questions in this order - each topic builds on the previous one.
 
 **Medium**
 
-15. Longest Substring Without Repeating Characters (sliding window) — LC 3
-16. Longest Palindromic Substring — LC 5
-17. Group Anagrams — LC 49
-18. Valid Parentheses — LC 20
-19. Minimum Window Substring — LC 76
-20. String Compression — LC 443
-21. Longest Common Prefix — LC 14
-22. Count and Say — LC 38
-23. Reverse Words in a String — LC 151
-24. Isomorphic Strings — LC 205
-25. Word Pattern — LC 290
-26. Backspace String Compare - LC 844
-27. Find the Difference - LC 389
+15. Maximum Number of Vowels in a Substring of Given Length - LC 1456
+16. Longest Substring Without Repeating Characters (sliding window) — LC 3
+17. Longest Palindromic Substring — LC 5
+18. Group Anagrams — LC 49
+19. Valid Parentheses — LC 20
+20. Minimum Window Substring — LC 76
+21. String Compression — LC 443
+22. Longest Common Prefix — LC 14
+23. Count and Say — LC 38
+24. Reverse Words in a String — LC 151
+25. Isomorphic Strings — LC 205
+26. Word Pattern — LC 290
+27. Backspace String Compare - LC 844
+28. Find the Difference - LC 389
 
 ---
 
