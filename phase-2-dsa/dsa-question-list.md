@@ -45,18 +45,19 @@ Do questions in this order - each topic builds on the previous one.
 26. Best Time to Buy and Sell Stock — LC 121
 27. Product of Array Except Self — LC 238
 28. Minimum Size Subarray Sum - LC 209
-29. Majority Element — LC 169
-30. Majority Element II — LC 229
-31. Sort Colors (Dutch National Flag) — LC 75
-32. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
-33. Maximum Product Subarray — LC 152
-34. Trapping Rain Water — LC 42
-35. Jump Game — LC 55
-36. Peak Index in a Mountain Array — LC 852
-37. Squares of a Sorted Array — LC 977
-38. Search a 2D Matrix II — LC 240
-39. Two Sum II - Input Array Is Sorted — LC 167
-40. Remove Duplicates from Sorted Array II - LC 80
+29. Minimum Consecutive Cards to Pick Up - LC 2260
+30. Majority Element — LC 169
+31. Majority Element II — LC 229
+32. Sort Colors (Dutch National Flag) — LC 75
+33. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
+34. Maximum Product Subarray — LC 152
+35. Trapping Rain Water — LC 42
+36. Jump Game — LC 55
+37. Peak Index in a Mountain Array — LC 852
+38. Squares of a Sorted Array — LC 977
+39. Search a 2D Matrix II — LC 240
+40. Two Sum II - Input Array Is Sorted — LC 167
+41. Remove Duplicates from Sorted Array II - LC 80
 
 ---
 
