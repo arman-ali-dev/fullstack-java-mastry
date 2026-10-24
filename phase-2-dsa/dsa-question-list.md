@@ -86,16 +86,17 @@ Do questions in this order - each topic builds on the previous one.
 16. Longest Substring Without Repeating Characters (sliding window) — LC 3
 17. Longest Palindromic Substring — LC 5
 18. Group Anagrams — LC 49
-19. Valid Parentheses — LC 20
-20. Minimum Window Substring — LC 76
-21. String Compression — LC 443
-22. Longest Common Prefix — LC 14
-23. Count and Say — LC 38
-24. Reverse Words in a String — LC 151
-25. Isomorphic Strings — LC 205
-26. Word Pattern — LC 290
-27. Backspace String Compare - LC 844
-28. Find the Difference - LC 389
+19. Get Equal Substrings Within Budget - LC 1208
+20. Valid Parentheses — LC 20
+21. Minimum Window Substring — LC 76
+22. String Compression — LC 443
+23. Longest Common Prefix — LC 14
+24. Count and Say — LC 38
+25. Reverse Words in a String — LC 151
+26. Isomorphic Strings — LC 205
+27. Word Pattern — LC 290
+28. Backspace String Compare - LC 844
+29. Find the Difference - LC 389
 
 ---
 
