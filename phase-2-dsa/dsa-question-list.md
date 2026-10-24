@@ -67,18 +67,19 @@ Do questions in this order - each topic builds on the previous one.
 1. Reverse Only Letters - LC 917
 2. Length of Last Word - LC 58
 3. Reverse String — LC 344
-4. Valid Palindrome — LC 125 ≈ (LeetCode par alphanumeric-only check hai)
-5. Count vowels and consonants — GFG
-6. Remove all spaces from a string — GFG
-7. First Unique Character in a String — LC 387
-8. Valid Anagram — LC 242
-9. Count occurrences of each character (frequency map) — GFG
-10. Is Subsequence — LC 392
-11. Robot Return to Origin - LC 657
-12. Check If Two String Arrays are Equivalent - LC 1662
-13. Shuffle String - LC 1528
-14. Check If a Word Occurs As a Prefix of Any Word in a Sentence - LC 1455
-15. Reverse Only Letters - LC 917
+4. Check if the Sentence Is Pangram - LC 1832
+5. Valid Palindrome — LC 125 ≈ (LeetCode par alphanumeric-only check hai)
+6. Count vowels and consonants — GFG
+7. Remove all spaces from a string — GFG
+8. First Unique Character in a String — LC 387
+9. Valid Anagram — LC 242
+10. Count occurrences of each character (frequency map) — GFG
+11. Is Subsequence — LC 392
+12. Robot Return to Origin - LC 657
+13. Check If Two String Arrays are Equivalent - LC 1662
+14. Shuffle String - LC 1528
+15. Check If a Word Occurs As a Prefix of Any Word in a Sentence - LC 1455
+16. Reverse Only Letters - LC 917
 
 **Medium**
 
