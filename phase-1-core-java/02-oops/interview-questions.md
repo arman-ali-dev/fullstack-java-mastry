@@ -101,11 +101,28 @@ The static keyword means that a variable or method belongs to the class rather t
 
 ---
 
-16. How is the `final` keyword used with variables, methods, and classes? Does a `final` reference make the object immutable?
-17. What is the difference between `==` and `equals()`?
+#### 16. How is the `final` keyword used with variables, methods, and classes? 
+The final keyword is used in three ways in Java. When we use final with a variable, we cannot reassign its value after initialization. When we use it with a method, the method cannot be overridden by a child class. When we use it with a class, the class cannot be inherited.
+
+---
+
+#### 17. What is the difference between `==` and `equals()`?
+The equals() method is used to compare the content of objects, The == operator compares values for primitive data types, but for objects, it compares their references.
+
+---
+
 18. What is the `equals()`/`hashCode()` contract, and what goes wrong in a `HashMap` if you override only one?
-19. What are upcasting and downcasting, and how does `instanceof` help avoid `ClassCastException`?
-20. What is the difference between composition and inheritance, and why is composition often preferred?
+
+#### 19. What are upcasting and downcasting, and how does `instanceof` help avoid `ClassCastException`?
+Upcasting means converting a child class reference to a parent class reference, and it happens automatically in Java. Downcasting means converting a parent class reference back to a child class reference, and it requires explicit casting. We can use the instanceof operator before downcasting to check whether an object belongs to a particular class. This helps avoid ClassCastException.
+
+---
+
+#### 20. What is the difference between composition and inheritance, and why is composition often preferred?
+Inheritance represents an “is-a” relationship, where a child class inherits properties and methods from a parent class. Composition represents a “has-a” relationship, where a class contains an object of another class. For example, a Dog is an Animal, so we can use inheritance. A Car has an Engine, so we can use composition. Composition is often preferred because it provides more flexibility, reduces tight coupling between classes
+
+----
+
 21. What does "program to an interface, not an implementation" mean? How does it relate to dependency injection in Spring?
 22. In what order do static blocks, instance blocks, and constructors execute in a parent-child class hierarchy?
 23. How do you create an immutable class in Java?
