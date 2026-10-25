@@ -107,12 +107,13 @@ Do questions in this order - each topic builds on the previous one.
 
 1. Two Sum (using HashMap) — LC 1
 2. Subarray with zero sum - check if exists — GFG
-3. Intersection of Two Arrays — LC 349
-4. Intersection of Two Arrays II — LC 350
-5. Intersection of Multiple Arrays — LC 2248
-6. Longest Consecutive Sequence — LC 128
-7. Jewels and Stones — LC 771
-8. First Letter to Appear Twice (first recurring character) — LC 2351
+3. Ransom Note - LC 383
+4. Intersection of Two Arrays — LC 349
+5. Intersection of Two Arrays II — LC 350
+6. Intersection of Multiple Arrays — LC 2248
+7. Longest Consecutive Sequence — LC 128
+8. Jewels and Stones — LC 771
+9. First Letter to Appear Twice (first recurring character) — LC 2351
 
 ---
 
