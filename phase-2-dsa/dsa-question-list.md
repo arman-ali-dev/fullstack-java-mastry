@@ -46,18 +46,19 @@ Do questions in this order - each topic builds on the previous one.
 27. Product of Array Except Self — LC 238
 28. Minimum Size Subarray Sum - LC 209
 29. Minimum Consecutive Cards to Pick Up - LC 2260
-30. Majority Element — LC 169
-31. Majority Element II — LC 229
-32. Sort Colors (Dutch National Flag) — LC 75
-33. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
-34. Maximum Product Subarray — LC 152
-35. Trapping Rain Water — LC 42
-36. Jump Game — LC 55
-37. Peak Index in a Mountain Array — LC 852
-38. Squares of a Sorted Array — LC 977
-39. Search a 2D Matrix II — LC 240
-40. Two Sum II - Input Array Is Sorted — LC 167
-41. Remove Duplicates from Sorted Array II - LC 80
+30. Max Sum of a Pair With Equal Sum of Digits - LC 2342
+31. Majority Element — LC 169
+32. Majority Element II — LC 229
+33. Sort Colors (Dutch National Flag) — LC 75
+34. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
+35. Maximum Product Subarray — LC 152
+36. Trapping Rain Water — LC 42
+37. Jump Game — LC 55
+38. Peak Index in a Mountain Array — LC 852
+39. Squares of a Sorted Array — LC 977
+40. Search a 2D Matrix II — LC 240
+41. Two Sum II - Input Array Is Sorted — LC 167
+42. Remove Duplicates from Sorted Array II - LC 80
 
 ---
 
