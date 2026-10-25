@@ -25,19 +25,27 @@
 25. What is the default value of a char variable in Java, and how can we represent it?
 26. Why should you not use `double` or `float` for money calculations, and what should you use instead?
 27. What is the difference between widening and narrowing type casting?
-28. What happens when an `int` overflows in Java?
-29. What is the difference between pre-increment (`++x`) and post-increment (`x++`)?
-30. What is the difference between float and double?
-31. What is the difference between `==` and `equals()` for Strings, and what is the String pool?
-32. Why is `String` immutable in Java, and what are the benefits?
-33. What is the difference between `String`, `StringBuilder`, and `StringBuffer`?
-34. What are wrapper classes, and what are autoboxing and unboxing?
-35. Why does `Integer a = 127, b = 127; a == b` return true, but the same with 128 returns false?
-36. Is Java pass-by-value or pass-by-reference? Explain with a primitive and an object example.
-37. What is the difference between local, instance, and static variables in terms of scope, lifetime, and default values?
-38. When can unboxing cause a `NullPointerException`?
-39. How many objects are created by `String s = new String("hello");`?
-40. What is the difference between an array and an `ArrayList`?
-41. What are varargs, and what are their restrictions?
-42. How do you write a generic class or method with a bounded type parameter (`T extends Number`)?
-43. What is type erasure in Java generics?
+28. Can narrowing type casting cause data loss? Give an example.
+29. What happens when an `int` overflows in Java?
+30. What is the difference between pre-increment (`++x`) and post-increment (`x++`)?
+31. Can we use pre-increment and post-increment with floating-point variables, such as float and double?
+32. What is the difference between float and double?
+33. Why is double more precise than float?
+34. Why does Java treat a decimal literal like 3.14 as double by default?
+35. Why do we use the f suffix when assigning a decimal value to a float variable?
+36. Can float and double represent every decimal value accurately? Why or why not
+37. What is the difference between `==` and `equals()` for Strings.
+
+38. What is the String pool?
+39. Why is `String` immutable in Java, and what are the benefits?
+40. What is the difference between `String`, `StringBuilder`, and `StringBuffer`?
+41. What are wrapper classes, and what are autoboxing and unboxing?
+42. Why does `Integer a = 127, b = 127; a == b` return true, but the same with 128 returns false?
+43. Is Java pass-by-value or pass-by-reference? Explain with a primitive and an object example.
+44. What is the difference between local, instance, and static variables in terms of scope, lifetime, and default values?
+45. When can unboxing cause a `NullPointerException`?
+46. How many objects are created by `String s = new String("hello");`?
+47. What is the difference between an array and an `ArrayList`?
+48. What are varargs, and what are their restrictions?
+49. How do you write a generic class or method with a bounded type parameter (`T extends Number`)?
+50. What is type erasure in Java generics?
