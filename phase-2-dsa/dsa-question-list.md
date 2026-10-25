@@ -115,6 +115,7 @@ Do questions in this order - each topic builds on the previous one.
 8. Jewels and Stones — LC 771
 9. First Letter to Appear Twice (first recurring character) — LC 2351
 10. Check if All Characters Have Equal Number of Occurrences - LC 1941
+11. Maximum Number of Balloons - LC 1189
 
 ---
 
