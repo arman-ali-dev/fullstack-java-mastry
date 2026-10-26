@@ -35,17 +35,22 @@
 35. Why do we use the f suffix when assigning a decimal value to a float variable?
 36. Can float and double represent every decimal value accurately? Why or why not
 37. What is the difference between `==` and `equals()` for Strings.
-
 38. What is the String pool?
-39. Why is `String` immutable in Java, and what are the benefits?
-40. What is the difference between `String`, `StringBuilder`, and `StringBuffer`?
-41. What are wrapper classes, and what are autoboxing and unboxing?
-42. Why does `Integer a = 127, b = 127; a == b` return true, but the same with 128 returns false?
-43. Is Java pass-by-value or pass-by-reference? Explain with a primitive and an object example.
-44. What is the difference between local, instance, and static variables in terms of scope, lifetime, and default values?
-45. When can unboxing cause a `NullPointerException`?
-46. How many objects are created by `String s = new String("hello");`?
-47. What is the difference between an array and an `ArrayList`?
-48. What are varargs, and what are their restrictions?
-49. How do you write a generic class or method with a bounded type parameter (`T extends Number`)?
-50. What is type erasure in Java generics?
+39. What is the difference between a String literal and a String object created using new?
+40. Why is `String` immutable in Java, and what are the benefits?
+41. What is the difference between `String`, `StringBuilder`, and `StringBuffer`?
+42. What is the difference between mutable and immutable objects in Java?
+43. When should we use `String`, `StringBuilder`, and `StringBuffer`?
+44. Why is `StringBuilder` faster than `StringBuffer`?
+45. What are wrapper classes?
+46. what are autoboxing and unboxing?
+47. Why do we need wrapper classes in Java?
+48. Why does `Integer a = 127, b = 127; a == b` return true, but the same with 128 returns false?
+49. Is Java pass-by-value or pass-by-reference? Explain with a primitive and an object example.
+50. What is the difference between local, instance, and static variables in terms of scope, lifetime, and default values?
+51. When can unboxing cause a `NullPointerException`?
+52. How many objects are created by `String s = new String("hello");`?
+53. What is the difference between an array and an `ArrayList`?
+54. What are varargs, and what are their restrictions?
+55. How do you write a generic class or method with a bounded type parameter (`T extends Number`)?
+56. What is type erasure in Java generics?
