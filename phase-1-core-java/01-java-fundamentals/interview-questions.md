@@ -51,6 +51,10 @@
 51. When can unboxing cause a `NullPointerException`?
 52. How many objects are created by `String s = new String("hello");`?
 53. What is the difference between an array and an `ArrayList`?
-54. What are varargs, and what are their restrictions?
-55. How do you write a generic class or method with a bounded type parameter (`T extends Number`)?
-56. What is type erasure in Java generics?
+54. What are varargs?
+55. Can a method have multiple varargs parameters?
+56. Why must the varargs parameter be the last parameter in a method?
+57. How are varargs treated inside a method?
+58. What are Generics in Java, and why do we use them?
+59. How do you write a generic class or method with a bounded type parameter (`T extends Number`)?
+60. What is type erasure in Java generics?
