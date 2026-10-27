@@ -117,6 +117,7 @@ Do questions in this order - each topic builds on the previous one.
 9. First Letter to Appear Twice (first recurring character) — LC 2351
 10. Check if All Characters Have Equal Number of Occurrences - LC 1941
 11. Maximum Number of Balloons - LC 1189
+12. Find Players With Zero or One Losses - LC 2225
 
 ---
 
