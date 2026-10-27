@@ -83,24 +83,25 @@ Do questions in this order - each topic builds on the previous one.
 14. Shuffle String - LC 1528
 15. Check If a Word Occurs As a Prefix of Any Word in a Sentence - LC 1455
 16. Reverse Only Letters - LC 917
+17. Path Crossing - LC 1496
 
 **Medium**
 
-15. Maximum Number of Vowels in a Substring of Given Length - LC 1456
-16. Longest Substring Without Repeating Characters (sliding window) — LC 3
-17. Longest Palindromic Substring — LC 5
-18. Group Anagrams — LC 49
-19. Get Equal Substrings Within Budget - LC 1208
-20. Valid Parentheses — LC 20
-21. Minimum Window Substring — LC 76
-22. String Compression — LC 443
-23. Longest Common Prefix — LC 14
-24. Count and Say — LC 38
-25. Reverse Words in a String — LC 151
-26. Isomorphic Strings — LC 205
-27. Word Pattern — LC 290
-28. Backspace String Compare - LC 844
-29. Find the Difference - LC 389
+18. Maximum Number of Vowels in a Substring of Given Length - LC 1456
+19. Longest Substring Without Repeating Characters (sliding window) — LC 3
+20. Longest Palindromic Substring — LC 5
+21. Group Anagrams — LC 49
+22. Get Equal Substrings Within Budget - LC 1208
+23. Valid Parentheses — LC 20
+24. Minimum Window Substring — LC 76
+25. String Compression — LC 443
+26. Longest Common Prefix — LC 14
+27. Count and Say — LC 38
+28. Reverse Words in a String — LC 151
+29. Isomorphic Strings — LC 205
+30. Word Pattern — LC 290
+31. Backspace String Compare - LC 844
+32. Find the Difference - LC 389
 
 ---
 
