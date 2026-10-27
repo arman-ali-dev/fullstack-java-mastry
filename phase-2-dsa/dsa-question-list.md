@@ -59,6 +59,7 @@ Do questions in this order - each topic builds on the previous one.
 40. Search a 2D Matrix II — LC 240
 41. Two Sum II - Input Array Is Sorted — LC 167
 42. Remove Duplicates from Sorted Array II - LC 80
+43. Subarray Sum Equals K - LC 560
 
 ---
 
