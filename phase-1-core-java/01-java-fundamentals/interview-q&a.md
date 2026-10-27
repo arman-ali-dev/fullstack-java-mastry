@@ -1,9 +1,12 @@
 ## Must Prepare
 
-#### 1. Explain the structure of a Java program. Why is the main method `public static void main(String[] args)`?
-
+#### 1. Explain the structure of a Java program.
 A Java program generally contains a package declaration, import statements, a class and the main method.
-<br>
+
+---
+
+#### 2. Why is the main method `public static void main(String[] args)`?
+
 The execution of a Java program starts from the main() method.
 - The execution of a standalone Java application starts from the main() method.
 - Public: It allows the JVM to access the main method from outside the class.
@@ -15,7 +18,58 @@ So, public static void main(String[] args) is the entry point of a java program.
 
 --- 
 
-#### 2. What is the difference between JDK, JRE, and JVM?
+#### 3. What happens if we remove static from main?
+
+If we remove static from the main method, the program will compile successfully, but it will not run. This is because the JVM looks for a static main method to start the program. Without static, the JVM cannot use it as the entry point.
+
+---
+
+#### 4. Can we change public to private in main?
+
+When we change `public` to `private` in the main method, the program compiles normally but will not run because the JVM needs the main method to be public to start the program.
+
+---
+
+#### 5. Can we overload main? Can we override it?
+
+Yes, we can overload the main method by changing its parameters. Java allows multiple methods with the same name but different parameters. However, the JVM starts the program using the standard main method, `public static void main(String[] args)`.
+<br>
+No, we cannot override the main method because it is static, and static methods cannot be overridden. If a child class defines a static method with the same signature as the parent's static method, it is called method hiding, not method overriding.
+
+---
+
+#### 6. What happens if the public class name does not match the file name?
+
+When the public class name does not match the file name, the program gives a compile-time error. In Java, the file name must match the public class name
+
+---
+
+#### 7. Can a Java program have more than one main method?
+
+Can a Java program have more than one main method?
+Yes, a Java program can have more than one main method through method overloading. We can create multiple main methods with different parameters, but the JVM starts the program by calling the standard public static void main(String[] args) method.
+
+---
+
+#### 8. Can we make the main() method final?
+
+Yes, we can make the main() method final because final prevents a method from being overridden. The program will compile and run normally because the JVM can still call the main() method.
+
+---
+
+#### 9. Can we change the return type of the main() method?
+
+We can change the return type of the main method, and the program may compile normally, but it will not run. We get a runtime error saying that the main method cannot be found because the JVM expects the main method to have a void return type. This is because the JVM does not expect any value to be returned from the main method.
+
+---
+
+#### 10. Can a Java program run without a main() method?
+
+Yes, a Java program can compile without a main method, but it will not run normally because the JVM needs the main method to start the program.
+
+---
+
+#### 11. What is the difference between JDK, JRE, and JVM?
 
 JDK, JRE, and JVM are three important components of Java.
 
@@ -27,26 +81,88 @@ The relationship is: JDK contains the JRE, and the JRE contains the JVM in the t
 
 ---
 
-#### 3. What are the primitive data types in Java, and how do they differ from reference types?
+#### 12. Why is Java platform-independent?
 
-Java has 8 primitive data types: byte, short, int, long, float, double, char, and boolean. Primitive types store simple values directly, such as numbers, characters, and true or false values.
-<br>
-Reference types refer to objects
-<br>
-
-The main difference is that primitive variables hold primitive values, whereas reference variables hold references to objects or arrays. Primitive types have fixed sizes, while size of reference types depends on object. 
+Java is platform-independent because Java code is compiled into bytecode, which can run on any operating system that has a compatible JVM. The JVM converts the bytecode into machine code for that operating system. That's why Java follows the principle of "Write Once, Run Anywhere."
 
 ---
 
-#### 4. What are the default values of instance variables, and why don't local variables get default values?
+#### 13. What is bytecode in Java?
 
-Instance variables get default values automatically when an object is created. For example, numeric types get 0, boolean gets false, and reference types get null.
-<br>
-Local variables do not get default values because Java ensures we to initialize them before using them. This helps prevent the use of uninitialized variables.
+Bytecode is an intermediate code generated by the Java compiler when we compile a Java program. It is stored in a `.class` file and can run on any operating system that has a compatible JVM.
 
 ---
 
-#### 5. Why should you not use `double` or `float` for money calculations, and what should you use instead?
+#### 14. What is the difference between JIT compiler and interpreter?
+
+Interpreter and JIT both are parts of the JVM. The interpreter executes Java bytecode instruction by instruction, while the JIT which stands for "Just In Time" compiler compile frequently executed bytecode into machine code at runtime that improves performance. 
+
+---
+
+#### 15. What happens when we compile and run a Java program?
+
+When we compile a Java program, the Java compiler converts the source code into bytecode and stores it in a `.class` file. When we run the program, the JVM loads the bytecode and executes it using the interpreter and JIT compiler. Finally, the program produces the output.
+
+---
+
+#### 16. What are the primitive data types in Java?
+Primitive data types are used to store simple values like numbers, characters, and true or false values.
+
+---
+
+#### 17. What are the eight primitive data types in Java?
+
+Java has 8 primitive data types: byte, short, int, long, float, double, char, and boolean. 
+
+---
+
+#### 18. What is the difference between primitive types and reference types?
+
+Primitive types store simple values like numbers, characters, and boolean values. Reference types store references of objects, such as arrays, strings, and user-defined objects. Primitive types have fixed sizes depending on the type, while reference variables have not fixed size it depends on object.
+
+#### 19. What are the default values of primitive and reference type instance variables in Java?
+
+In Java, instance variables get default values automatically. Numeric types get 0 or 0.0, char gets '\u0000', and boolean gets false. Reference type variables get null by default. 
+
+---
+
+#### 20. Is String a primitive type or a reference type? Why?
+
+String is a reference type because it is a class in Java, not a primitive data type.
+
+---
+
+#### 21. What are the default values of instance variables?
+
+In Java, instance variables get default values automatically. Numeric types get 0 or 0.0, char gets '\u0000', and boolean gets false. Reference type variables get null by default.
+
+---
+
+#### 22. Why don't local variables get default values?
+
+Local variables do not get default values because Java requires us to initialize them before using them. 
+
+---
+
+#### 23. What is the difference between instance variables and local variables?
+
+Instance variables are declared inside a class but outside methods, and each object has its own copy of them. They get default values automatically. Local variables are declared inside a method or block, and they can only be used within that method or block. They do not get default values, so we must initialize them before using them.
+
+---
+
+#### 24. Can we use a local variable without initializing it? Why?
+
+No, we cannot use a local variable without initializing it because Java requires local variables to have a value before we use them. Otherwise, the compiler gives a compile-time error.
+
+---
+
+#### 25. What is the default value of a char variable in Java, and how can we represent it?
+
+The default value of char instance variable is null character represented by '\u0000';
+
+---
+
+#### 26. Why should you not use `double` or `float` for money calculations, and what should you use instead?
 
 We should not use float or double for money calculations because they can produce small precision errors when representing decimal numbers.
 <br>
@@ -54,20 +170,26 @@ Instead, we should use BigDecimal because it provides accurate decimal arithmeti
 
 ---
 
-### 6. What is the difference between widening and narrowing type casting?
+#### 27. What is the difference between widening and narrowing type casting?
 Widening type casting means converting a smaller data type into a larger data type. It happens automatically in Java when the conversion is safe.
 <br>
 Narrowing type casting means converting a larger data type into a smaller data type. It usually requires explicit casting because some data may be lost.
 
 ---
 
-#### 7. What happens when an `int` overflows in Java?
+#### 28. Can narrowing type casting cause data loss? Give an example.
 
-When an int overflows in Java, its value wraps around because an int has a fixed size of 32 bits.
-The maximum value of an int is already defined. If we add 1 to this value, it becomes minimum value of integer.
-Java does not automatically throw an exception when an integer overflows.
+Yes, narrowing type casting can cause data loss. For example, when we convert a `long` value to an `int`, the value may change if it is outside the range of `int`. This happens because `int` has a smaller range than `long`.
 
 ---
+
+#### 29. What happens when an `int` overflows in Java?
+
+When an `int` overflows in Java, its value wraps around from the maximum value to the minimum value or vice versa. Java does not throw an exception for integer overflow. For example, if an `int` reaches its maximum value and we add 1, it becomes the minimum value of `int`.
+
+---
+
+#### 30. Can we use pre-increment and post-increment with floating-point variables, such as float and double?
 
 #### 8. What is the difference between pre-increment (`++x`) and post-increment (`x++`)?
 Pre-increment (++x) increments the value first and then uses the updated value.
@@ -76,19 +198,59 @@ Post-increment (x++) uses the current value first and then increments it.
 
 ---
 
-#### 9. What is the difference between float and double?
+#### 31. Can we use pre-increment and post-increment with floating-point variables, such as float and double?
+
+Yes, we can use pre-increment and post-increment with float and double variables in Java. Both operators increase the value by 1.0. 
+
+---
+
+#### 32. What is the difference between float and double?
 Float and double are primitive data types in Java used to store decimal numbers.
 - float: Uses 32 bits and provides approximately 6–7 decimal digits of precision.
 - double: Uses 64 bits and provides approximately 15–16 decimal digits of precision.
 
 ---
 
-#### 10. What is the difference between `==` and `equals()` for Strings, and what is the String pool?
+#### 33. Why is double more precise than float?
+
+Double is more precise than float because it uses 64 bits, while float uses 32 bits.
+
+---
+
+#### 34. Why does Java treat a decimal literal like 3.14 as double by default?
+
+In Java, decimal literals like `3.14` are treated as `double` by default because it is a predefined rule of the Java language. If we want to use a `float` value, we must add the `f` suffix, like `3.14f`.
+
+---
+
+#### 35. Why do we use the f suffix when assigning a decimal value to a float variable?
+
+In Java, decimal values like `3.14` are treated as `double` by default because it is a predefined rule in the Java language. We use the `f` suffix, like `3.14f`, to tell the compiler that the value is a `float` instead of a `double`.
+
+#### 36. Can float and double represent every decimal value accurately? Why or why not?
+
+No, float and double cannot represent every decimal value accurately because they use a limited number of bits to store values. Some decimal values, like 0.1, cannot be represented exactly in binary, Double is more precise than float because it uses 64 bits, while float uses 32 bits.
+
+#### 37. What is the difference between `==` and `equals()` for Strings, and what is the String pool?
 == operator: It compares the references of two String objects to check whether they refer to the same object.
 <br>
 equals() method: It compares the actual content of two Strings.
-<br>
-String Pool: The String Pool is a special area of memory where Java reuses String literals to save memory. If the same literal already exists in the pool, Java can reuse that String object.
+
+---
+
+#### 38. What is the String pool?
+String Pool: The String Pool is a special area of memory within the heap memory where Java reuses String literals to save memory. If the same literal already exists in the pool, Java can reuse that String object.
+
+---
+
+#### 39. What is the difference between a String literal and a String object created using new?
+A String literal is stored in the String pool, and Java reuses the same object when the same literal already exists in the pool. On the other hand, when we create a String using the `new` keyword, Java creates a new String object in heap memory, even if the same text already exists in the String pool. Both are immutable, which means their values cannot be changed after creation.
+
+---
+
+#### 40. Why is String immutable in Java, and what are the benefits?
+
+String is immutable in Java, which means its value cannot be changed after creation. It helps improve security because Strings are commonly used for sensitive data, file paths, and URLs. It also makes Strings thread-safe and allows Java to reuse String objects through the String pool, which can save memory.
 
 ---
 
