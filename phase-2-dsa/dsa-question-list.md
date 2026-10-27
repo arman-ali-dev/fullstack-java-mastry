@@ -118,6 +118,7 @@ Do questions in this order - each topic builds on the previous one.
 10. Check if All Characters Have Equal Number of Occurrences - LC 1941
 11. Maximum Number of Balloons - LC 1189
 12. Find Players With Zero or One Losses - LC 2225
+13. Destination City - LC 1436
 
 ---
 
