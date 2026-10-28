@@ -35,31 +35,32 @@ Do questions in this order - each topic builds on the previous one.
 19. Distribute Candies - LC 575
 20. Matrix Diagonal Sum - LC 1572
 21. Find Numbers with Even Number of Digits - LC 1295
+22. Number of Good Pairs
 
 **Medium**
 
-22. Two Sum — LC 1
-23. 3Sum — LC 15
-24. 4Sum — LC 18
-25. Maximum Subarray (Kadane's algorithm) — LC 53
-26. Best Time to Buy and Sell Stock — LC 121
-27. Product of Array Except Self — LC 238
-28. Minimum Size Subarray Sum - LC 209
-29. Minimum Consecutive Cards to Pick Up - LC 2260
-30. Max Sum of a Pair With Equal Sum of Digits - LC 2342
-31. Majority Element — LC 169
-32. Majority Element II — LC 229
-33. Sort Colors (Dutch National Flag) — LC 75
-34. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
-35. Maximum Product Subarray — LC 152
-36. Trapping Rain Water — LC 42
-37. Jump Game — LC 55
-38. Peak Index in a Mountain Array — LC 852
-39. Squares of a Sorted Array — LC 977
-40. Search a 2D Matrix II — LC 240
-41. Two Sum II - Input Array Is Sorted — LC 167
-42. Remove Duplicates from Sorted Array II - LC 80
-43. Subarray Sum Equals K - LC 560
+23. Two Sum — LC 1
+24. 3Sum — LC 15
+25. 4Sum — LC 18
+26. Maximum Subarray (Kadane's algorithm) — LC 53
+27. Best Time to Buy and Sell Stock — LC 121
+28. Product of Array Except Self — LC 238
+29. Minimum Size Subarray Sum - LC 209
+30. Minimum Consecutive Cards to Pick Up - LC 2260
+31. Max Sum of a Pair With Equal Sum of Digits - LC 2342
+32. Majority Element — LC 169
+33. Majority Element II — LC 229
+34. Sort Colors (Dutch National Flag) — LC 75
+35. Merge Sorted Array — LC 88 ≈ (without extra space wala original version GFG par)
+36. Maximum Product Subarray — LC 152
+37. Trapping Rain Water — LC 42
+38. Jump Game — LC 55
+39. Peak Index in a Mountain Array — LC 852
+40. Squares of a Sorted Array — LC 977
+41. Search a 2D Matrix II — LC 240
+42. Two Sum II - Input Array Is Sorted — LC 167
+43. Remove Duplicates from Sorted Array II - LC 80
+44. Subarray Sum Equals K - LC 560
 
 ---
 
