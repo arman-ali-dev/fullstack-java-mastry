@@ -36,6 +36,7 @@ Do questions in this order - each topic builds on the previous one.
 20. Matrix Diagonal Sum - LC 1572
 21. Find Numbers with Even Number of Digits - LC 1295
 22. Number of Good Pairs
+23. Find Lucky Integer in an Array - LC 1394
 
 **Medium**
 
