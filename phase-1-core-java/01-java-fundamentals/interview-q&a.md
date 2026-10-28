@@ -253,50 +253,65 @@ A String literal is stored in the String pool, and Java reuses the same object w
 String is immutable in Java, which means its value cannot be changed after creation. It helps improve security because Strings are commonly used for sensitive data, file paths, and URLs. It also makes Strings thread-safe and allows Java to reuse String objects through the String pool, which can save memory.
 
 ---
-
-#### 11. Why is `String` immutable in Java, and what are the benefits?
-String is immutable in Java, which means its value cannot be changed after the object is created.
-<br>
-<br>
-The main benefits of String immutability are:
-1. Security: Strings are used in sensitive operations, such as file paths and database connections. Immutability prevents their values from being changed unexpectedly.
-2. String Pool: Immutable Strings can be safely shared and reused from the String Pool.
-3. Thread safety: Multiple threads can access the same String object without worrying about its value being modified.
-
----
   
-#### 12. What is the difference between `String`, `StringBuilder`, and `StringBuffer`?
+#### 41. What is the difference between `String`, `StringBuilder`, and `StringBuffer`?
 String, StringBuilder, and StringBuffer are used to work with text in Java, but they differ in mutability and thread safety.
 - String: Immutable. Once created, its content cannot be changed.
-- StringBuilder: Mutable and not thread-safe. It is generally faster and preferred when modifying strings within a single thread.
-- StringBuffer: Mutable and thread-safe because its methods are synchronized. It can be useful when the same buffer is shared across multiple threads.
+- StringBuilder: Mutable and not thread-safe.
+- StringBuffer: Mutable and thread-safe because its methods are synchronized.
 
 ---
 
-#### 13. What are wrapper classes, and what are autoboxing and unboxing?
+#### 42. What is the difference between mutable and immutable objects in Java?
+
+Mutable objects are objects whose state or values can be changed after creation. For example, a `StringBuilder` is mutable because we can modify its content. On the other hand, immutable objects are objects whose state cannot be changed after creation. For example, a `String` is immutable because any modification creates a new String object instead of changing the original one.
+
+---
+
+#### 43. When should we use String, StringBuilder, and StringBuffer?
+
+We use `String` when the text does not need frequent modification because it is immutable. We use `StringBuilder` when we need to modify text frequently, because it is mutable and faster for repeated modifications in a single-threaded context. We use `StringBuffer` when we need to modify text in a multithreaded environment because its methods are synchronized, making its operations thread-safe.
+
+---
+
+#### 44. Why is StringBuilder faster than StringBuffer?
+
+StringBuilder is generally faster than StringBuffer because its methods are not synchronized, whereas StringBuffer's methods are synchronized to support thread-safe operations. Synchronization adds some overhead.
+
+---
+
+#### 45. What are wrapper classes?
 Wrapper classes are classes that represent primitive data types as objects in Java. Java has eight wrapper classes corresponding to it's primitive types.
-<br>
-Autoboxing is the automatic conversion of a primitive value into its corresponding wrapper object.
-<br>
-Unboxing is the automatic conversion of a wrapper object into its corresponding primitive value.
 
 ---
 
-#### 14. Why does `Integer a = 127, b = 127; a == b` return true, but the same with 128 returns false?
+#### 46. What are autoboxing and unboxing?
+
+Autoboxing is the automatic conversion of a primitive value into its corresponding wrapper class object. For example, Java automatically converts an `int` into an `Integer` object. Unboxing is the opposite process, where Java automatically converts a wrapper class object into its corresponding primitive value. For example, Java converts an `Integer` object into an `int` automatically.
+
+---
+
+#### 47. Why do we need wrapper classes in Java?
+
+We need Wrapper classes because collections like ArrayList cannot store primitive types directly.
+
+---
+
+#### 48. Why does `Integer a = 127, b = 127; a == b` return true, but the same with 128 returns false?
 Java caches Integer objects for values from -128 to 127 by default. Therefore, when we assign 127 to two Integer variables, both variables can refer to the same cached object, so a == b returns true.
 
 For 128, which is outside the default cache range, Java typically creates separate objects, so a == b returns false.
 
-#### 15. Is Java pass-by-value or pass-by-reference? Explain with a primitive and an object example.
+#### 49. Is Java pass-by-value or pass-by-reference? Explain with a primitive and an object example.
 Java is always pass-by-value, not pass-by-reference.
 <br>
-When we pass an object to a method, Java passes a copy of the reference. Both references can point to the same object, so changes to the object's fields can be visible outside the method.
+When we pass an object to a method, Java passes a copy of the reference. Both references can point to the same object, so the method can change the object's fields and it can be visible outside the method.
 
 When we pass a primitive variable to a method, Java passes a copy of its value. Changes made inside the method do not affect the original variable.
 
 ---
 
-#### 16. What is the difference between local, instance, and static variables in terms of scope, lifetime, and default values?
+#### 50. What is the difference between local, instance, and static variables in terms of scope, lifetime, and default values?
 In Java, local, instance, and static variables differ in scope, lifetime, and default values.
 - Local variables are declared inside a method or block. Their scope is limited to that method or block, and they exist while that execution context is active. They do not receive default values; we must initialize them before use.
 - Instance variables are declared inside a class but outside methods, without the static keyword. Each object has its own copy. They exist as part of the object and receive default values.
@@ -304,44 +319,56 @@ In Java, local, instance, and static variables differ in scope, lifetime, and de
 
 ---
 
-#### 17. When can unboxing cause a `NullPointerException`?
-Unboxing can cause a NullPointerException when we try to convert a null wrapper object into its corresponding primitive type. This happens because a primitive type cannot store null.
-<br>
-To avoid this, we should check whether the wrapper object is null before unboxing it
+#### 51. When can unboxing cause a `NullPointerException`?
+Unboxing can cause a NullPointerException when we try to convert a null wrapper object into its corresponding primitive type.
 
 ---
 
-#### 18. How many objects are created by `String s = new String("hello");`?
+#### 52. How many objects are created by `String s = new String("hello");`?
 
-String s = new String("hello"); can create one or two String objects, depending on whether the literal "hello" already exists in the String Pool.
-<br>
-If the literal is not already in the pool, one String object is created in the pool for the literal, and another String object is created on the heap by new String().
-<br>
-If the literal already exists in the pool, only the new object created by new String() is needed.”
+In Java, String s = new String("hello"); can create one or two String objects. if "hello" is not already in the String pool, two objects are created; otherwise, only one new object is created.
 
-19. What is the difference between an array and an `ArrayList`?
+---
+
+#### 53. What is the difference between an array and an `ArrayList`?
 An array has a fixed size, whereas an ArrayList can grow dynamically. An array can store both primitives and objects, while an ArrayList stores objects and uses wrapper classes for primitive values. Arrays use the length property, whereas ArrayList uses the size() method. We can access array elements using indexes, and we can also access ArrayList elements using indexes.
 
-#### 20. What are varargs, and what are their restrictions?
+#### 54. What are varargs?
 Varargs, or variable-length arguments, allow a method to accept zero or more arguments of the same type. We use three dots (...) to declare varargs in Java.
-<br>
-Restrictions:
-1. A method can have only one varargs parameter.
-2. The varargs parameter must be the last parameter in the method declaration.
-3. Varargs are treated as an array inside the method.
-4. We can pass zero, one, or multiple arguments to a varargs parameter.
 
 ---
 
-#### 21. How do you write a generic class or method with a bounded type parameter (`T extends Number`)?
+#### 55. Can a method have multiple varargs parameters?
+
+No, a method cannot have multiple varargs parameters because the compiler would not know how to divide the arguments between them. A method can have only one varargs parameter, and it must be the last parameter in the method declaration. 
+
+---
+
+#### 56. Why must the varargs parameter be the last parameter in a method?
+
+The varargs parameter must be the last parameter because it can accept multiple arguments. If we put another parameter after it, the compiler would not know which argument belongs to which parameter.
+
+---
+
+#### 57. How are varargs treated inside a method?
+
+Inside a method, varargs are treated as an array. We can access each argument using its index, just like an array.
+
+---
+
+#### 58. What are Generics in Java, and why do we use them?
+
+Generics allow us to write classes, interfaces, and methods that can work with different data types. We use generics to provide type safety at compile time and reduce the need for type casting. For example, `ArrayList<String>` allows us to store only String values in the list.
+
+---
+
+#### 59. How do you write a generic class or method with a bounded type parameter (`T extends Number`)?
 We can use a bounded type parameter in Java generics by using the extends keyword. It restricts the type parameter to a specific class or its subclasses.
 <br>
 For example, T extends Number means that T can be Integer, Double, Float, or another subclass of Number. It cannot be String because String does not extend Number.
 
 ---
 
-#### 22. What is type erasure in Java generics?
+#### 60. What is type erasure in Java generics?
 
-Type erasure is a process in Java in which the compiler removes generic type information during compilation to maintain compatibility with older Java versions.
-<br>
-For example, List<String> and List<Integer> both become the raw type List at runtime. The compiler uses type information during compilation to check type safety, but most generic type information is not available at runtime.
+Type erasure is a process in Java in which the compiler removes generic type information during compilation and replaces it with the appropriate type, usually `Object`. This allows Java to maintain compatibility with older versions of Java that did not support generics.
