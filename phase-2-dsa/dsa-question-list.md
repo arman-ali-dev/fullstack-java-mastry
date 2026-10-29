@@ -63,6 +63,7 @@ Do questions in this order - each topic builds on the previous one.
 44. Remove Duplicates from Sorted Array II - LC 80
 45. Subarray Sum Equals K - LC 560
 46. Binary Subarrays With Sum - LC 930
+47. Maximum Erasure Value - LC 1695
 
 ---
 
