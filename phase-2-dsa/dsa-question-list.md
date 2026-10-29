@@ -105,6 +105,7 @@ Do questions in this order - each topic builds on the previous one.
 30. Word Pattern — LC 290
 31. Backspace String Compare - LC 844
 32. Find the Difference - LC 389
+33. Sort Characters By Frequency - LC 451
 
 ---
 
