@@ -37,6 +37,8 @@ Do questions in this order - each topic builds on the previous one.
 21. Find Numbers with Even Number of Digits - LC 1295
 22. Number of Good Pairs
 23. Find Lucky Integer in an Array - LC 1394
+24. Contains Duplicate - LC 217
+25. Contains Duplicate II - LC 219
 
 **Medium**
 
