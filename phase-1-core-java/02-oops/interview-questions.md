@@ -28,9 +28,10 @@
 28. What is the difference between composition and inheritance?
 29. What is a static block?
 30. How do you create an immutable class in Java?
-31. What is an inner class in java?
-32. What are the types of inner classes in Java?
-33. What is an anonymous class?
-34. What is the difference between `final`, `finally`, and `finalize`?
-35. What is method hiding?
-36. What is the relationship between equals() and hashCode()?
+31. What do you mean by defensive copies?
+32. What is an inner class in java?
+33. What are the types of inner classes in Java?
+34. What is an anonymous class?
+35. What is the difference between `final`, `finally`, and `finalize`?
+36. What is method hiding?
+37. What is the relationship between equals() and hashCode()?
