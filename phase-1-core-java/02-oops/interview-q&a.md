@@ -15,81 +15,119 @@ Abstraction focuses on hiding implementation details and showing only essential 
 
 ---
 
-#### 3. What is encapsulation, and how do you achieve it in Java? Why validate data inside setters?
+#### 3. What is encapsulation, and how do you achieve it in Java?
 
 Encapsulation is an OOP principle that combines data and methods into a single unit and restricts direct access to the data.
 <br>
 In Java, we achieve encapsulation by declaring variables as private and providing public getters and setters to access or modify them.
-<br>
-We validate data inside setters to prevent invalid values from being assigned to an object and to maintain data integrity.
-<br>
-For example, in a bank account, we can prevent the balance from being set to a negative value through a setter.
 
 ---
 
-#### 4. What is a constructor, and what happens if you don't write one?
+#### 4. What is a constructor?
 
 A constructor is a special member of a class that is used to initialize an object. It has the same name as the class and does not have a return type.
-<br>
-If we don't write any constructor in a class, the Java compiler automatically provides a default constructor. It initializes instance variables with their default values, such as 0 for int and null for reference types.
-<br>
-However, if we define any constructor ourselves, the compiler does not provide the default constructor automatically.
-
-#### 5. What is constructor overloading, and what is `this()` used for?
-
-Constructor overloading means defining multiple constructors in the same class with different parameter lists. They can differ in the number, types, or order of parameters.
-<br>
-this() is used to call another constructor of the same class. The this() call must be the first statement in a constructor.
 
 ---
 
-#### 6. What is inheritance, and why doesn't Java support multiple inheritance with classes?
+#### 5. When is a constructor called?
 
-Inheritance is an OOP concept in which one class acquires the properties and methods of another class. It promotes code reusability. In Java, we use the extends keyword to inherit a class.
+A constructor is called automatically when an object is created using the `new` keyword. It is used to initialize the object's state.
+
+---
+
+#### 6. What are the different types of constructors in Java?
+
+There are two main types of constructors in Java: default constructors and parameterized constructors.
 <br>
-Java does not support multiple inheritance with classes because it can create ambiguity when two parent classes have methods with the same signature. This is known as the Diamond Problem. The compiler would need to determine which implementation the child class should inherit.
+A default constructor is provided by the compiler when we do not define any constructor in a class. A parameterized constructor accepts parameters to initialize an object with specific values.
 
 ---
 
-#### 7. In what order do constructors run in an inheritance chain, and what is the role of `super()`? What happens if the parent has no no-arg constructor?
+#### 7. Can a constructor be overloaded?
 
-In Java, constructors execute from the parent class to the child class. First, the parent constructor runs, then the child constructor runs.
+Yes, a constructor can be overloaded by defining multiple constructors with different parameter lists in the same class.
+
+---
+
+#### 8. Can a constructor be inherited or overridden?
+
+No, constructors cannot be inherited or overridden in Java
+
+---
+
+#### 9. Can a constructor be private?
+
+Yes, a constructor can be private. It is used to restrict object creation from outside the class.
+
+---
+
+#### 10. Can we call one constructor from another constructor?
+
+Yes, we can call one constructor from another constructor using this().
+
+---
+
+#### 11. What is the difference between a constructor and a method?
+
+A constructor is used to initialize an object and has the same name as the class. A method is used to perform a specific task and can have any valid name. A constructor has no return type, whereas a method can have a return type or `void`.
+
+---
+
+#### 12. what is `this` keyword?
+
+In Java, the `this` keyword refers to the current object. It is used to access the current object's instance variables and methods, and to call another constructor of the same class using `this()`.
+
+---
+
+#### 13. Why doesn't Java support multiple inheritance with classes?
+
+Java does not support multiple inheritance with classes to avoid ambiguity, especially the diamond problem.
+
+---
+
+#### 14. What is the diamond problem ?
+
+In Java, the diamond problem with interfaces occurs when a class implements two interfaces that have the same default method. The class must override that method to resolve the ambiguity.
+
+---
+
+#### 15. What is the 'super' keyword?
+
+In Java, the `super` keyword is used to refer to the immediate parent class object. It is used to access parent class variables and methods, and to call the parent class constructor using `super()`.
+
+---
+
+#### 16. What is the difference between method overloading and method overriding?
+
+Method overloading means defining multiple methods with the same name but different parameter lists in the same class. It is also a compile-time polymorphism.
 <br>
-The super() keyword is used to call the parent class constructor. If we don't explicitly write a constructor call, Java implicitly inserts super() as the first statement, provided the parent has an accessible no-argument constructor.
+Method overriding occurs when a child class provides its own implementation of a method inherited from the parent class, using the same method signature. It is also called runtime polymorphism.
+
+---
+
+#### 17. What is the difference between Compile Time Polymorphism and Run Time Polymorphism?
+
+Compile-time polymorphism is resolved by the compiler and is achieved through method overloading. Runtime polymorphism is resolved at runtime and is achieved through method overriding.
+
+#### 18. What are the rules for method overriding?
+
+The method must have the same name and parameters, and its return type must be the same or compatible. The child method cannot have more restrictive access than the parent method.
+
+#### 19. Can you override `static`, `private`, or `final` methods?
+
+We cannot override static methods because they are hidden, not overridden. We cannot override private methods because they are not inherited, and we cannot override final methods final keyword prevents methods to being overridden.
+
+---
+
+#### 20. What is the difference between an abstract class and an interface, and when would you choose each?
+
+An abstract class can have both abstract and concrete methods, instance variables, and constructors, whereas an interface defines a contract that a class must follow and can also have default and static methods.
 <br>
-If the parent class has no accessible no-argument constructor, the child must explicitly call one of the parent's available constructors using super(arguments). Otherwise, the code produces a compile-time error.
+I would choose an abstract class when related classes share common state and behavior. I would choose an interface when different classes need to follow the same contract.
 
 ---
 
-#### 8. What is the difference between method overloading and method overriding?
-
-Method overloading means defining multiple methods with the same name but different parameter lists in the same class. It is an example of compile-time polymorphism because the compiler determines which method to call based on the arguments.
-<br>
-Method overriding occurs when a child class provides its own implementation of a method inherited from the parent class, using the same method signature. It supports runtime polymorphism because the method implementation is determined by the actual object at runtime.
-
----
-
-#### 9. What are the rules for method overriding? Can you override `static`, `private`, or `final` methods?
-
-Method overriding means when a child class provides its own implementation of a method inherited from the parent class. The method must have the same name and parameters, and its return type must be the same or compatible. The child method cannot have more restrictive access than the parent method.
-<br>
-We cannot override static methods because they are hidden, not overridden. We cannot override private methods because they are not inherited, and we cannot override final methods because they cannot be changed in a child class.
-
----
-
-#### 10. How does runtime polymorphism work when a parent reference holds a child object?
-
-Runtime polymorphism occurs when a parent class reference holds a child class object, and an overridden method is called. In this case, Java decides which method to execute based on the actual object at runtime, not the reference type. For example, if an Animal reference holds a Dog object and we call the sound() method, Java executes the Dog class's overridden sound() method. This is called runtime polymorphism.
-
----
-
-#### 11. What is the difference between an abstract class and an interface, and when would you choose each?
-
-An abstract class can have both abstract methods and concrete methods. It can also have instance variables and constructors. An interface is mainly used to define a contract that a class must follow. In an interface, methods are generally abstract by default, but it can also have default and static methods with implementations. A class can extend only one abstract class, but it can implement multiple interfaces. I would choose an abstract class when related classes share common code and state, and I would choose an interface when different classes need to follow the same contract, even if they are unrelated.
-
----
-
-#### 12. What are `default` and `static` methods in interfaces?
+#### 21. What are `default` and `static` methods in interfaces?
 
 A default method in an interface is a method that has a body and provides a default implementation.
 <br>
@@ -97,54 +135,69 @@ static method in an interface also has a body, but it belongs to the interface i
 
 ---
 
-#### 13. What happens when two interfaces provide the same default method?
+#### 22. What are the four access modifiers in Java?
 
-When two interfaces provide the same default method, the class that implements both interfaces must override that method to resolve the conflict. Inside the overridden method, we can choose which interface's implementation to call using InterfaceName.super.methodName(). This helps Java avoid ambiguity about which default method should be executed.
-
----
-
-#### 14. What are the four access modifiers in Java, and how does `protected` differ from default access?
-
-Java has four access modifiers: public, protected, default, and private. Public members can be accessed from anywhere, private members can be accessed only within the same class, and default members can be accessed only within the same package. Protected members can be accessed within the same package and also from subclasses in different packages.
-
-#### 15. What does the `static` keyword mean, and why can't a static method access instance members directly?
-
-The static keyword means that a variable or method belongs to the class rather than an object. A static method cannot directly access instance members because instance members belong to a particular object.
+The four access modifiers in Java are `public`, `protected`, default, and `private`. They control the visibility and accessibility of classes, methods, variables, and constructors.
 
 ---
 
-#### 16. How is the `final` keyword used with variables, methods, and classes?
+#### 23. what are the mean of each access modifier?
+
+Public members can be accessed from anywhere, private members can be accessed only within the same class, and default members can be accessed only within the same package. Protected members can be accessed within the same package and also from subclasses in different packages.
+
+---
+
+#### 24. What does the `static` keyword mean, and why can't a static method access instance members directly?
+
+The static keyword means that a variable or method belongs to the class rather than an object.
+
+---
+
+#### 25. How is the `final` keyword used with variables, methods, and classes?
 
 The final keyword is used in three ways in Java. When we use final with a variable, we cannot reassign its value after initialization. When we use it with a method, the method cannot be overridden by a child class. When we use it with a class, the class cannot be inherited.
 
 ---
 
-#### 17. What is the difference between `==` and `equals()`?
+#### 26. What is the difference between `==` and `equals()`?
 
 The equals() method is used to compare the content of objects, The == operator compares values for primitive data types, but for objects, it compares their references.
 
 ---
 
-18. What is the `equals()`/`hashCode()` contract, and what goes wrong in a `HashMap` if you override only one?
+#### 27. What are upcasting and downcasting?
 
-#### 19. What are upcasting and downcasting, and how does `instanceof` help avoid `ClassCastException`?
-
-Upcasting means converting a child class reference to a parent class reference, and it happens automatically in Java. Downcasting means converting a parent class reference back to a child class reference, and it requires explicit casting. We can use the instanceof operator before downcasting to check whether an object belongs to a particular class. This helps avoid ClassCastException.
-
----
-
-#### 20. What is the difference between composition and inheritance, and why is composition often preferred?
-
-Inheritance represents an “is-a” relationship, where a child class inherits properties and methods from a parent class. Composition represents a “has-a” relationship, where a class contains an object of another class. For example, a Dog is an Animal, so we can use inheritance. A Car has an Engine, so we can use composition. Composition is often preferred because it provides more flexibility, reduces tight coupling between classes
+Upcasting is converting a subclass reference to a superclass reference. It happens automatically in Java.
+<br>
+Downcasting is converting a superclass reference to a subclass reference. It requires explicit casting
 
 ---
 
-21. What does "program to an interface, not an implementation" mean? How does it relate to dependency injection in Spring?
-22. In what order do static blocks, instance blocks, and constructors execute in a parent-child class hierarchy?
-23. How do you create an immutable class in Java?
-24. Is Java pass-by-value or pass-by-reference?
-25. What are the types of inner classes in Java, and how does a static nested class differ from an inner class?
-26. What is the difference between an anonymous class and a lambda expression?
-27. What is the Liskov Substitution Principle? Give an example of a violation.
-28. How would you design a payment or notification module so new types can be added without modifying existing code?
-29. What is the difference between `final`, `finally`, and `finalize`?
+#### 28. What is the difference between composition and inheritance?
+
+Inheritance represents an “is-a” relationship, where a child class inherits properties and methods from a parent class. Composition represents a “has-a” relationship, where a class contains an object of another class. For example, a Dog is an Animal, so we can use inheritance. A Car has an Engine, so we can use composition. Composition is often preferred because it provides more flexibility, reduces tight coupling between classes.
+
+---
+
+#### 29. What is a static block?
+
+In Java, a static block is a block of code that executes only once when the class is loaded. It is mainly used to initialize static variables.
+
+---
+
+#### 30. How do you create an immutable class in Java?
+
+To create an immutable class in Java, we declare the class as `final`, make all fields `private` and `final`, initialize them through a constructor, and provide no setter methods. We should also make defensive copies of mutable objects to prevent their state from being changed.
+
+---
+
+#### 31. What do you mean by defensive copies ?
+
+Defensive copies are copies of mutable objects created to protect an object's internal state from external modifications.
+
+32. What is an inner class in java?
+33. What are the types of inner classes in Java?
+34. What is an anonymous class?
+35. What is the difference between `final`, `finally`, and `finalize`?
+36. What is method hiding?
+37. What is the relationship between equals() and hashCode()?
