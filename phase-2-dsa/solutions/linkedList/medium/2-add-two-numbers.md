@@ -40,6 +40,32 @@ class Solution {
 }
 ```
 
+
+```java
+class Solution {
+    public ListNode helper(ListNode l1, ListNode l2, int carry) {
+        if (l1 == null && l2 == null) {
+            if (carry != 0) {
+                return new ListNode(carry);
+            }
+            return null;
+        }
+
+        int l1Value = l1 == null ? 0 : l1.val;
+        int l2Value = l2 == null ? 0 : l2.val;
+
+        ListNode node = new ListNode((l1Value + l2Value + carry) % 10);
+        node.next = helper(l1 != null ? l1.next : null, l2 != null ? l2.next : null, (l1Value + l2Value + carry) / 10);
+
+        return node;
+    } 
+
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        return helper(l1, l2, 0);
+    }
+}
+```
+
 ### Time Complexity
 
 - O(max(n, m))
