@@ -150,10 +150,10 @@ Do questions in this order - each topic builds on the previous one.
 8. Merge Two Sorted Lists — LC 21
 9. Add Two Numbers — LC 2
 10. Flatten a Multilevel Doubly Linked List — LC 430
-11. Copy List with Random Pointer — LC 138
-12. Swap Nodes in Pairs — LC 24
-13. LRU Cache (LinkedList + HashMap) — LC 146
-14. Intersection of Two Linked Lists — LC 160
+11. Swap Nodes in Pairs — LC 24
+12. LRU Cache (LinkedList + HashMap) — LC 146
+13. Intersection of Two Linked Lists — LC 160
+14. Delete the Middle Node of a Linked List - LC 2095
 
 ---
 
