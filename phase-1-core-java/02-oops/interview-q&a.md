@@ -195,9 +195,43 @@ To create an immutable class in Java, we declare the class as `final`, make all 
 
 Defensive copies are copies of mutable objects created to protect an object's internal state from external modifications.
 
-32. What is an inner class in java?
-33. What are the types of inner classes in Java?
-34. What is an anonymous class?
-35. What is the difference between `final`, `finally`, and `finalize`?
-36. What is method hiding?
-37. What is the relationship between equals() and hashCode()?
+#### 32. What is an inner class in java?
+
+An inner class in Java is a non-static class declared inside another class. It can access all members of the outer class, including its private members.
+
+---
+
+#### 33. What are the types of inner classes in Java?
+
+There are four types of nested classes in Java:
+
+1. **Member Inner Class:** A non-static class declared inside another class.
+2. **Static Nested Class:** A static class declared inside another class.
+3. **Local Inner Class:** A class declared inside a method or block.
+4. **Anonymous Inner Class:** A class without a name that is declared and instantiated at the same time.
+
+#### 34. What is an anonymous class?
+
+An anonymous class in Java is a class without a name that is declared and instantiated at the same time. It is used to provide a one-time implementation of an interface or an abstract class.
+
+---
+
+#### 35. What is the difference between `final`, `finally`, and `finalize`?
+
+**final:** A keyword used with variables, methods, and classes. A final variable cannot be reassigned, a final method cannot be overridden, and a final class cannot be inherited.
+<br>
+**finally:** A block used with exception handling. It generally executes whether an exception occurs or not.
+<br>
+**finalize():** A method that was traditionally called by the garbage collector before reclaiming an object. It is deprecated and should not be used in modern Java.
+
+---
+
+#### 36. What is method hiding?
+
+Method hiding occurs in Java when a subclass defines a static method with the same name and signature as a static method in its parent class. The subclass method hides the parent class method rather than overriding it.
+
+---
+
+#### 37. What is the relationship between equals() and hashCode()?
+
+In Java, equals() and hashCode() are related methods used to compare objects. If two objects are equal according to equals(), they must have the same hash code. However, two objects with the same hash code are not necessarily equal.
