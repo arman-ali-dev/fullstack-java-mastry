@@ -156,6 +156,7 @@ Do questions in this order - each topic builds on the previous one.
 13. Intersection of Two Linked Lists — LC 160
 14. Delete the Middle Node of a Linked List - LC 2095
 15. Remove Duplicates from Sorted List II - LC 82
+16. Swapping Nodes in a Linked List - LC 1721
 
 ---
 
