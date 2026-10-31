@@ -147,7 +147,7 @@ Public members can be accessed from anywhere, private members can be accessed on
 
 ---
 
-#### 24. What does the `static` keyword mean, and why can't a static method access instance members directly?
+#### 24. What does the `static` keyword mean?
 
 The static keyword means that a variable or method belongs to the class rather than an object.
 
@@ -235,3 +235,77 @@ Method hiding occurs in Java when a subclass defines a static method with the sa
 #### 37. What is the relationship between equals() and hashCode()?
 
 In Java, equals() and hashCode() are related methods used to compare objects. If two objects are equal according to equals(), they must have the same hash code. However, two objects with the same hash code are not necessarily equal.
+
+---
+
+#### 38. Is java 100% Object Oriented?
+
+No, Java is not 100% object-oriented because it supports primitive data types like `int`, `char`, `boolean`, and `double`, which are not objects. Java also supports static members that belong to a class rather than individual objects.
+
+---
+
+#### 39. Execution's order: static block, instance block, constructor
+
+1. Static block: Executes once when the class is loaded.
+2. Instance initialization block: Executes every time an object is created.
+3. Constructor: Executes after the instance initialization block.
+
+---
+
+#### 40. Can we overload a method only changing by return type?
+
+No, we cannot overload a method by changing only its return type. Method overloading requires a different parameter list, such as a different number, type, or order of parameters.
+
+---
+
+#### 41. What is Object class?
+
+The Object class is the root class. Every class in Java directly or indirectly inherits from the Object class. It provides common methods such as toString(), equals(), hashCode(), and getClass().
+
+---
+
+#### 42. What is toString()?
+
+In Java, toString() is a method of the Object class that returns the string representation of an object.
+
+---
+
+#### 43. What is getClass()?
+
+In Java, `getClass()` is a method of the `Object` class that returns the runtime class of an object. It is used to get information about the object's actual class at runtime.
+
+---
+
+#### 44. What is hashCode()?
+
+In Java, `hashCode()` is a method of the `Object` class that returns an integer value called the hash code of an object. It is mainly used by hash-based collections like `HashMap` and `HashSet` to organize and locate objects efficiently.
+
+---
+
+#### 45. What is the difference between Association, aggregation and composition?
+
+**Association:** A general relationship between two independent classes where one class uses or interacts with another.
+<br>
+**Aggregation:** A weak "has-a" relationship where one object contains another object, but both can exist independently.
+<br>
+**Composition:** A strong "has-a" relationship where one object owns another object, and the contained object cannot exist independently of the owner.
+
+---
+
+#### 46. What are types of inheritance?
+
+There are five types of inheritance in object-oriented programming:
+
+1. **Single Inheritance:** One child class inherits from one parent class.
+2. **Multilevel Inheritance:** A class inherits from a child class, forming a chain of inheritance.
+3. **Hierarchical Inheritance:** Multiple child classes inherit from one parent class.
+4. **Multiple Inheritance:** One child class inherits from multiple parent classes.
+5. **Hybrid Inheritance:** A combination of two or more types of inheritance.
+
+Java supports single, multilevel, and hierarchical inheritance through classes. Multiple and hybrid inheritance can be achieved using interfaces, but not through classes alone.
+
+---
+
+#### 47. Why interface allowed for multiple inheritance?
+
+Java allows multiple inheritance through interfaces because interfaces mainly define contracts rather than storing object data.

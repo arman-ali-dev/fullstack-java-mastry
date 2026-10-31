@@ -35,3 +35,13 @@
 35. What is the difference between `final`, `finally`, and `finalize`?
 36. What is method hiding?
 37. What is the relationship between equals() and hashCode()?
+38. Is java 100% Object Oriented?
+39. Execution's order: static block, instance block, constructor
+40. Can we overload a method only changing by return type?
+41. What is Object class?
+42. What is toString()?
+43. What is getClass()?
+44. What is hashCode()?
+45. What is the difference between Association, aggregation and composition?
+46. What are types of inheritance?
+47. Why interface allowed for multiple inheritance?
