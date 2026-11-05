@@ -177,15 +177,16 @@ Do questions in this order - each topic builds on the previous one.
 10. Simplify Path - LC 71
 11. Make The String Great - LC 1544
 12. Removing Stars From a String - LC 2390
+13. Daily Temperatures - LC 739
 
 **Queue**
 
-13. Implement Queue using Stacks — LC 232
-14. Implement Stack using Queues — LC 225
-15. First Unique Character in a String (first non-repeating character) — LC 387
-16. First non-repeating character in stream — GFG
-17. BFS of graph uses queue - covered in graphs section
-18. Sliding Window Maximum - LC 239
+14. Implement Queue using Stacks — LC 232
+15. Implement Stack using Queues — LC 225
+16. First Unique Character in a String (first non-repeating character) — LC 387
+17. First non-repeating character in stream — GFG
+18. BFS of graph uses queue - covered in graphs section
+19. Sliding Window Maximum - LC 239
 
 ---
 
