@@ -131,8 +131,44 @@ Collections like `ArrayList`, `HashSet`, and `HashMap` provide fail-fast iterato
 
 CopyOnWriteArrayList is a thread-safe implementation of the List interface that creates a new copy of the underlying array whenever we modify the list.
 
+---
+
 #### 23. What is the difference between ArrayList and CopyOnWriteArrayList?
 
 ArrayList is a resizable array implementation of the List interface. It is not thread-safe, so multiple threads accessing it.
 <br>
 CopyOnWriteArrayList is a thread-safe implementation of the List interface.
+
+---
+
+#### 24. How does `ArrayList` work internally, and how does it resize?
+
+`ArrayList` internally uses a dynamic array to store elements. When the array becomes full, it creates a new array with approximately 1.5 times the old capacity, copies the existing elements into it, and adds the new element. This allows `ArrayList` to grow dynamically.
+
+---
+
+#### 25. What is the difference between `ArrayList` and `LinkedList`, and when would you use each?
+
+`ArrayList` uses a dynamic array internally, while `LinkedList` uses a doubly linked list. `ArrayList` is faster for accessing elements by index, while `LinkedList` is more suitable for frequent insertions and deletions, especially at the ends.
+<br>
+I would use `ArrayList` when frequent access is required and `LinkedList` when frequent insertions and deletions are required.
+
+---
+
+#### 26. Why are `Vector`, `Stack`, and `Hashtable` considered legacy, and what should replace them?
+
+`Vector`, `Stack`, and `Hashtable` are considered legacy because they are older classes with synchronized methods, which can cause unnecessary performance overhead.
+<br>
+We generally use `ArrayList` instead of `Vector`, `ArrayDeque` instead of `Stack`, and `HashMap` instead of `Hashtable` in modern Java applications.
+
+---
+
+#### 27. What is the difference between `list.remove(int index)` and `list.remove(Object o)`?
+
+`list.remove(int index)` removes the element at the specified index, while `list.remove(Object o)` removes the first occurrence of the specified object from the list.
+
+---
+
+#### 28. What does `Arrays.asList()` return, and why does `add()` on it throw `UnsupportedOperationException`?
+
+`Arrays.asList()` returns a fixed-size list backed by the original array. We cannot add or remove elements because its size cannot change, so calling `add()` throws `UnsupportedOperationException`.
