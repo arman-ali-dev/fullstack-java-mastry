@@ -172,3 +172,9 @@ We generally use `ArrayList` instead of `Vector`, `ArrayDeque` instead of `Stack
 #### 28. What does `Arrays.asList()` return, and why does `add()` on it throw `UnsupportedOperationException`?
 
 `Arrays.asList()` returns a fixed-size list backed by the original array. We cannot add or remove elements because its size cannot change, so calling `add()` throws `UnsupportedOperationException`.
+
+---
+
+#### 29. How does `HashSet` ensure uniqueness?
+
+`HashSet` uses `hashCode()` and `equals()` methods to ensure uniqueness. First, it checks the hash code to find the bucket, then uses `equals()` to check whether an equal element already exists. If it exists, the duplicate is not added.
