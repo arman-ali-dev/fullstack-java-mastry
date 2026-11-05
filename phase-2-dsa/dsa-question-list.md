@@ -182,6 +182,7 @@ Do questions in this order - each topic builds on the previous one.
 11. First Unique Character in a String (first non-repeating character) — LC 387
 12. First non-repeating character in stream — GFG
 13. BFS of graph uses queue - covered in graphs section
+14. Sliding Window Maximum - LC 239
 
 ---
 
