@@ -174,15 +174,16 @@ Do questions in this order - each topic builds on the previous one.
 7. Min Stack (getMin in O(1)) — LC 155
 8. Evaluate Reverse Polish Notation — LC 150
 9. Simplify Path - LC 71
+10. Make The String Great - LC 1544
 
 **Queue**
 
-9. Implement Queue using Stacks — LC 232
-10. Implement Stack using Queues — LC 225
-11. First Unique Character in a String (first non-repeating character) — LC 387
-12. First non-repeating character in stream — GFG
-13. BFS of graph uses queue - covered in graphs section
-14. Sliding Window Maximum - LC 239
+11. Implement Queue using Stacks — LC 232
+12. Implement Stack using Queues — LC 225
+13. First Unique Character in a String (first non-repeating character) — LC 387
+14. First non-repeating character in stream — GFG
+15. BFS of graph uses queue - covered in graphs section
+16. Sliding Window Maximum - LC 239
 
 ---
 
@@ -251,15 +252,15 @@ Do questions in this order - each topic builds on the previous one.
 
 **BST specific**
 
-23. Search in a Binary Search Tree — LC 700
-24. Insert into a Binary Search Tree — LC 701
-25. Delete Node in a BST — LC 450
-26. Validate Binary Search Tree — LC 98
-27. Kth Smallest Element in a BST — LC 230
-28. Inorder Successor in BST — LC 285 (Premium) / GFG
-29. Predecessor and Successor in BST - GFG
-30. Construct Binary Search Tree from Preorder Traversal — LC 1008
-31. Lowest Common Ancestor of a Binary Search Tree — LC 235
+25. Search in a Binary Search Tree — LC 700
+26. Insert into a Binary Search Tree — LC 701
+27. Delete Node in a BST — LC 450
+28. Validate Binary Search Tree — LC 98
+29. Kth Smallest Element in a BST — LC 230
+30. Inorder Successor in BST — LC 285 (Premium) / GFG
+31. Predecessor and Successor in BST - GFG
+32. Construct Binary Search Tree from Preorder Traversal — LC 1008
+33. Lowest Common Ancestor of a Binary Search Tree — LC 235
 
 ---
 
