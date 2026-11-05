@@ -30,15 +30,41 @@ The Java Collection hierarchy starts with the Iterable interface, which is exten
 
 ---
 
-#### 5. How does the for-each loop work internally with `Iterable` and `Iterator`?
+#### 6. How does the for-each loop work internally with `Iterable` and `Iterator`?
 
-#### 6. What is the difference between `Iterator` and `ListIterator`?
+In Java, the enhanced for-each loop works internally using the `Iterable` and `Iterator` interfaces. The `Iterable` interface provides the `iterator()` method, which returns an `Iterator`. The iterator uses `hasNext()` to check whether more elements are available and `next()` to retrieve each element.
 
-#### 7. Why does `ConcurrentModificationException` occur, and how do you safely remove elements while iterating?
+---
 
-#### 8. What is the difference between fail-fast and fail-safe iterators?
+#### 7. What is the difference between `Iterator` and `ListIterator`?
 
-#### 9. How does `ArrayList` work internally, and how does it resize?
+Iterator is used to traverse elements in a collection in the forward direction only. It works with collections like ArrayList, HashSet, and others.
+<br>
+ListIterator is used to traverse elements of a List in both forward and backward directions. It also allows us to add, replace, and remove elements while iterating.
+
+---
+
+#### 8. Why does `ConcurrentModificationException` occur?
+
+ConcurrentModificationException occurs when a collection is structurally modified while we are iterating over it using a fail-fast iterator
+
+---
+
+#### 9. How do you safely remove elements while iterating?
+
+To safely remove elements while iterating, we should use the Iterator.remove() method instead of calling collection.remove() directly.
+
+---
+
+#### 10. What is the difference between fail-fast and fail-safe iterators?
+
+Fail-fast iterators immediately throw a ConcurrentModificationException if a collection is structurally modified during iteration.
+<br>
+Fail-safe iterators work on a separate copy of the collection or use a mechanism that allows modifications without throwing this exception.
+
+---
+
+#### 10. How does `ArrayList` work internally, and how does it resize?
 
 #### 10. What is the difference between `ArrayList` and `LinkedList`, and when would you use each?
 
