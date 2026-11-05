@@ -175,15 +175,16 @@ Do questions in this order - each topic builds on the previous one.
 8. Evaluate Reverse Polish Notation — LC 150
 9. Simplify Path - LC 71
 10. Make The String Great - LC 1544
+11. Removing Stars From a String - LC 2390
 
 **Queue**
 
-11. Implement Queue using Stacks — LC 232
-12. Implement Stack using Queues — LC 225
-13. First Unique Character in a String (first non-repeating character) — LC 387
-14. First non-repeating character in stream — GFG
-15. BFS of graph uses queue - covered in graphs section
-16. Sliding Window Maximum - LC 239
+12. Implement Queue using Stacks — LC 232
+13. Implement Stack using Queues — LC 225
+14. First Unique Character in a String (first non-repeating character) — LC 387
+15. First non-repeating character in stream — GFG
+16. BFS of graph uses queue - covered in graphs section
+17. Sliding Window Maximum - LC 239
 
 ---
 
