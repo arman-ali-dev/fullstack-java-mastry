@@ -14,7 +14,7 @@
 12. What is the difference between Iterable and Iterator?
 13. Can we use a for-each loop with an array?
 14. What is the difference between `Iterator` and `ListIterator`?
-15. Why does modifying a collection during iteration cause this exception?
+15. Why does modifying a collection during iteration cause `ConcurrentModificationException` exception?
 16. Why does `ConcurrentModificationException` occur?
 17. how do you safely remove elements while iterating?
 18. What is a fail-fast iterator?
