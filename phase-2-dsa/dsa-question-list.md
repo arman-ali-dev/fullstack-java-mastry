@@ -173,6 +173,7 @@ Do questions in this order - each topic builds on the previous one.
 6. Online Stock Span — LC 901
 7. Min Stack (getMin in O(1)) — LC 155
 8. Evaluate Reverse Polish Notation — LC 150
+9. Simplify Path - LC 71
 
 **Queue**
 
