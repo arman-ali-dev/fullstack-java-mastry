@@ -130,6 +130,7 @@ Do questions in this order - each topic builds on the previous one.
 13. Destination City - LC 1436
 14. Sum of Unique Elements - LC 1748
 15. Unique Number of Occurrences - LC 1207
+16. Count Number of Pairs With Absolute Difference K - LC 2006
 
 ---
 
@@ -171,22 +172,20 @@ Do questions in this order - each topic builds on the previous one.
 4. Final Prices With a Special Discount in a Shop - LC 1475
 5. Previous greater element — GFG
 6. Previous smaller element — GFG
-7. Online Stock Span — LC 901
-8. Min Stack (getMin in O(1)) — LC 155
-9. Evaluate Reverse Polish Notation — LC 150
-10. Simplify Path - LC 71
-11. Make The String Great - LC 1544
-12. Removing Stars From a String - LC 2390
-13. Daily Temperatures - LC 739
+7. Min Stack (getMin in O(1)) — LC 155
+8. Evaluate Reverse Polish Notation — LC 150
+9. Simplify Path - LC 71
+10. Make The String Great - LC 1544
+11. Removing Stars From a String - LC 2390
+12. Daily Temperatures - LC 739
 
 **Queue**
 
-14. Implement Queue using Stacks — LC 232
-15. Implement Stack using Queues — LC 225
-16. First Unique Character in a String (first non-repeating character) — LC 387
-17. First non-repeating character in stream — GFG
-18. BFS of graph uses queue - covered in graphs section
-19. Sliding Window Maximum - LC 239
+13. Implement Queue using Stacks — LC 232
+14. Implement Stack using Queues — LC 225
+15. First Unique Character in a String (first non-repeating character) — LC 387
+16. First non-repeating character in stream — GFG
+17. Sliding Window Maximum - LC 239
 
 ---
 
