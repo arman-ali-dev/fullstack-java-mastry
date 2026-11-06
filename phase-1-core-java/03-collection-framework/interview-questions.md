@@ -46,8 +46,15 @@
 44. What do `? extends T` and `? super T` mean in generics, and when do you use each?
 45. How does `TreeSet` detect duplicates, and how is that different from `HashSet`?
 46. What is the difference between `add`/`remove`/`element` and `offer`/`poll`/`peek` in `Queue`?
-47. Why is `HashMap` capacity a power of two, and how do load factor and initial capacity affect performance?
-48. When would you use `WeakHashMap`, `IdentityHashMap`, or `EnumMap`?
-49. How do `getOrDefault()`, `computeIfAbsent()`, and `merge()` simplify common `Map` operations?
-50. What is a `BlockingQueue`, and where is it used (producer-consumer)?
-51. How would you remove duplicates from a list while preserving insertion order?
+47. How would you remove duplicates from a list while preserving insertion order?
+48. What is the contract between equals() and hashCode()?
+49. What happens if we override equals() but not hashCode()?
+50. What are the initial capacity and load factor of a HashMap?
+51. When does HashMap resize its internal array?
+52. Why should we use immutable objects as HashMap keys?
+53. What is the difference between ArrayDeque and Stack?
+54. How can we implement an LRU cache using LinkedHashMap?
+55. How can we sort a Map by keys and values?
+56. How does LinkedHashMap maintain insertion order?
+57. Does iterating over a PriorityQueue return elements in sorted order?
+58. What is BlockingQueue, and where is it used?

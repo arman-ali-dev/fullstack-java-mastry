@@ -316,3 +316,11 @@ In Java Queue, both sets of methods perform similar operations, but they handle 
 - `peek()`: Returns the head element without removing it. Returns `null` if the queue is empty.
 
 **Main Difference:** The first set of methods throws exceptions on failure, while the second set returns special values like `false` or `null`.
+
+---
+
+#### 47. How would you remove duplicates from a list while preserving insertion order?
+
+We can use `LinkedHashSet` to remove duplicates from a list while preserving insertion order.
+`LinkedHashSet` stores only unique elements and maintains the order in which elements were inserted.
+We can convert the set back into a list using the `ArrayList` constructor.
