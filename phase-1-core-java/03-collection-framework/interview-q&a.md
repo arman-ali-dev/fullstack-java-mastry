@@ -178,3 +178,141 @@ We generally use `ArrayList` instead of `Vector`, `ArrayDeque` instead of `Stack
 #### 29. How does `HashSet` ensure uniqueness?
 
 `HashSet` uses `hashCode()` and `equals()` methods to ensure uniqueness. First, it checks the hash code to find the bucket, then uses `equals()` to check whether an equal element already exists. If it exists, the duplicate is not added.
+
+---
+
+#### 30. What is the difference between `HashSet`, `LinkedHashSet`, and `TreeSet`?
+
+`HashSet` does not maintain insertion order, `LinkedHashSet` maintains insertion order, and `TreeSet` stores elements in sorted order. `HashSet` and `LinkedHashSet` generally provide faster operations, while `TreeSet` operations are generally slower because it maintains sorted order.
+
+---
+
+#### 31. How does `HashMap` work internally for `put()` and `get()`?
+
+`HashMap` internally uses an array of buckets to store key-value pairs. During `put()`, it calculates the key's hash code to find the bucket and uses `equals()` to check for an existing key. If the key exists, it updates the value; otherwise, it adds a new entry.
+<br>
+During `get()`, it calculates the hash code, finds the bucket, and uses `equals()` to find the matching key and return its value.
+
+---
+
+#### 32. What is a hash collision, and how does `HashMap` handle it (including treeification in Java 8)?
+
+A **hash collision** occurs when two different keys generate the same bucket index in a `HashMap`.
+<br>
+`HashMap` handles collisions using a linked list. In Java 8, when the number of entries in a bucket reaches 8 and the array capacity is at least 64, the linked list is converted into a Red-Black Tree. This process is called **treeification**, which improves search performance.
+
+---
+
+#### 33. What must a custom class implement to be used safely as a `HashMap` key?
+
+A custom class should override both equals() and hashCode() methods to work correctly as a HashMap key.
+
+---
+
+#### 34. What is the difference between `HashMap` and `Hashtable`?
+
+HashMap is not synchronized, while Hashtable is synchronized and thread-safe. HashMap allows one null key and multiple null values, whereas Hashtable does not allow null keys or values.
+
+---
+
+#### 35. What is `ConcurrentHashMap`?
+
+ConcurrentHashMap is a thread-safe implementation of the Map interface. It allows multiple threads to access and modify the map concurrently. It does not allow null keys or values.
+
+---
+
+#### 36. What is the difference between `HashMap`, `LinkedHashMap`, and `TreeMap`?
+
+HashMap does not maintain insertion order, LinkedHashMap maintains insertion order, and TreeMap stores keys in sorted order. HashMap and LinkedHashMap is generally faster, while TreeMap is slower because it maintains sorted order.
+
+---
+
+#### 37. What is the difference between `Comparable` and `Comparator`?
+
+`Comparable` is used to define the natural sorting order of objects by implementing the `compareTo()` method inside the class.
+<br>
+`Comparator` is used to define custom sorting logic separately from the class by implementing the `compare()` method.
+
+---
+
+#### 38. How do you sort a list of objects by multiple fields?
+
+We can sort a list of objects by multiple fields using the Comparator interface and its thenComparing() method.
+
+---
+
+#### 39. How does `PriorityQueue` work, and how do you create a max-heap with it?
+
+A `PriorityQueue` in Java is a queue that processes elements based on their priority rather than insertion order.
+<br>
+Internally, it uses a Min-Heap by default, so the smallest element has the highest priority and comes out first.
+<br>
+To create a Max-Heap, we can use `Comparator.reverseOrder()`, which makes the largest element come out first.
+
+---
+
+#### 40. What is Max-Heap and Min-Heap?
+
+**Min-Heap:** A Min-Heap is a binary heap where the smallest element is always at the root. When we remove an element, the smallest element comes out first.
+<br>
+**Max-Heap:** A Max-Heap is a binary heap where the largest element is always at the root. When we remove an element, the largest element comes out first.
+
+---
+
+#### 41. Why is `ArrayDeque`?
+
+ArrayDeque is implementation of the Deque interface in Java. It allows us to insert and remove elements from both ends, meaning we can use it as both a queue and a stack.
+
+---
+
+#### 42. Which collections allow `null` elements or keys, and which do not?
+
+- **ArrayList:** Allows multiple null elements.
+- **LinkedList:** Allows multiple null elements.
+- **HashSet:** Allows one null element.
+- **LinkedHashSet:** Allows one null element.
+- **TreeSet:** Does not allow null elements.
+- **HashMap:** Allows one null key and multiple null values.
+- **LinkedHashMap:** Allows one null key and multiple null values.
+- **TreeMap:** Allows null values but does not allow null keys.
+- **Hashtable:** Does not allow null keys or values.
+- **ConcurrentHashMap:** Does not allow null keys or values.
+- **ArrayDeque:** Does not allow null elements.
+- **PriorityQueue:** Does not allow null elements.
+
+---
+
+#### 43. Why do we use generics with collections, and what is wrong with raw types?
+
+We use generics with collections to provide type safety. They allow us to store only a specific type of object. without specifying a generic type. They can store different types of objects, which may cause ClassCastException at runtime.
+
+---
+
+#### 44. What do `? extends T` and `? super T` mean in generics, and when do you use each?
+
+? extends T means the generic type can be T or any subclass of T. We use it when we want to read data from a collection.
+<br>
+? super T means the generic type can be T or any superclass of T. We use it when we want to add data to a collection.
+
+---
+
+#### 45. How does `TreeSet` detect duplicates, and how is that different from `HashSet`?
+
+TreeSet: It uses compareTo() or Comparator to compare elements. If the comparison returns 0, it considers the elements duplicates and does not add the new element.
+
+HashSet: It uses hashCode() to find the bucket and equals() to check whether an equal element already exists.
+
+---
+
+#### 46. What is the difference between `add`/`remove`/`element` and `offer`/`poll`/`peek` in `Queue`?
+
+In Java Queue, both sets of methods perform similar operations, but they handle failure differently.
+
+- `add()`: Inserts an element. Throws an exception if insertion fails.
+- `offer()`: Inserts an element. Returns `false` if insertion fails.
+- `remove()`: Removes and returns the head element. Throws an exception if the queue is empty.
+- `poll()`: Removes and returns the head element. Returns `null` if the queue is empty.
+- `element()`: Returns the head element without removing it. Throws an exception if the queue is empty.
+- `peek()`: Returns the head element without removing it. Returns `null` if the queue is empty.
+
+**Main Difference:** The first set of methods throws exceptions on failure, while the second set returns special values like `false` or `null`.
