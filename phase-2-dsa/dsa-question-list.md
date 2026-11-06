@@ -212,12 +212,8 @@ Do questions in this order - each topic builds on the previous one.
 2. Permutations — LC 46
 3. Combination Sum — LC 39
 4. Combination Sum II — LC 40
-5. Word Search — LC 79
-6. N-Queens — LC 51
-7. Sudoku Solver — LC 37
-8. Letter Combinations of a Phone Number — LC 17
-9. Palindrome Partitioning — LC 131
-10. Rat in a maze — GFG
+5. N-Queens — LC 51
+6. Sudoku Solver — LC 37
 
 ---
 
@@ -285,71 +281,6 @@ Do questions in this order - each topic builds on the previous one.
 9. Number of Connected Components in an Undirected Graph — LC 323 (Premium) — free alternative: LC 547 Number of Provinces
 10. Flood Fill - LC 733
 11. Course Schedule II - 210
-
----
-
-## DYNAMIC PROGRAMMING (Most commonly asked DP patterns)
-
-**1D DP**
-
-1. Climbing Stairs — LC 70
-2. House Robber — LC 198
-3. House Robber II (circular) — LC 213
-4. Jump Game (can you reach end) — LC 55
-5. Jump Game II (minimum jumps) — LC 45
-6. Coin Change (minimum coins) — LC 322
-7. Coin Change II (number of ways) — LC 518
-8. Word Break — LC 139
-9. Decode Ways — LC 91
-
-**2D DP**
-
-10. Unique Paths — LC 62
-11. Minimum Path Sum — LC 64
-12. Longest Common Subsequence — LC 1143
-13. Edit Distance — LC 72
-14. 0/1 Knapsack — GFG
-15. Partition Equal Subset Sum — LC 416
-16. Longest Increasing Subsequence — LC 300
-17. Matrix chain multiplication — GFG
-18. Palindrome Partitioning II (minimum cuts) — LC 132
-
----
-
-## HEAP / PRIORITY QUEUE (Medium priority)
-
-1. Kth Largest Element in an Array — LC 215
-2. Kth smallest element in array — GFG
-3. Top K Frequent Elements — LC 347
-4. Merge k Sorted Lists — LC 23
-5. Find Median from Data Stream — LC 295
-6. K Closest Points to Origin — LC 973
-7. Task Scheduler — LC 621
-8. Reorganize String (no two adjacent same characters) — LC 767
-
----
-
-## TWO POINTERS AND SLIDING WINDOW (Very important)
-
-**Two Pointers**
-
-1. Two Sum II - Input Array Is Sorted — LC 167
-2. 3Sum — LC 15
-3. Container With Most Water — LC 11
-4. Trapping Rain Water — LC 42
-5. Remove Duplicates from Sorted Array — LC 26
-6. Move Zeroes — LC 283
-7. Valid Palindrome II (allowed character removal) — LC 680
-8. Sort Colors (Dutch national flag) — LC 75
-
-**Sliding Window**
-
-9. Maximum sum subarray of size k — GFG
-10. Longest Substring Without Repeating Characters — LC 3
-11. Longest Substring with At Most K Distinct Characters — LC 340 (Premium)
-12. Minimum Window Substring — LC 76
-13. Find All Anagrams in a String (count occurrences of anagram) — LC 438 ≈ (LeetCode par indices return karne hain, count GFG par)
-14. Sliding Window Maximum (deque) — LC 239
 
 ---
 
