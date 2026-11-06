@@ -236,35 +236,36 @@ Do questions in this order - each topic builds on the previous one.
 9. Invert Binary Tree (mirror) — LC 226
 10. Diameter of Binary Tree — LC 543
 11. Subtree of Another Tree — LC 572
+12. Symmetric Tree - LC 101
 
 **Medium**
 
-12. Lowest Common Ancestor of a Binary Tree — LC 236
-13. Path Sum — LC 112
-14. Path Sum II (all root-to-leaf paths with given sum) — LC 113
-15. Serialize and Deserialize Binary Tree — LC 297
-16. Binary Tree Right Side View — LC 199
-17. Left view of binary tree — GFG
-18. Top view of binary tree — GFG
-19. bottom view of binary tree — GFG
-20. Vertical Tree Traversal — GFG
-21. Binary Tree Zigzag Level Order Traversal — LC 103
-22. Nodes at K Distance from Root - GFG
-23. Binary Tree Paths - LC 257
-24. Maximum Width of Binary Tree - LC 662
-25. Flatten Binary Tree to Linked List — LC 114
+13. Lowest Common Ancestor of a Binary Tree — LC 236
+14. Path Sum — LC 112
+15. Path Sum II (all root-to-leaf paths with given sum) — LC 113
+16. Serialize and Deserialize Binary Tree — LC 297
+17. Binary Tree Right Side View — LC 199
+18. Left view of binary tree — GFG
+19. Top view of binary tree — GFG
+20. bottom view of binary tree — GFG
+21. Vertical Tree Traversal — GFG
+22. Binary Tree Zigzag Level Order Traversal — LC 103
+23. Nodes at K Distance from Root - GFG
+24. Binary Tree Paths - LC 257
+25. Maximum Width of Binary Tree - LC 662
+26. Flatten Binary Tree to Linked List — LC 114
 
 **BST specific**
 
-26. Search in a Binary Search Tree — LC 700
-27. Insert into a Binary Search Tree — LC 701
-28. Delete Node in a BST — LC 450
-29. Validate Binary Search Tree — LC 98
-30. Kth Smallest Element in a BST — LC 230
-31. Inorder Successor in BST — LC 285 (Premium) / GFG
-32. Predecessor and Successor in BST - GFG
-33. Construct Binary Search Tree from Preorder Traversal — LC 1008
-34. Lowest Common Ancestor of a Binary Search Tree — LC 235
+27. Search in a Binary Search Tree — LC 700
+28. Insert into a Binary Search Tree — LC 701
+29. Delete Node in a BST — LC 450
+30. Validate Binary Search Tree — LC 98
+31. Kth Smallest Element in a BST — LC 230
+32. Inorder Successor in BST — LC 285 (Premium) / GFG
+33. Predecessor and Successor in BST - GFG
+34. Construct Binary Search Tree from Preorder Traversal — LC 1008
+35. Lowest Common Ancestor of a Binary Search Tree — LC 235
 
 ---
 
