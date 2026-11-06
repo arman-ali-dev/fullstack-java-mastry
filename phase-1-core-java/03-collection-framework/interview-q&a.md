@@ -195,11 +195,11 @@ During `get()`, it calculates the hash code, finds the bucket, and uses `equals(
 
 ---
 
-#### 32. What is a hash collision, and how does `HashMap` handle it (including treeification in Java 8)?
+#### 32. What is a hash collision, and how does `HashMap` handle it?
 
 A **hash collision** occurs when two different keys generate the same bucket index in a `HashMap`.
 <br>
-`HashMap` handles collisions using a linked list. In Java 8, when the number of entries in a bucket reaches 8 and the array capacity is at least 64, the linked list is converted into a Red-Black Tree. This process is called **treeification**, which improves search performance.
+`HashMap` handles collisions using a linked list.
 
 ---
 
@@ -259,7 +259,7 @@ To create a Max-Heap, we can use `Comparator.reverseOrder()`, which makes the la
 
 ---
 
-#### 41. Why is `ArrayDeque`?
+#### 41. What is `ArrayDeque`?
 
 ArrayDeque is implementation of the Deque interface in Java. It allows us to insert and remove elements from both ends, meaning we can use it as both a queue and a stack.
 
