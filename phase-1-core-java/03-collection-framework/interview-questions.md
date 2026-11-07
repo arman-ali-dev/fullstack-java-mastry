@@ -50,11 +50,11 @@
 48. What is the contract between equals() and hashCode()?
 49. What happens if we override equals() but not hashCode()?
 50. What are the initial capacity and load factor of a HashMap?
-51. When does HashMap resize its internal array?
-52. Why should we use immutable objects as HashMap keys?
-53. What is the difference between ArrayDeque and Stack?
-54. How can we implement an LRU cache using LinkedHashMap?
-55. How can we sort a Map by keys and values?
-56. How does LinkedHashMap maintain insertion order?
-57. Does iterating over a PriorityQueue return elements in sorted order?
+51. What is load factor?
+52. When does HashMap resize its internal array?
+53. Can we change load factor?
+54. What is the difference between ArrayDeque and Stack?
+55. How can we implement an LRU cache using LinkedHashMap?
+56. How can we sort a Map by keys and values?
+57. How does LinkedHashMap maintain insertion order?
 58. What is BlockingQueue, and where is it used?

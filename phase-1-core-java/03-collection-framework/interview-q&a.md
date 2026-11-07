@@ -195,11 +195,13 @@ During `get()`, it calculates the hash code, finds the bucket, and uses `equals(
 
 ---
 
-#### 32. What is a hash collision, and how does `HashMap` handle it?
+#### 32. What is a hash collision, and how does `HashMap` handle it, including treeification in Java 8?
 
 A **hash collision** occurs when two different keys generate the same bucket index in a `HashMap`.
 <br>
 `HashMap` handles collisions using a linked list.
+<br>
+In Java 8, when a bucket contains 8 or more entries it converts the linked list into a Red-Black Tree. This process is called treeification.
 
 ---
 
@@ -324,3 +326,81 @@ In Java Queue, both sets of methods perform similar operations, but they handle 
 We can use `LinkedHashSet` to remove duplicates from a list while preserving insertion order.
 `LinkedHashSet` stores only unique elements and maintains the order in which elements were inserted.
 We can convert the set back into a list using the `ArrayList` constructor.
+
+---
+
+#### 48. What is the contract between equals() and hashCode()?
+
+The contract between equals() and hashCode() states that if two objects are equal according to the equals() method, they must have the same hash code.
+<br>
+However, if two objects have the same hash code, they are not necessarily equal.
+<br>
+Whenever we override equals(), we should also override hashCode() to maintain this contract.
+
+---
+
+#### 49. What happens if we override equals() but not hashCode()?
+
+If we override `equals()` but not `hashCode()`, two objects that are logically equal may have different hash codes.
+<br>
+Because of this, hash-based collections like `HashMap` and `HashSet` may fail to identify duplicate or equal objects correctly.
+<br>
+That's why whenever we override `equals()`, we should also override `hashCode()`.
+
+---
+
+#### 50. What are the initial capacity and load factor of a HashMap?
+
+The default initial capacity of a HashMap is 16, which means its internal array can initially hold 16 buckets.
+<br>
+The default load factor is 0.75.
+
+---
+
+#### 51. What is load factor?
+
+Load factor is the value that decides when a HashMap should increase its capacity.
+
+---
+
+#### 52. When does HashMap resize its internal array?
+
+HashMap resizes its internal array when the number of entries reaches the calculated limit.
+
+`Capacity × Load Factor`
+
+By default, the initial capacity is 16 and the load factor is 0.75, so HashMap resizes when the number of entries reaches 12. Its capacity typically doubles from 16 to 32.
+
+---
+
+#### 53. Can we change load factor?
+
+Yes, we can change the load factor by passing it to the HashMap constructor.
+
+---
+
+#### 54. What is the difference between ArrayDeque and Stack?
+
+Stack is a legacy class that follows the LIFO (Last In, First Out) principle. Its methods are synchronized, which adds overhead.
+<bbr>
+ArrayDeque is a resizable array-based implementation of the Deque interface. It is generally faster than Stack and is not synchronized.
+
+---
+
+#### 55. How can we implement an LRU cache using LinkedHashMap?
+
+We can implement an LRU (Least Recently Used) cache using `LinkedHashMap` by enabling access order and overriding the `removeEldestEntry()` method.
+<br>
+When the cache exceeds its capacity, it automatically removes the least recently used entry.
+
+---
+
+#### 56. How can we sort a Map by keys and values?
+
+We can sort a Map by keys or values using TreeMap and Stream API.
+
+#### 57. How does LinkedHashMap maintain insertion order?
+
+`LinkedHashMap` maintains insertion order by using a doubly linked list along with the HashMap structure.
+<br>
+Each entry is connected to the previous and next entry, which helps maintain the order in which elements were inserted.
