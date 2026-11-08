@@ -1,12 +1,18 @@
 # Min and Max in Array
 
-## Pattern
+Let me restate the problem. We are given an array of integers, and we need to find the maximum and minimum element in it.
 
-Array Traversal (Single Pass)
+<br>
 
----
+Let me clarify a few things. Can the array have negative numbers or duplicates? Can it be empty?
 
-## Optimal Approach
+<br>
+
+The brute force approach is to sort the array. After sorting, the first element is the minimum and the last element is the maximum. Time complexity is O(n log n) because sorting algorithms like merge sort take n log n time.
+
+<br>
+
+The optimal approach is we do not need to sort. I can traverse the array only once. I keep track of two variables, min and max, and initialize both with the first element. For each next element, if it is greater than max, I update max. If it is smaller than min, I update min. After the loop, I return both values. Time complexity is O(n) because I traverse the array only once. Space complexity is O(1) because I use only two variables.
 
 ### Code
 
@@ -18,7 +24,6 @@ class Solution {
         ArrayList<Integer> ans = new ArrayList<>();
 
         for (int num : arr) {
-
             if (num > max) {
                 max = num;
             }
@@ -38,14 +43,4 @@ class Solution {
 
 ```
 
-### Time Complexity
-
-- O(n)
-
-### Space Complexity
-
-- O(1)
-
-### Explanation
-
-My first thought was that since I need both the minimum and maximum values, I can traverse the array once while keeping track of both. I initialize min and max with the first element because it's the only value I've seen initially. Then, for every element in the array, I compare it with the current maximum and update max if it's larger. Similarly, I compare it with the current minimum and update min if it's smaller. By maintaining these two variables throughout a single traversal, I can find both values without making multiple passes over the array. Finally, I store the minimum and maximum in an ArrayList and return the result. This approach is efficient because it processes each element only once, giving a time complexity of O(n) with O(1) extra space, excluding the output list.
+For the code, I initialize min and max with the first element. I loop from index 1 to the end, because index 0 is already stored in min and max. Inside the loop, I compare and update. Finally, I return both values.
