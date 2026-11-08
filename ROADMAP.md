@@ -243,9 +243,10 @@ This is usually the biggest gap. Companies check DSA before anything else.
 - Connecting MongoDB with Spring Boot using Spring Data MongoDB
 - MongoTemplate vs MongoRepository
 
-### MySQL 
+### MySQL
 
 #### Database Fundamentals
+
 - Database
 - DBMS
 - Types of Databases
@@ -268,6 +269,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 - Normalization — 1NF, 2NF, 3NF
 
 #### SQL Basics & CRUD
+
 - SELECT Command
 - INSERT Command
 - SELECT Command in Detail
@@ -284,6 +286,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 - Practice Questions
 
 #### SQL Advanced Querying
+
 - ALTER Command
 - CHANGE and MODIFY Commands
 - TRUNCATE Command
@@ -295,6 +298,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 - Composite Queries / Combining Multiple SQL Concepts
 
 #### Database Performance & Important Concepts
+
 - Indexes — Basic Concept
 - Composite Indexes
 - EXPLAIN — Basic Query Execution Plan
@@ -568,10 +572,17 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ### Docker
 
-- What is containerization
+- What is containerization & Docker architecture
+- Images and containers
+- Docker commands
+- Port mapping & environment variables
+- Troubleshooting containers
 - Writing Dockerfile for Spring Boot app
-- Docker commands: build, run, push, pull
+- Image layering & multi-stage builds
+- Volumes
+- Docker networking
 - Docker Compose for multi-container apps
+- Health checks, security basics & image tagging
 - Docker Hub
 
 ### Kubernetes
