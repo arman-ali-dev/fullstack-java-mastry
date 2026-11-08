@@ -1,12 +1,19 @@
 # Reverse Array
 
-## Pattern
+Let me restate the problem. We are given an array of integers, and we need to reverse it in place, which means without using extra space.
+<br>
+Let me clarify a few things. Can the array be empty? Can it have only one element? Should I modify the original array instead of returning a new one?
 
-Two Pointers
+<br>
 
----
+The brute force approach is to traverse the array backward. I create a new array of the same size and copy the elements into it in reverse order. After the loop, I return the new array.
+<br>
+Time complexity is O(n) because I traverse the array once. Space complexity is O(n) because I copy every element into a new array. But this does not satisfy the in-place requirement, so we need to optimize.
 
-## Optimal Approach
+<br>
+
+We can optimize this using two pointers. I keep a left pointer at index 0 and a right pointer at index n minus 1. I use a while loop with the condition left less than right, which means we continue until the pointers meet or cross. In each iteration, I swap the elements at left and right, then I move left forward and right backward.
+Time complexity is O(n) because the loop runs n by 2 times, which is still O(n). Space complexity is O(1) because I use only one temporary variable for swapping.
 
 ### Code
 
@@ -14,25 +21,18 @@ Two Pointers
 class Solution {
     public void reverseArray(int arr[]) {
         int n = arr.length;
-        int i = 0, j = n - 1;
+        int left = 0, right = n - 1;
 
-        while (i < j) {
-            int temp = arr[i];
-            arr[i++] = arr[j];
-            arr[j--] = temp;
+        while (left < right) {
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+
+            left++;
+            right--;
         }
     }
 }
 ```
 
-### Time Complexity
-
-- O(n)
-
-### Space Complexity
-
-- O(1)
-
-### Explanation
-
-My approach uses the Two Pointers pattern. Since I need to reverse the array in-place, I initialize one pointer at the beginning of the array and another at the end. In each iteration, I swap the elements at these two positions and then move the left pointer one step forward and the right pointer one step backward. I continue this process while the left pointer is less than the right pointer. Once both pointers meet or cross each other, the entire array has been reversed, so there's no need for further swaps. This approach is efficient because every element is swapped at most once, giving a time complexity of O(n) while using O(1) extra space.
+I initialize left at index 0 and right at the last index. Inside the while loop, I swap the elements at left and right using a temp variable. I need temp because if I directly assign arr[right] to arr[left], the original value at left is overwritten and lost, and both positions end up with the same value. After the swap, I move left forward and right backward. The method is void because the array is modified in place, so there is no need to return anything.
