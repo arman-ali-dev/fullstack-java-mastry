@@ -6,7 +6,7 @@ An exception is an unwanted event that occurs during program execution and inter
 
 #### 2. What do you mean by exception handling?
 
-Exception handling in Java is a way to handle runtime problems so that the program does not stop unexpectedly
+Exception handling in Java is a way to handle runtime problems so that the program does not stop unexpectedly.
 
 #### 3. Explain the Java exception hierarchy.
 
