@@ -155,14 +155,58 @@ A monitor lock is an internal lock associated with every Java object. A thread a
 
 ---
 
-#### 10000. What is the difference between `Runnable` and `Callable`?
+#### 22. What is wait()?
 
-`Runnable` and `Callable` are both used to define tasks that can be executed by a thread.
-
-The main differences are:
-
-1. `Runnable` does not return a result, while `Callable` can return a result.
-2. `Runnable` cannot throw checked exceptions, while `Callable` can throw checked exceptions.
-3. `Runnable` uses the `run()` method, while `Callable` uses the `call()` method.
+The `wait()` method makes a thread wait until another thread calls `notify()` or `notifyAll()`. It also releases the object's monitor lock while waiting.
 
 ---
+
+#### 23. What is the difference between notify() and notifyAll()?
+
+`notify()` wakes up one waiting thread, while `notifyAll()` wakes up all waiting threads on the same object.
+
+---
+
+#### 24. What is thread starvation?
+
+Thread starvation is a problem which occurs when a thread waits for a long time because other threads keep getting CPU time or priority.
+
+---
+
+#### 25. What is Lock interface?
+
+The `Lock` interface in Java is used to control access to shared resources by multiple threads. It allows only one thread at a time to access the locked section of code.
+
+---
+
+#### 26. What is ReentrantLock?
+
+ReentrantLock is a class in Java that implements the Lock interface. It allows a thread to acquire the same lock multiple times
+
+---
+
+#### 27. What is the difference between `synchronized` and `ReentrantLock`, and when would you use `ReentrantLock`?
+
+Both synchronized and ReentrantLock are used to control access to shared resources.
+<br>
+The main difference is that synchronized releases the lock automatically, while ReentrantLock gives us more control over locking and unlocking.
+<br>
+We use ReentrantLock when we need features like tryLock()
+
+---
+
+#### 28. What is `ReadWriteLock` ?
+
+`ReadWriteLock` is a lock that allows multiple threads to read shared data at the same time, but only one thread can write at a time.
+
+---
+
+#### 29. When would you use a `ReadWriteLock`?
+
+We use ReadWriteLock when multiple threads read shared data frequently, but write operations happen less often.
+
+---
+
+#### 30. What is a race condition?
+
+A race condition occurs when multiple threads access and modify shared data at the same time, causing unexpected results
