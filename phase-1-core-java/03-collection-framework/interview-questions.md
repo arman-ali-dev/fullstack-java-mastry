@@ -57,4 +57,3 @@
 55. How can we implement an LRU cache using LinkedHashMap?
 56. How can we sort a Map by keys and values?
 57. How does LinkedHashMap maintain insertion order?
-58. What is BlockingQueue, and where is it used?
