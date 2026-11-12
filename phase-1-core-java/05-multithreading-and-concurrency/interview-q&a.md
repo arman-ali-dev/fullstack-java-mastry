@@ -210,3 +210,75 @@ We use ReadWriteLock when multiple threads read shared data frequently, but writ
 #### 30. What is a race condition?
 
 A race condition occurs when multiple threads access and modify shared data at the same time, causing unexpected results
+
+---
+
+#### 31. What is Executor framework?
+
+The Executor Framework is a Java framework used to manage and execute multiple tasks using a pool of threads instead of creating a new thread for every task.
+
+---
+
+#### 32. What is executor service?
+
+ExecutorService is a Java interface used to manage a pool of threads and execute multiple tasks without creating a new thread for every task.
+
+---
+
+#### 33. What is thread pool?
+
+A thread pool is a group of reusable threads.
+
+---
+
+#### 34. What is the difference between `Runnable` and `Callable`?
+
+Both `Runnable` and `Callable` are used to define tasks that can be executed by a thread.
+<br>
+The main difference is that `Runnable` does not return a result and cannot throw checked exceptions, while `Callable` can return a result and throw checked exceptions.
+
+---
+
+#### 35. What is `Future`?
+
+Future is an interface in Java that represents the result of an asynchronous task.
+
+---
+
+#### 36. What types of pools does `Executors` provide?
+
+Executors provides several types of thread pools:
+
+1. FixedThreadPool: Uses a fixed number of threads.
+2. CachedThreadPool: Creates new threads when needed and reuses available threads.
+3. SingleThreadExecutor: Uses only one thread to execute tasks sequentially.
+4. ScheduledThreadPool: Executes tasks after a delay or at fixed intervals.
+5. WorkStealingPool: Uses multiple threads and distributes tasks among them.
+
+---
+
+#### 37. What is the difference between `shutdown()` and `shutdownNow()`?
+
+shutdown() stops accepting new tasks but allows already submitted tasks to complete. On the other hand, shutdownNow() attempts to stop running tasks by interrupting them and returns tasks that are waiting for execution.
+
+---
+
+#### 38. How does the `synchronized` keyword work?
+
+The `synchronized` keyword in Java is used to control access to shared resources by multiple threads. It allows only one thread at a time to execute the synchronized method or block using the same object's lock. Other threads must wait until the lock is released.
+
+---
+
+#### 39. What is the difference between a synchronized method, a block, and a static synchronized method?
+
+1. Synchronized Method: It locks the current object (this). Only one thread at a time can execute synchronized methods on the same object.
+
+2. Synchronized Block: It allows us to synchronize only a specific section of code instead of the entire method. We can also specify which object's lock to use.
+
+3. Static Synchronized Method: It acquires the class-level lock (ClassName.class) instead of an object-level lock. Only one thread at a time can execute static synchronized methods of the same class.
+
+---
+
+#### 40. Why must wait(), notify(), and notifyAll() be called inside a synchronized context?
+
+We must call `wait()`, `notify()`, and `notifyAll()` inside a synchronized block because a thread must have the object's lock before using these methods. Otherwise, Java throws an `IllegalMonitorStateException`.

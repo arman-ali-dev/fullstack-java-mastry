@@ -32,27 +32,29 @@
 29. When would you use a `ReadWriteLock`?
 30. What is a race condition?
 
-31. What is executor service?
-32. What is thread pool?
-33. What is the difference between `Runnable` and `Callable`?
-34. What is `Future`?
-35. What types of pools does `Executors` provide
-36. What is the difference between `shutdown()` and `shutdownNow()`?
-37. How does the `synchronized` keyword work?
-38. What is the difference between a synchronized method, a block, and a static synchronized method?
-39. What is a deadlock, how can it occur, and how do you prevent it?
-40. What is atomic classes?
-41. What are the four necessary conditions for a deadlock?
-42. What happens if you forget to call unlock() in ReentrantLock?
-43. What is the difference between visibility and atomicity?
-44. What is the CAS (Compare-And-Swap) operation?
-45. What is the `CompletableFuture`?
-46. What are the limitations of `Future`, and how does `CompletableFuture` solve them?
-47. What is the difference between `thenApply()` and `thenCompose()`?
-48. How do you stop a running thread safely using `interrupt()`?
-49. What is `ThreadLocal`, and where is it used?
-50. What are virtual threads (Java 21), and how do they differ from platform threads?
-51. What happens when you submit a task to an ExecutorService after calling shutdown()?
-52. What is the difference between execute() and submit()?
-53. Why must wait(), notify(), and notifyAll() be called inside a synchronized context?
-54. What is the difference between concurrency and parallelism?
+31. What is Executor framework?
+32. What is executor service?
+33. What is thread pool?
+34. What is the difference between `Runnable` and `Callable`?
+35. What is `Future`?
+36. What types of pools does `Executors` provide?
+37. What is the difference between `shutdown()` and `shutdownNow()`?
+38. How does the `synchronized` keyword work?
+39. What is the difference between a synchronized method, a block, and a static synchronized method?
+40. Why must wait(), notify(), and notifyAll() be called inside a synchronized context?
+41. What is the difference between execute() and submit()?
+42. What happens when you submit a task to an ExecutorService after calling shutdown()?
+43. How do you stop a running thread safely using `interrupt()`?
+44. What happens if you forget to call unlock() in ReentrantLock?
+
+45. What is atomic classes?
+46. What is a deadlock, how can it occur, and how do you prevent it?
+47. What are the four necessary conditions for a deadlock?
+48. What is the difference between visibility and atomicity?
+49. What is the CAS (Compare-And-Swap) operation?
+50. What is the `CompletableFuture`?
+51. What are the limitations of `Future`, and how does `CompletableFuture` solve them?
+52. What is the difference between `thenApply()` and `thenCompose()`?
+53. What is `ThreadLocal`, and where is it used?
+54. What are virtual threads (Java 21), and how do they differ from platform threads?
+55. What is the difference between concurrency and parallelism?
