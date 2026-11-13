@@ -1,60 +1,42 @@
 # Merge Sorted Array
 
-## Pattern
+Let me restate the problem. We are given two sorted arrays of integers, nums1 and nums2, and two integers m and n. nums1 has a length of m plus n. Its first m elements are valid, and the last n positions are empty, filled with zeros. We need to merge nums2 into nums1 in place, so that nums1 becomes one sorted array. We don’t return anything.
+<br>
+Let me clarify a few things. Can m or n be zero? Can the arrays have duplicates or negative numbers?
+<br>
 
-Two Pointers + Merge from Right to Left
+The brute force approach is to use two pointers i and j. i for the traversal and j is the position where next element should be placed from nums2. I initialize j with m and traverse the array from 0 to n and in each iteration I copy nums2[i] with nums1[j] and move j forward. after the loop there is no need to return anything.
+time complexity is O(n log n) because of sorting. space complexity is O(1) because i use only two pointers
 
----
+<br>
 
-## Optimal Approach
+We can optimize this by using three pointers, p1, p2 and k. I initialize p1 with m minus 1, p2 with n minus 1, and k with m plus n minus 1. I fill nums1 from the back, because if I start from the front, I will overwrite the valid elements of nums1.
+
+I use a while loop with the condition p2 greater than or equal to 0, because once nums2 is finished, the remaining elements of nums1 are already in place. In each iteration, I check if p1 is greater than or equal to 0 and nums1[p1] is greater than nums2[p2]. If yes, I copy nums1[p1] to nums1[k] and move p1 backward. Otherwise, I copy nums2[p2] to nums1[k] and move p2 backward. In both cases, I move k backward.
+
+The loop runs at most m + n times so the time complexity is O(n + m). Space complexity is O(1) because I use only three pointers, p1, p2 and k.
 
 ### Code
 
 ```java
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        int r1 = m - 1;
-        int r2 = n - 1;
-        int w = m + n - 1;
+        int p1 = m - 1;
+        int p2 = n - 1;
+        int k = m + n - 1;
 
-
-        while (w >= 0) {
-            if (r1 >= 0 && r2 >= 0) {
-                nums1[w] = nums1[r1] > nums2[r2] ? nums1[r1--] : nums2[r2--];
-            } else if (r1 >= 0) {
-                nums1[w] = nums1[r1--];
+        while (p2 >= 0) {
+            if (p1 >= 0 && nums1[p1] > nums2[p2]) {
+                nums1[k] = nums1[p1];
+                p1--;
             } else {
-                nums1[w] = nums2[r2--];
+                nums1[k] = nums2[p2];
+                p2--;
             }
-
-            w--;
+            k--;
         }
     }
 }
 ```
 
-### Time Complexity
-
-- O(m + n)
-
-### Space Complexity
-
-- O(1)
-
----
-
-### Explanation
-
-The idea is to merge the two sorted arrays directly into nums1. Since nums1 already has enough empty space at the end, I fill it from the back so that I don't overwrite the elements that still need to be compared.
-<br>
-I use three pointers: r1 points to the last valid element of nums1, r2 points to the last element of nums2, and w points to the last position of the final merged array.
-<br>
-I compare nums1[r1] and nums2[r2]. The larger element is placed at nums1[w], and its pointer is moved backward.
-<br>
-If one array becomes empty, I copy the remaining elements of the other array. I continue until w reaches the beginning.
-<br>
-The important part is that I merge from right to left, because writing from the beginning could overwrite the unprocessed elements of nums1.
-<br>
-Time Complexity: O(m + n), because every element from both arrays is processed at most once.
-<br>
-Space Complexity: O(1), because the merging is done in-place and I only use a few pointers.
+I create three pointers p1, p2 and k. I initialize p1 with m - 1 and p2 with n - 1 and k with m + n - 1. and I use a while loop with condition p2 is greater than or equal to 0 because once nums2 is finished. remaining elements of nums1 are already in place. In each iteration I check if p1 is greater than or equal to 0 because I don't want to go out of bounds. and nums1[p1] is greater than or equal to nums2[p2] if yes I copy nums1[p1] with nums1[k] and move p1 backward. else I copy nums2[p2] with nums1[k] and move p2 backward. In both cases I move k backward. after the loop there is no need to return anything because method's return type is void.
