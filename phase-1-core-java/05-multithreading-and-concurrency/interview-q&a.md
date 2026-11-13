@@ -282,3 +282,105 @@ The `synchronized` keyword in Java is used to control access to shared resources
 #### 40. Why must wait(), notify(), and notifyAll() be called inside a synchronized context?
 
 We must call `wait()`, `notify()`, and `notifyAll()` inside a synchronized block because a thread must have the object's lock before using these methods. Otherwise, Java throws an `IllegalMonitorStateException`.
+
+---
+
+#### 41. What is the difference between execute() and submit()?
+
+Both `execute()` and `submit()` are used to execute tasks using an `ExecutorService`.
+
+- `execute()` accepts a `Runnable` task and does not return a result.
+- `submit()` accepts a `Runnable` or `Callable` task and returns a `Future` that we can use to get the result or check the task's status.
+
+---
+
+#### 42. What happens when you submit a task to an ExecutorService after calling shutdown()?
+
+If we submit a new task after calling `shutdown()`, the `ExecutorService` rejects the task and throws a `RejectedExecutionException`.
+
+---
+
+#### 43. How do you stop a running thread safely using `interrupt()`?
+
+We can stop a running thread safely by calling its interrupt() method. It sends an interruption request to the thread.
+
+---
+
+#### 44. What happens if you forget to call unlock() in ReentrantLock?
+
+If we forget to call `unlock()`, the lock remains held, and other threads may wait indefinitely to acquire it. This can cause deadlock.
+
+---
+
+#### 45. What is atomic classes?
+
+Atomic classes in Java provide thread-safe operations on shared variables without using explicit synchronization. For example, `AtomicInteger` allows multiple threads to safely update an integer value.
+
+---
+
+#### 46. What is a deadlock, how can it occur, and how do you prevent it?
+
+A deadlock occurs when two or more threads wait for each other to release locks, and none of them can continue.
+<br>
+It happens when threads acquire locks in different orders.
+<br>
+We can prevent deadlocks by Acquiring locks in the same order, avoiding unnecessary locks and using tryLock() with a timeout.
+
+---
+
+#### 47. What is the difference between visibility and atomicity?
+
+Visibility means changes made by one thread are visible to other threads. Atomicity means an operation completes fully without being interrupted by another thread.
+
+---
+
+#### 48. What is the `CompletableFuture`?
+
+`CompletableFuture` is used to execute tasks asynchronously and handle their results when they are completed.
+
+---
+
+#### 49. What are the limitations of `Future`, and how does `CompletableFuture` solve them?
+
+The main limitation of `Future` is that its `get()` method blocks the calling thread until the task completes. It also does not support chaining multiple tasks easily.
+
+`CompletableFuture` solves these limitations by allowing us to execute tasks without blocking the calling thread and chain multiple tasks using methods like `thenApply()` and `thenAccept()`.
+
+---
+
+#### 50. What is the difference between `thenApply()` and `thenAccept()`?
+
+- **`thenApply()`** is used to transform the result of a task.
+- **`thenAccept()`** is used to consume the result of a task without returning a new result.
+
+---
+
+#### 51. What is the difference between `supplyAsync()` and `runAsync()`?
+
+- **`supplyAsync()`** is used to execute an asynchronous task that returns a result.
+
+- **`runAsync()`** is used to execute an asynchronous task that does not return a result.
+
+---
+
+#### 52. What is `ThreadLocal`, and where is it used?
+
+`ThreadLocal` is used to create a separate copy of a variable for each thread. It is commonly used to store user-specific data, such as user details, in web applications.
+
+---
+
+#### 53. What are virtual threads (Java 21), and how do they differ from platform threads?
+
+Virtual threads are lightweight threads introduced in Java 21.
+<br>
+The main difference is:
+<br>
+Platform threads are directly mapped to operating system threads and are more expensive to create.
+<br>
+Virtual threads are managed by the JVM and are much cheaper to create.
+
+---
+
+#### 54. What is the difference between concurrency and parallelism?
+
+Concurrency means handling multiple tasks at the same time by switching between them, while parallelism means actually executing multiple tasks simultaneously, usually using multiple CPU cores.

@@ -20,7 +20,6 @@
 18. What is `volatile` keyword?
 19. What is the critical section ?
 20. What is context switching?
-
 21. What is monitor lock?
 22. What is wait()?
 23. What is the difference between notify() and notifyAll()?
@@ -31,7 +30,6 @@
 28. What is `ReadWriteLock` ?
 29. When would you use a `ReadWriteLock`?
 30. What is a race condition?
-
 31. What is Executor framework?
 32. What is executor service?
 33. What is thread pool?
@@ -49,12 +47,11 @@
 
 45. What is atomic classes?
 46. What is a deadlock, how can it occur, and how do you prevent it?
-47. What are the four necessary conditions for a deadlock?
-48. What is the difference between visibility and atomicity?
-49. What is the CAS (Compare-And-Swap) operation?
-50. What is the `CompletableFuture`?
-51. What are the limitations of `Future`, and how does `CompletableFuture` solve them?
-52. What is the difference between `thenApply()` and `thenCompose()`?
-53. What is `ThreadLocal`, and where is it used?
-54. What are virtual threads (Java 21), and how do they differ from platform threads?
-55. What is the difference between concurrency and parallelism?
+47. What is the difference between visibility and atomicity?
+48. What is the `CompletableFuture`?
+49. What are the limitations of `Future`, and how does `CompletableFuture` solve them?
+50. What is the difference between `thenApply()` and `thenAccept()`?
+51. What is the difference between `supplyAsync()` and `runAsync()`?
+52. What is `ThreadLocal`, and where is it used?
+53. What are virtual threads (Java 21), and how do they differ from platform threads?
+54. What is the difference between concurrency and parallelism?
