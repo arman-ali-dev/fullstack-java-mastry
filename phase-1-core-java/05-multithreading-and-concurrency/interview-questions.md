@@ -44,7 +44,6 @@
 42. What happens when you submit a task to an ExecutorService after calling shutdown()?
 43. How do you stop a running thread safely using `interrupt()`?
 44. What happens if you forget to call unlock() in ReentrantLock?
-
 45. What is atomic classes?
 46. What is a deadlock, how can it occur, and how do you prevent it?
 47. What is the difference between visibility and atomicity?
