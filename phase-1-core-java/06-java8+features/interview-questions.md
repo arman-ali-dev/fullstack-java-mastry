@@ -18,7 +18,6 @@
 18. What are records, and when would you use them?
 19. How do you handle checked exceptions inside a lambda expression?
 20. What is the `var` keyword, and what are its restrictions?
-
 21. What are sealed classes, and what problem do they solve?
 22. What are the major features added to Java after Java 8 (up to Java 17)?
 23. Can a functional interface have default and static methods?
@@ -30,9 +29,8 @@
 29. What is the difference between forEach() and forEachOrdered()?
 30. What is the difference between limit() and skip()?
 31. What is the difference between isPresent() and ifPresent() in `Optional`?
-32. Why should we avoid using Optional as a field or method parameter?
-33. What are private methods in interfaces, introduced in Java 9?
-34. What are factory methods for creating immutable collections, introduced in Java 9?
-35. What are text blocks, introduced in Java 15?
-36. What are switch expressions, introduced in Java 14?
-37. What is pattern matching for instanceof, introduced in Java 16?
+32. What are private methods in interfaces, introduced in Java 9?
+33. What are factory methods for creating immutable collections, introduced in Java 9?
+34. What are text blocks, introduced in Java 15?
+35. What are switch expressions, introduced in Java 14?
+36. What is pattern matching for instanceof, introduced in Java 16?

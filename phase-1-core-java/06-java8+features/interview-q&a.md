@@ -96,7 +96,7 @@ reduce() is a terminal operation used to combine all elements of a stream into a
 
 #### 14. What are parallel streams, and when should you avoid them?
 
-Parallel streams allow us to process multiple elements of a stream simultaneously using multiple threads. We should avoid them when working with small datasets
+Parallel streams allow us to process multiple elements of a stream simultaneously using multiple threads. We should avoid them when working with small datasets.
 
 ---
 
@@ -141,3 +141,99 @@ Checked exceptions inside lambda expressions can be handled using a try-catch bl
 #### 20. What is the `var` keyword, and what are its restrictions?
 
 var is used for local variables. It allows the compiler to automatically determine the variable's data type from its assigned value. It can only be used for local variables, and initialization is mandatory.
+
+---
+
+#### 21. What are sealed classes, and what problem do they solve?
+
+Sealed classes were introduced in Java 17. They allow us to control which classes can extend a class or implement an interface.
+
+---
+
+#### 22. What are the major features added to Java after Java 8 (up to Java 17)?
+
+Java 9 to Java 17 introduced several important features, such as the Module System, var keyword, new String methods, switch expressions, text blocks, records, pattern matching for instanceof, and sealed classes. These features improved code readability, reduced boilerplate code, and provided better control over application design.
+
+---
+
+#### 23. Can a functional interface have default and static methods?
+
+Yes, a functional interface can have multiple default and static methods, but it must have exactly one abstract method. Default and static methods do not affect its functional interface status.
+
+---
+
+#### 24. What is the difference between a lambda expression and an anonymous inner class?
+
+A lambda expression provides a shorter way to implement a functional interface, whereas an anonymous inner class creates an unnamed class to implement an interface or extend a class.
+
+---
+
+#### 25. What is the difference between a method reference and a lambda expression?
+
+A lambda expression is used to provide the implementation of a functional interface, whereas a method reference is a shorter form of a lambda expression when we are simply calling an existing method.
+
+---
+
+#### 26. Can we reuse a Stream after performing a terminal operation?
+
+No, we cannot reuse a Stream after performing a terminal operation because the Stream gets consumed. If we want to process the data again, we need to create a new Stream
+
+---
+
+#### 27. What is the difference between findFirst() and findAny()?
+
+findFirst() returns the first element of a stream whereas findAny() returns any element from the stream.
+
+---
+
+#### 28. What is the difference between filter() and map()?
+
+filter() is used to select elements based on a condition, whereas map() is used to transform each element into another value.
+
+---
+
+#### 29. What is the difference between forEach() and forEachOrdered()?
+
+forEach() performs an action on each element but does not guarantee encounter order in parallel streams. Whereas, forEachOrdered() maintains the encounter order, even when using parallel streams.
+
+---
+
+#### 30. What is the difference between limit() and skip()?
+
+`limit()` is used to get the first specified number of elements from a Stream, whereas `skip()` is used to skip the first specified number of elements from a stream.
+
+---
+
+#### 31. What is the difference between isPresent() and ifPresent() in `Optional`?
+
+`isPresent()` is used to check whether an Optional contains a value and returns a boolean. Whereas, `ifPresent()` is used to perform an action only if a value is present.
+
+---
+
+#### 32. What are private methods in interfaces, introduced in Java 9?
+
+Private methods were introduced in interfaces in Java 9 to avoid code duplication. They allow default and static methods to share common logic. These methods can only be accessed within the interface
+
+---
+
+#### 33. What are factory methods for creating immutable collections, introduced in Java 9?
+
+Factory methods were introduced in Java 9 to create immutable collections easily using methods like List.of(), Set.of(), and Map.of(). These collections cannot be modified after creation.
+
+---
+
+### 34. What are text blocks, introduced in Java 15?
+
+Text blocks were introduced in Java 15 to write multiline strings more easily. They improve code readability by removing the need for repeated quotation marks and escape characters like \n
+
+---
+
+#### 35. What are switch expressions, introduced in Java 14?
+
+Switch expressions were introduced in Java 14. They allow us to use switch as an expression that returns a value. They make code shorter
+
+---
+
+#### 36. What is pattern matching for instanceof, introduced in Java 16?
+
+Pattern matching for instanceof was introduced in Java 16. It allows us to check an object's type and declare a variable of that type in a single step, eliminating the need for explicit type casting
