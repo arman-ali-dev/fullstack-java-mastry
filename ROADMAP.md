@@ -1,6 +1,6 @@
 # Java Full Stack Mastery Roadmap
 
-## Phase 1 Core Java
+## Phase 1 - Core Java
 
 ### Java Fundamentals
 
@@ -106,7 +106,7 @@
 
 ---
 
-## Phase 2 DSA in Java
+## Phase 2 - DSA in Java
 
 This is usually the biggest gap. Companies check DSA before anything else.
 
@@ -161,7 +161,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ---
 
-## Phase 3 Spring Boot and Backend
+## Phase 3 - Spring Boot and Backend
 
 ### Pre-Spring Essentials (Web Fundamentals + Maven)
 
@@ -266,7 +266,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ---
 
-## Phase 4 Databases (MongoDB + MySQL Deep Dive)
+## Phase 4 - Databases (MongoDB + MySQL Deep Dive)
 
 ### MongoDB Basics
 
@@ -355,7 +355,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ---
 
-## Phase 5 Microservices
+## Phase 5 - Microservices
 
 ### Foundations
 
@@ -429,7 +429,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ---
 
-## Phase 6 HTML & CSS
+## Phase 6 - HTML & CSS
 
 ### HTML Fundamentals
 
@@ -462,7 +462,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ---
 
-## Phase 7 JavaScript
+## Phase 7 - JavaScript
 
 ### Core JavaScript
 
@@ -520,7 +520,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ---
 
-## Phase 8 React.js
+## Phase 8 - React.js
 
 ### React Fundamentals
 
@@ -604,7 +604,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 
 ---
 
-## Phase 9 DevOps and Deployment
+## Phase 9 - DevOps and Deployment
 
 ### Docker
 
