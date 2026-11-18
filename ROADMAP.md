@@ -104,11 +104,6 @@
 - garbage collection
 - OutOfMemoryError and StackOverflowError
 
-### Resources
-
-- Book: Head First Java
-- YouTube: Telusko, CodeWithHarry (Java playlist)
-
 ---
 
 ## Phase 2 — DSA in Java
