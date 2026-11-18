@@ -95,7 +95,7 @@
 - Pattern Matching
 - Text Blocks
 
-### JVM and Memory Management
+### Java Memory Management
 
 - What is memory management
 - JVM memory areas
