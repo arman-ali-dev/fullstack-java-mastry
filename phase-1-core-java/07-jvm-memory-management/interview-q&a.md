@@ -123,3 +123,13 @@ finalize() was a method that the Garbage Collector could call before reclaiming 
 Method Area is a shared memory area of the JVM that stores class-level information, such as class metadata, method information, field information, and the runtime constant pool. It is shared among all threads.
 
 ---
+
+#### 22. What is PC Register?
+
+PC Register is a JVM memory area maintained separately for each thread. It keeps track of the address of the current JVM instruction being executed, helping the thread resume execution from the correct position.
+
+---
+
+#### 23. What is Native Method Stack?
+
+Native Method Stack is a JVM memory area used to support the execution of native methods. These methods are written in languages like C or C++ and are called from Java using JNI.
