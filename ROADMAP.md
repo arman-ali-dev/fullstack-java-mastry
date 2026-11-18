@@ -48,8 +48,7 @@
 - Generics in Collections
 - Null Handling in Collections
 - Arrays vs Collections
-
-Unmodifiable and Immutable Collections
+- Unmodifiable and Immutable Collections
 
 ### Exception Handling
 
