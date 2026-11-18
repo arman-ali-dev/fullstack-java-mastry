@@ -4,64 +4,106 @@
 
 ### Java Fundamentals
 
-- Java program structure: main method, class, packages, imports
-- Primitive data types: int, float, double, char, boolean, long, byte, short
-- Type casting: implicit (widening) and explicit (narrowing)
-- Operators: arithmetic, relational, logical, bitwise, ternary, assignment
-- Control flow: if, else if, else, switch
-- Loops: for, while, do-while, enhanced for-each
-- Arrays: single-dimensional, multi-dimensional, array traversal
-- Methods: defining, calling, return types, method overloading
-- Scope and lifetime of variables: local, instance, static
-- String basics: String, StringBuilder, StringBuffer, common methods
-- Wrapper classes: Integer, Double, Character, Boolean, autoboxing & unboxing
-- Generics basics: generic methods and generic classes (<T>)
-- Scanner class for user input
+- Java program structure
+- Primitive data types
+- Type casting
+- Operators
+- Control flow
+- Loops
+- Arrays
+- Methods
+- Scope and lifetime of variables
+- String basics
+- Wrapper classes
+- Generics basics
+- Scanner class
 
 ### OOP Concepts
 
-- Classes, Objects, Constructors
-- Inheritance, Polymorphism, Encapsulation, Abstraction
-- Interfaces vs Abstract Classes
+- What is OOP and Why It Exists
+- Class and Object
+- Constructor
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction
+- Access Modifiers
+- Static Keyword
+- Final Keyword
+- Instanceof Operator
+- Upcasting and Downcasting
+- Object Class
+- Inner Classes
 
 ### Collections Framework
 
-- List: ArrayList, LinkedList
-- Map: HashMap, LinkedHashMap, TreeMap
-- Set: HashSet, TreeSet
-- Queue, Deque, PriorityQueue
+- What is Collection Framework and Why It Exists
+- Complete Hierarchy
+- Iterable and Collection Interfaces
+- Iterator and ListIterator
+- List Interface and All Implementations
+- Set Interface and All Implementations
+- Queue Interface and All Implementations
+- Map Interface and All Implementations
+- Generics in Collections
+- Null Handling in Collections
+- Arrays vs Collections
+
+Unmodifiable and Immutable Collections
 
 ### Exception Handling
 
-- Checked vs Unchecked exceptions
-- Try-catch-finally
-- Custom exceptions
-- Try-with-resources
+- What is an Exception and Why It Exists
+- Exception Hierarchy
+- Checked vs Unchecked Exceptions
+- Try-Catch-Finally
+- Throws Keyword
+- Throw Keyword
+- Custom Exceptions
+- Try-With-Resources
+- Exception Chaining
 
 ### Multithreading and Concurrency
 
-- Thread lifecycle
+- What is Multithreading and Why It Exists
+- Creating a Thread
+- Thread Lifecycle
 - Runnable vs Callable
-- ExecutorService, ThreadPool
-- Synchronized, volatile keywords
+- ExecutorService and ThreadPool
+- Synchronized Keyword
+- Volatile Keyword
+- Atomic Classes
+- ReentrantLock and ReadWriteLock
+- Concurrent Collections
 - CompletableFuture
 
 ### Java 8+ Features
 
-- Lambda expressions
+- Functional Interfaces
+- Lambda Expressions
+- Method References
+- Default and Static Methods in Interfaces
 - Stream API
-- Optional class
-- Functional interfaces
-- Method references
-- Default and static methods in interfaces
+- Optional Class
+- Date and Time API
+- var Keyword
+- Immutable Collections
+- String Methods
+- Switch Expressions
+- Records
+- Sealed Classes
+- Stream API Improvements
+- Pattern Matching
+- Text Blocks
 
 ### JVM and Memory Management
 
-- JVM architecture
-- Heap vs Stack memory
-- Garbage Collection
-- ClassLoader mechanism
-- Java memory model
+- What is memory management
+- JVM memory areas
+- Class loader?
+- String pool
+- garbage collection
+- OutOfMemoryError and StackOverflowError
 
 ### Resources
 
