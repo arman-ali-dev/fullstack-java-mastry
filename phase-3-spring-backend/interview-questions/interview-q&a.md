@@ -59,3 +59,87 @@ REST stands for Representational State Transfer API. It allows a client to commu
 #### 10. What is an API?
 
 An API is a way that allows two applications to communicate with each other.
+
+---
+
+#### 11. What is JSON? Why is it used?
+
+JSON stands for JavaScript Object Notation. It is a lightweight data format used to exchange data between applications. It is easy to read, understand, and commonly used in REST APIs to send and receive data.
+
+---
+
+#### 12. What is Path variable vs query parameter vs request body?
+
+Path Variable is used to pass a value as part of the URL, usually to identify a specific resource. Query Parameter used to pass additional information through the URL, usually for filtering, searching, or pagination. Request Body Used to send data inside the request body, usually when creating or updating a resource.
+
+---
+
+#### 13. What is an embedded server?
+
+An embedded server is a server that is included inside an application. In Spring Boot, an embedded Tomcat server starts automatically when we run the application, so we don't need to deploy it on a separate external server.
+
+---
+
+#### 14. What is Maven?
+
+Maven is a project management and build automation tool used in Java projects. It provides a standard project structure, manages dependencies, and automates tasks like compiling, testing, and packaging the application.
+
+---
+
+#### 15. What is pom.xml?
+
+pom.xml stands for Project Object Model. It is the main configuration file in Maven where we define project information, dependencies, plugins, and build configurations.
+
+---
+
+#### 16. What is Spring Framework? What problem does it solve?
+
+Spring is a Java framework used to build enterprise applications. It reduces boilerplate code and makes application development easier by providing features like Dependency Injection, Inversion of Control, and transaction management.
+
+---
+
+#### 17. What is IoC (Inversion of Control)?
+
+IoC stands for Inversion of Control. It is a principle in which the Spring container takes responsibility for creating and managing objects instead of us creating and managing them manually.
+
+---
+
+#### 18. What is Dependency Injection?
+
+Dependency Injection is a design pattern in which an object receives its required dependencies from outside instead of creating them itself. In Spring, the IoC container provides these dependencies automatically.
+
+---
+
+#### 19. Constructor injection vs field injection: which is better and why?
+
+Constructor injection is better than field injection because it makes dependencies mandatory, supports immutability using final fields, and makes unit testing easier.
+
+---
+
+#### 20. What is the difference between Constructor and Setter and Field Injection?
+
+Constructor injection provides dependencies through the constructor, setter injection provides them through setter methods, and field injection injects them directly into class fields using @Autowired.
+
+---
+
+#### 21. What is a Bean?
+
+A Spring Bean is an object that is created and managed by the Spring IoC container. We can create beans using annotations like @Component, @Service, @Repository, or the @Bean annotation.
+
+---
+
+#### 22. What is the ApplicationContext vs BeanFactory?
+
+ApplicationContext is an advanced version of BeanFactory. It extends the BeanFactory interface. BeanFactory and ApplicationContext are both Spring containers used to create and manage beans. BeanFactory provides basic bean management and uses lazy initialization by default, which means beans are created when they are requested. ApplicationContext provides additional features like event publishing and integration with Spring AOP. It uses eager initialization by default for singleton beans, which means beans are created when the container starts.
+
+---
+
+#### 23. @Autowired, @Qualifier, @Primary: when do you use each?
+
+@Autowired is used to inject a dependency automatically by type. @Qualifier is used when multiple beans of the same type are available and we want to specify which bean to inject. @Primary is used to define a default bean when multiple beans of the same type are available.
+
+---
+
+#### 24. Spring vs Spring Boot?
+
+Spring is a Java framework used to build enterprise applications. Spring Boot is built on top of the Spring Framework and makes development easier by providing auto-configuration, starter dependencies, and embedded servers. It reduces boilerplate code and manual configuration.
