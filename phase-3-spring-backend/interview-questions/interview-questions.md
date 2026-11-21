@@ -22,7 +22,7 @@
 22. What is the ApplicationContext vs BeanFactory?
 23. @Autowired, @Qualifier, @Primary: when do you use each?
 24. Spring vs Spring Boot?
-25. Bean lifecycle (instantiate, populate, init, destroy)?
+25. Bean lifecycle?
 26. What does @SpringBootApplication contain?
 27. How does auto-configuration work?
 28. What are Spring Boot starters?
@@ -33,16 +33,16 @@
 33. @Controller vs @RestController?
 34. @RequestParam vs @PathVariable vs @RequestBody?
 35. @GetMapping, @PostMapping, @PutMapping, @PatchMapping, @DeleteMapping: PUT vs PATCH?
-36. What is ResponseEntity? Why use it?
-37. How do you handle exceptions globally?
-38. What are @ControllerAdvice, @ExceptionHandler?
-39. How do you validate request data? (@Valid, @NotNull, @Size)
-40. What is a DTO? Why not expose the Entity directly?
-41. What is ORM? Why use it?
-42. What is JPA vs Hibernate vs Spring Data JPA?
-43. JpaRepository vs CrudRepository?
-44. What does @Transactional do? Where does it not work? (private methods, self-invocation)
-45. Lazy vs Eager loading?
+36. Lazy vs Eager loading?
+37. What is ResponseEntity? Why use it?
+38. How do you handle exceptions globally?
+39. What are @ControllerAdvice, @ExceptionHandler?
+40. How do you validate request data?
+41. What is a DTO? Why not expose the Entity directly?
+42. What is ORM? Why use it?
+43. What is JPA vs Hibernate vs Spring Data JPA?
+44. JpaRepository vs CrudRepository?
+45. What does @Transactional do? Where does it not work? (private methods, self-invocation)
 46. What is the N+1 problem? How do you fix it?
 47. OneToMany, ManyToOne, ManyToMany: how do you map them? What is mappedBy?
 48. How do you write custom queries? (@Query, derived query methods)

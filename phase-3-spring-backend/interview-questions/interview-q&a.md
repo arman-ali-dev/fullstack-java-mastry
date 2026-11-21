@@ -143,3 +143,103 @@ ApplicationContext is an advanced version of BeanFactory. It extends the BeanFac
 #### 24. Spring vs Spring Boot?
 
 Spring is a Java framework used to build enterprise applications. Spring Boot is built on top of the Spring Framework and makes development easier by providing auto-configuration, starter dependencies, and embedded servers. It reduces boilerplate code and manual configuration.
+
+---
+
+#### 25. Bean lifecycle?
+
+The Spring Bean Lifecycle describes how Spring creates, initializes, uses, and destroys a bean. First, Spring creates the bean and injects its dependencies. Then it performs initialization callbacks and makes the bean ready to use. Finally, when the container is closed, Spring calls the destruction methods.
+
+---
+
+#### 26. What does @SpringBootApplication contain?
+
+@SpringBootApplication is a combination of three annotations:
+
+1. @SpringBootConfiguration Indicates that the class is a configuration class. It allows us to define beans using @Bean.
+2. @EnableAutoConfiguration Enables Spring Boot's auto-configuration based on the dependencies available in the project.
+3. @ComponentScan Tells Spring to scan the current package and its sub-packages to find components like @Component, @Service, and @Repository.
+
+---
+
+#### 27. How does auto-configuration work?
+
+Auto-configuration is a feature of Spring Boot that automatically configures the required components based on the dependencies available in our project. It reduces the need for manual configuration.
+
+---
+
+#### 28. What are Spring Boot starters?
+
+Spring Boot starters are predefined dependency packages that contain commonly required libraries for specific functionalities. They help us avoid adding multiple dependencies separately and make dependency management easier.
+
+---
+
+#### 29. application.properties vs application.yml?
+
+Both application.properties and application.yml are used to configure Spring Boot applications. The main difference is their format. Properties uses key-value pairs, whereas YAML uses indentation and a nested structure. Both serve the same purpose, but YAML can be more readable for complex configurations.
+
+---
+
+#### 30. What are profiles? How do you use dev/prod configs?
+
+Spring Boot profiles are used to maintain different configurations for different environments, such as development and production. We can create separate configuration files like application-dev.properties and application-prod.properties and activate a profile using the spring.profiles.active property.
+
+---
+
+#### 31. @Component vs @Service vs @Repository vs @Controller?
+
+All four annotations are used to register classes as Spring Beans, but they serve different purposes. `@Component` is a general-purpose annotation, `@Service` is used for business logic, `@Repository` is used for database operations, and `@Controller` is used to handle web requests. `@Service`, `@Repository`, and `@Controller` are specialized forms of `@Component`.
+
+---
+
+#### 32. @Configuration and @Bean: what is the difference from @Component?
+
+`@Component` is used to register a class as a Spring Bean through component scanning. `@Configuration` is used to define a configuration class, and `@Bean` is used on methods to register the objects returned by those methods as Spring Beans. We commonly use `@Bean` when we want to configure third-party classes.
+
+---
+
+#### 33. @Controller vs @RestController?
+
+`@Controller` is mainly used in MVC applications to return views like HTML pages, whereas `@RestController` is used to build REST APIs and directly return data in the response body, usually in JSON format. `@RestController` is a combination of `@Controller` and `@ResponseBody`.
+
+---
+
+#### 34. @RequestParam vs @PathVariable vs @RequestBody?
+
+`@PathVariable` is used to extract values from the URL path. `@RequestParam` is used to extract query parameters. `@RequestBody` is used to receive data from the HTTP request body, usually in JSON format.
+
+---
+
+#### 35. @GetMapping, @PostMapping, @PutMapping, @PatchMapping, @DeleteMapping: PUT vs PATCH?
+
+GET is used to fetch data, POST is used to create a resource, PUT is used to completely update or replace a resource, PATCH is used to partially update a resource, and DELETE is used to remove a resource.
+
+---
+
+#### 36. Lazy vs Eager loading?
+
+Lazy loading fetches related data only when we access it, whereas eager loading fetches related data immediately along with the main entity. Lazy loading helps avoid unnecessary data fetching, while eager loading is useful when we always need the related data.
+
+---
+
+#### 37. What is ResponseEntity? Why use it?
+
+ResponseEntity is a class in Spring that represents the complete HTTP response. We use it when we want to control the response status code, headers, and body.
+
+---
+
+#### 38. How do you handle exceptions globally?
+
+In Spring Boot, we handle exceptions globally using @RestControllerAdvice and @ExceptionHandler. We create a common exception handler class and define methods to handle specific exceptions.
+
+---
+
+#### 39. What are @ControllerAdvice, @ExceptionHandler?
+
+@ControllerAdvice is used to create a global exception-handling class that can handle exceptions across multiple controllers. @ExceptionHandler is used to handle specific exceptions
+
+---
+
+#### 40. How do you validate request data?
+
+In Spring Boot, we validate request data using Bean Validation annotations like @NotNull, @NotBlank, @Email, and @Size. We apply these annotations to DTO fields and use @Valid in the controller method to trigger validation. If validation fails, Spring throws an exception that we can handle globally using @RestControllerAdvice.
