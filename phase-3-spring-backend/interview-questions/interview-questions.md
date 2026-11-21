@@ -39,37 +39,40 @@
 39. What are @ControllerAdvice, @ExceptionHandler?
 40. How do you validate request data?
 41. What is a DTO? Why not expose the Entity directly?
-42. What is ORM? Why use it?
-43. What is JPA vs Hibernate vs Spring Data JPA?
-44. JpaRepository vs CrudRepository?
-45. What does @Transactional do? Where does it not work? (private methods, self-invocation)
-46. What is the N+1 problem? How do you fix it?
-47. OneToMany, ManyToOne, ManyToMany: how do you map them? What is mappedBy?
-48. How do you write custom queries? (@Query, derived query methods)
-49. Spring Security basics: authentication vs authorization?
-50. How does JWT authentication work?
-51. What is Spring AOP? Where have you used it?
-52. What is Actuator?
-53. How do you write unit tests? (JUnit, Mockito, @WebMvcTest)
-54. What are microservices? Monolith vs microservices?
-55. What is Spring Boot?
-56. What are the Features of Spring Boot?
-57. What are the advantages of using Spring Boot?
-58. What are the Spring Boot Starter Dependencies?
-59. How does a spring application get started?
-60. What does the @SpringBootApplication annotation do internally?
-61. What is Spring Initializr?
-62. What are the basic Spring Boot Annotations?
-63. Is it possible to change the port of the embedded Tomcat server in Spring Boot?
-64. Can we create a non-web application in Spring Boot?
-65. Difference between @Controller and @RestController
-66. What is the difference between RequestMapping and GetMapping?
-67. What are the differences between @SpringBootApplication and @EnableAutoConfiguration annotation?
-68. How to enable Actuator in the Spring boot application?
-69. What is the purpose of using @ComponentScan in the class files?
-70. How to get the list of all the beans in your Spring boot application?
-71. What are Bean Scopes and its Types in Spring?
-72. What is the default bean scope in Spring?
-73. Difference between Singleton and Prototype scope?
-74. What is a servlet? What is the DispatcherServlet in Spring MVC?
-75. What is the request flow in Spring Boot?
+42. What is Spring AOP? Where have you used it?
+43. What are filters?
+44. What are interceptors?
+45. What is the difference between filter, interceptor and spring aop?
+46. What is ORM? Why use it?
+47. What is JPA vs Hibernate vs Spring Data JPA?
+48. JpaRepository vs CrudRepository?
+49. What does @Transactional do? Where does it not work? (private methods, self-invocation)
+50. What is the N+1 problem? How do you fix it?
+51. OneToMany, ManyToOne, ManyToMany: how do you map them? What is mappedBy?
+52. How do you write custom queries? (@Query, derived query methods)
+53. Spring Security basics: authentication vs authorization?
+54. How does JWT authentication work?
+55. What is Actuator?
+56. How do you write unit tests? (JUnit, Mockito, @WebMvcTest)
+57. What are microservices? Monolith vs microservices?
+58. What is Spring Boot?
+59. What are the Features of Spring Boot?
+60. What are the advantages of using Spring Boot?
+61. What are the Spring Boot Starter Dependencies?
+62. How does a spring application get started?
+63. What does the @SpringBootApplication annotation do internally?
+64. What is Spring Initializr?
+65. What are the basic Spring Boot Annotations?
+66. Is it possible to change the port of the embedded Tomcat server in Spring Boot?
+67. Can we create a non-web application in Spring Boot?
+68. Difference between @Controller and @RestController
+69. What is the difference between RequestMapping and GetMapping?
+70. What are the differences between @SpringBootApplication and @EnableAutoConfiguration annotation?
+71. How to enable Actuator in the Spring boot application?
+72. What is the purpose of using @ComponentScan in the class files?
+73. How to get the list of all the beans in your Spring boot application?
+74. What are Bean Scopes and its Types in Spring?
+75. What is the default bean scope in Spring?
+76. Difference between Singleton and Prototype scope?
+77. What is a servlet? What is the DispatcherServlet in Spring MVC?
+78. What is the request flow in Spring Boot?

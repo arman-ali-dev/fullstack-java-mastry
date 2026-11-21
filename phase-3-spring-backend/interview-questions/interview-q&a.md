@@ -243,3 +243,45 @@ In Spring Boot, we handle exceptions globally using @RestControllerAdvice and @E
 #### 40. How do you validate request data?
 
 In Spring Boot, we validate request data using Bean Validation annotations like @NotNull, @NotBlank, @Email, and @Size. We apply these annotations to DTO fields and use @Valid in the controller method to trigger validation. If validation fails, Spring throws an exception that we can handle globally using @RestControllerAdvice.
+
+---
+
+#### 41. What is a DTO? Why not expose the Entity directly?
+
+DTO stands for Data Transfer Object. It is a simple Java object used to transfer data between the client and the backend. We use DTOs instead of exposing entities directly for security, better separation, and flexibility. For example, a User entity may contain sensitive information like a password, but the User DTO can contain only the name and email.
+
+---
+
+#### 42. What is Spring AOP? Where have you used it?
+
+Spring AOP stands for Aspect-Oriented Programming. It is used to separate common functionalities like logging, security, and transaction management from the main business logic.
+<br>
+For example, instead of writing logging code in every service method, we can create a separate Aspect and apply logging around those methods.
+<br>
+This helps us reduce code duplication and keep our business logic clean.
+
+---
+
+#### 43. What are filters?
+
+Filters are components in Java web applications that intercept HTTP requests and responses. They are mainly used for tasks like authentication, logging, CORS handling, and modifying requests or responses. In Spring Boot, filters execute before the request reaches the DispatcherServlet.
+
+---
+
+#### 44. What are interceptors?
+
+Interceptors are components in Spring MVC that intercept requests before and after controller execution.
+
+We use interceptors for tasks like authorization, logging, and checking request information.
+
+---
+
+#### 45.
+
+A Filter belongs to the Servlet API and intercepts HTTP requests and responses before they reach the DispatcherServlet.
+<br>
+An Interceptor belongs to Spring MVC and works before and after controller execution.
+<br>
+Spring AOP works at the method execution level.
+<br>
+For example, we can use a Filter for JWT validation, an Interceptor for authorization checks, and Spring AOP for logging service method execution.
