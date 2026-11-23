@@ -11,7 +11,7 @@
 
 ## 1. Monolith
 
-### Definition (interview answer)
+### Definition
 
 > _"A monolith is an application where all features, like user, order and payment, are built as one single unit. It has one codebase, one database, and is deployed as one package."_
 
@@ -97,26 +97,11 @@ Poori app ek hi language aur framework me hoti hai. Agar ek module ke liye alag 
 
 Poori app test karke hi release hota hai, isliye naye features users tak der se pahunchte hain.
 
-### Summary table
-
-| Problem                     | Matlab                                  |
-| --------------------------- | --------------------------------------- |
-| Chhota change, poora deploy | Ek module badla, poori app redeploy     |
-| Ek hissa fail, sab fail     | Ek bug se poori app down                |
-| Scale karna mehnga          | Poori app ki copies chalani padti hain  |
-| Ek hi technology            | Language/framework change karna mushkil |
-| Bada codebase               | Samajhna aur manage karna mushkil       |
-| Slow releases               | Poora testing aur deployment cycle      |
-
-### Interview answer
-
-> _"A monolith fails at scale because everything is tightly coupled. A small change needs a full redeployment, one failure can bring down the whole application, and we cannot scale individual features. As the codebase grows, it also becomes hard for multiple teams to work on it together."_
-
 ---
 
 ## 3. Microservices
 
-### Definition (interview answer)
+### Definition
 
 > _"Microservices is an architecture where an application is divided into small, independent services. Each service handles one business function, has its own database, and can be developed, deployed and scaled independently. Services talk to each other using REST APIs or messaging."_
 
@@ -207,77 +192,3 @@ Har service:
 | Requirements clear nahi hain  | Service boundaries galat ban sakti hain, baad me badalna mehnga padta hai |
 | DevOps ka experience nahi hai | Docker, deployment, monitoring sambhalna padta hai                        |
 | Budget aur time kam hai       | Microservices me setup time aur cost zyada hota hai                       |
-
-### Interview answer
-
-> _"I would use microservices when the application is large, multiple teams work on it, and different parts need to scale independently. For a small application or a new startup idea, I would start with a monolith, because microservices add operational complexity. We can always split the monolith into microservices later when the need arises."_
-
----
-
-## Monolith vs Microservices: Comparison
-
-| Point         | Monolith                   | Microservices                  |
-| ------------- | -------------------------- | ------------------------------ |
-| Codebase      | Ek bada                    | Kai chhote                     |
-| Database      | Ek shared                  | Har service ka apna            |
-| Deployment    | Poori app ek saath         | Har service alag               |
-| Scaling       | Poori app scale            | Sirf zaruri service scale      |
-| Failure       | Ek fail, sab fail          | Ek fail, baaki chalti hain     |
-| Technology    | Ek hi                      | Har service alag ho sakti hai  |
-| Complexity    | Kam (shuru me)             | Zyada                          |
-| Communication | Method calls (fast)        | Network calls (REST/messaging) |
-| Best for      | Chhoti apps, naye projects | Badi, growing apps             |
-
----
-
-## Interview ke liye 30-second answer
-
-**Q: What is the difference between Monolith and Microservices?**
-
-> _"In a monolith, the whole application is one unit with one codebase and one database. It is simple to build, but hard to scale and deploy as it grows. In microservices, the application is split into small independent services, each with its own database. They can be deployed and scaled independently, but the system becomes more complex. So I use a monolith for small applications and microservices for large, growing ones."_
-
----
-
-## Follow-up questions jo aate hain
-
-**1. Microservices ka sabse bada challenge kya hai?**
-
-> _"The biggest challenge is the complexity of a distributed system: network failures, data consistency across databases, and monitoring many services."_
-
-**2. Kya microservices hamesha better hain?**
-
-> _"No. For small applications, a monolith is simpler and cheaper. Microservices make sense only when the application and the team are large enough to need them."_
-
-**3. Services ek dusre se kaise baat karti hain?**
-
-> _"Using REST APIs, with tools like RestTemplate or Feign Client, or using messaging systems like Kafka and RabbitMQ."_
-
-**4. Har service ka apna database kyu hota hai?**
-
-> _"So that services stay independent. If services share one database, a change in one table can break other services, and we lose independent deployment."_
-
-**5. Monolith se microservices me kaise jaate hain?**
-
-> _"First start with a monolith, find the modules that need independent scaling or deployment, and extract them one by one into services."_
-
----
-
-## Quick Revision (ek line me)
-
-- **Monolith** = ek bada dabba. Sab kuch ek jagah.
-- **Why it fails** = chhota change poora deploy, ek fail toh sab fail, scale mehnga.
-- **Microservices** = chhote alag dabbe, har ek ka apna kaam aur database, aur wo ek dusre se baat karte hain.
-- **Use karo** jab app bada ho aur kai teams hon.
-- **Avoid karo** jab app chhota ho, team chhoti ho, ya requirements clear na hon.
-
----
-
-## Aage ke lectures (roadmap)
-
-1. ~~Monolith vs Microservices~~ ✅
-2. Inter-service communication (RestTemplate / Feign)
-3. Service Discovery (Eureka)
-4. API Gateway
-5. Config Server
-6. Circuit Breaker (Resilience4j)
-7. Docker basics
