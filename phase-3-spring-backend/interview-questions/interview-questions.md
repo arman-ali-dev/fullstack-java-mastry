@@ -43,36 +43,38 @@
 43. What are filters?
 44. What are interceptors?
 45. What is the difference between filter, interceptor and spring aop?
-46. What is ORM? Why use it?
-47. What is JPA vs Hibernate vs Spring Data JPA?
-48. JpaRepository vs CrudRepository?
-49. What does @Transactional do? Where does it not work? (private methods, self-invocation)
-50. What is the N+1 problem? How do you fix it?
-51. OneToMany, ManyToOne, ManyToMany: how do you map them? What is mappedBy?
-52. How do you write custom queries? (@Query, derived query methods)
-53. Spring Security basics: authentication vs authorization?
-54. How does JWT authentication work?
-55. What is Actuator?
-56. How do you write unit tests? (JUnit, Mockito, @WebMvcTest)
-57. What are microservices? Monolith vs microservices?
-58. What is Spring Boot?
-59. What are the Features of Spring Boot?
-60. What are the advantages of using Spring Boot?
-61. What are the Spring Boot Starter Dependencies?
-62. How does a spring application get started?
-63. What does the @SpringBootApplication annotation do internally?
-64. What is Spring Initializr?
-65. What are the basic Spring Boot Annotations?
-66. Is it possible to change the port of the embedded Tomcat server in Spring Boot?
-67. Can we create a non-web application in Spring Boot?
-68. Difference between @Controller and @RestController
-69. What is the difference between RequestMapping and GetMapping?
-70. What are the differences between @SpringBootApplication and @EnableAutoConfiguration annotation?
-71. How to enable Actuator in the Spring boot application?
-72. What is the purpose of using @ComponentScan in the class files?
-73. How to get the list of all the beans in your Spring boot application?
-74. What are Bean Scopes and its Types in Spring?
-75. What is the default bean scope in Spring?
-76. Difference between Singleton and Prototype scope?
-77. What is a servlet? What is the DispatcherServlet in Spring MVC?
-78. What is the request flow in Spring Boot?
+46. JDBC vs JDBC Driver vs Spring JDBC?
+47. What is ORM? Why use it?
+48. What is JPA vs Hibernate vs Spring Data JPA?
+49. JpaRepository vs CrudRepository?
+50. What does @Transactional do? Where does it not work?
+51. OneToOne, OneToMany, ManyToOne, ManyToMany: how do you map them? What is mappedBy?
+52. What is a servlet? What is the DispatcherServlet in Spring MVC?
+53. What is Spring Boot?
+54. What is Spring Initializr?
+55. What are the basic Spring Boot Annotations?
+56. What are the Features of Spring Boot?
+57. What is the request flow in Spring Boot?
+58. Difference between Singleton and Prototype scope?
+59. What is the default bean scope in Spring?
+60. What are Bean Scopes and its Types in Spring?
+61. How to get the list of all the beans in your Spring boot application?
+62. What is the purpose of using @ComponentScan in the class files?
+63. What is Actuator?
+64. How to enable Actuator in the Spring boot application?
+65. What are the differences between @SpringBootApplication and @EnableAutoConfiguration annotation?
+66. What is the difference between RequestMapping and GetMapping?
+67. Difference between @Controller and @RestController
+68. Can we create a non-web application in Spring Boot?
+69. Is it possible to change the port of the embedded Tomcat server in Spring Boot?
+70. What does the @SpringBootApplication annotation do internally?
+71. How does a spring application get started?
+72. What are the Spring Boot Starter Dependencies?
+73. What are the advantages of using Spring Boot?
+
+74. What is the N+1 problem? How do you fix it?
+75. How do you write custom queries? (@Query, derived query methods)
+76. Spring Security basics: authentication vs authorization?
+77. How does JWT authentication work?
+78. How do you write unit tests? (JUnit, Mockito, @WebMvcTest)
+79. What are microservices? Monolith vs microservices?

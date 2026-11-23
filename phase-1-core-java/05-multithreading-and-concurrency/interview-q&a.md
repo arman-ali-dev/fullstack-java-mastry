@@ -259,7 +259,7 @@ Executors provides several types of thread pools:
 
 #### 37. What is the difference between `shutdown()` and `shutdownNow()`?
 
-shutdown() stops accepting new tasks but allows already submitted tasks to complete. On the other hand, shutdownNow() attempts to stop running tasks by interrupting them and returns tasks that are waiting for execution.
+shutdown() is used to stops accepting new tasks but It allows already submitted tasks to complete. On the other hand, shutdownNow() attempts to stop running tasks by interrupting them and returns tasks that are waiting for execution.
 
 ---
 

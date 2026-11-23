@@ -276,7 +276,7 @@ We use interceptors for tasks like authorization, logging, and checking request 
 
 ---
 
-#### 45.
+#### 45. What is the difference between filter, interceptor and spring aop?
 
 A Filter belongs to the Servlet API and intercepts HTTP requests and responses before they reach the DispatcherServlet.
 <br>
@@ -285,3 +285,104 @@ An Interceptor belongs to Spring MVC and works before and after controller execu
 Spring AOP works at the method execution level.
 <br>
 For example, we can use a Filter for JWT validation, an Interceptor for authorization checks, and Spring AOP for logging service method execution.
+
+---
+
+#### 46. JDBC vs JDBC Driver vs Spring JDBC?
+
+JDBC stands for Java Database Connectivity. It is a Java API used to connect and interact with databases.
+<br>
+A JDBC Driver is a database-specific implementation of the JDBC API that allows Java applications to communicate with a particular database, such as MySQL.
+<br>
+Spring JDBC is a module of the Spring Framework that simplifies JDBC operations. It provides JdbcTemplate, which handles repetitive tasks like connection management, statement execution, and resource cleanup.
+
+---
+
+#### 47. What is ORM? Why use it?
+
+ORM stands for Object-Relational Mapping. It is a technique that maps Java objects to database tables and their fields to table columns.
+<br>
+We use ORM to perform database operations using Java objects instead of writing SQL queries manually for every operation.
+<br>
+It reduces boilerplate code, improves productivity, and makes database operations easier.
+
+---
+
+#### 48. What is JPA vs Hibernate vs Spring Data JPA?
+
+JPA, Hibernate, and Spring Data JPA are related but have different roles.
+
+JPA is a specification that defines standards for object-relational mapping in Java.
+
+Hibernate is an ORM framework that provides an implementation of the JPA specification.
+
+Spring Data JPA is a Spring module that simplifies database operations by providing interfaces like JpaRepository, so we don't have to write basic CRUD methods manually.
+
+---
+
+#### 49. JpaRepository vs CrudRepository?
+
+CrudRepository and JpaRepository are interfaces provided by Spring Data. CrudRepository provides basic CRUD operations like save, findById, findAll, and deleteById. JpaRepository also provides CRUS operations along with pagination and sorting. It also provides JPA-specific methods like flush().
+
+---
+
+#### 50. What does @Transactional do? Where does it not work?
+
+@Transactional is an annotation provided by Spring that is used to manage database transactions.
+<br>
+It ensures that multiple database operations are treated as a single unit. If all operations succeed, the transaction is committed. If an unchecked exception occurs, the transaction is rolled back by default.
+<br>
+It may not work in some cases like self-invocation, object created manually, private methods and also checked exceptions do not trigger rollback of transaction.
+
+---
+
+#### 51. OneToOne, OneToMany, ManyToOne, ManyToMany: how do you map them? What is mappedBy?
+
+@OneToOne is used when one entity is associated to only one other entity, like User and Profile.
+<br>
+@OneToMany is used when one entity is associated to multiple entities, like one Department having many Employees.
+<br>
+@ManyToOne is used when multiple entities are associated to one entity, like many Employees belonging to one Department.
+<br>
+@ManyToMany is used when multiple entities are associated to multiple entities, like Students and Courses.
+<br>
+The mappedBy attribute is used on the inverse side of a bidirectional relationship. It specifies the field in the owning entity that manages the relationship.
+
+---
+
+#### 52. What is a servlet? What is the DispatcherServlet in Spring MVC?
+
+A Servlet is a Java server-side component that handles client requests and generates responses. It runs inside a Servlet Container like Tomcat.
+<br>
+DispatcherServlet is a special Servlet provided by Spring MVC. It acts as a Front Controller, receives incoming HTTP requests, finds the appropriate controller, and manages the request processing flow. So, DispatcherServlet is the central component that handles request routing in Spring MVC.
+
+---
+
+#### 53. What is Spring Boot?
+
+Spring Boot is a Java-based framework built on top of the Spring Framework. It makes application development easier by reducing manual configuration and boilerplate code. It provides features like auto-configuration, starter dependencies, and embedded servers like Tomcat.
+
+---
+
+#### 54. What is Spring Initializr?
+
+Spring Initializr is a web-based tool used to quickly generate Spring Boot projects. We can select the project type, programming language, Spring Boot version, and required dependencies. It generates a ready-to-use project structure that we can download and import into an IDE like IntelliJ IDEA. It saves time and reduces manual project setup.
+
+---
+
+#### 55. What are the basic Spring Boot Annotations?
+
+Some commonly used Spring Boot annotations are:
+
+1. `@SpringBootApplication`: Marks the main Spring Boot application class and enables auto-configuration and component scanning.
+2. `@Component`: Marks a class as a Spring-managed bean.
+3. `@Service`: Marks the service layer, where we write business logic.
+4. `@Repository`: Marks the repository layer, which handles database operations.
+5. `@Controller`: Used to create MVC controllers.
+6. `@RestController`: Used to create REST APIs. It combines `@Controller` and `@ResponseBody`.
+7. `@Autowired`: Used for dependency injection.
+8. `@Configuration`: Marks a class that contains bean configuration.
+9. `@Bean`: Registers an object as a Spring bean.
+10. `@RequestMapping`, `@GetMapping`, and `@PostMapping`: Used to map HTTP requests to controller methods.
+
+These annotations help us configure the application, manage dependencies, and handle HTTP requests.
