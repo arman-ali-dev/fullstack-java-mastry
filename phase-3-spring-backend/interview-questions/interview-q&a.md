@@ -386,3 +386,59 @@ Some commonly used Spring Boot annotations are:
 10. `@RequestMapping`, `@GetMapping`, and `@PostMapping`: Used to map HTTP requests to controller methods.
 
 These annotations help us configure the application, manage dependencies, and handle HTTP requests.
+
+---
+
+#### 56. What are the Features of Spring Boot?
+
+Spring Boot provides several features that make application development easier and faster.
+<br>
+Auto-Configuration, Starter Dependencies, Embedded Server, Standalone Application, Production-Ready Features, Externalized Configuration, Less Boilerplate Code
+
+---
+
+#### 57. What is the request flow in Spring Boot?
+
+In a Spring Boot application, the request flow starts when a client, such as React or Postman, sends an HTTP request.
+<br>
+First, the request passes through the Filter chain, where we can perform tasks like JWT validation and logging.
+<br>
+Then, the request reaches the DispatcherServlet, which acts as the Front Controller.
+<br>
+The DispatcherServlet uses HandlerMapping to find the appropriate controller method, and HandlerAdapter invokes that method.
+<br>
+The Controller receives the request and calls the Service layer, where the business logic is executed.
+<br>
+The Service layer communicates with the Repository layer to perform database operations using JPA or Hibernate.
+<br>
+Finally, the database returns the result, and the response travels back through the application to the client, usually in JSON format.
+
+---
+
+#### 58. Difference between Singleton and Prototype scope?
+
+In Singleton scope, Spring creates only one instance of a bean per bean definition within a container. Whenever we request that bean, Spring provides the same instance. It is the default scope in Spring.
+
+In Prototype scope, Spring creates a new instance every time the bean is requested from the container.
+
+---
+
+#### 59. What is the default bean scope in Spring?
+
+The default bean scope is Singleton.
+
+---
+
+#### 60. How to get the list of all the beans in your Spring boot application?
+
+We can get the list of all bean definition names in a Spring Boot application using the ApplicationContext.
+<br>
+We can call the getBeanDefinitionNames() method, which returns an array of bean names registered in the Spring container. Then, we can use a loop to print all the bean names.
+
+---
+
+#### 61. What is the purpose of using @ComponentScan in the class files?
+
+The purpose of @ComponentScan is to tell Spring which packages to scan for components.
+<br>
+It searches for classes annotated with annotations like @Component, @Service, @Repository, and @Controller, and registers them as Spring beans in the IoC container.

@@ -57,24 +57,20 @@
 57. What is the request flow in Spring Boot?
 58. Difference between Singleton and Prototype scope?
 59. What is the default bean scope in Spring?
-60. What are Bean Scopes and its Types in Spring?
-61. How to get the list of all the beans in your Spring boot application?
-62. What is the purpose of using @ComponentScan in the class files?
-63. What is Actuator?
-64. How to enable Actuator in the Spring boot application?
-65. What are the differences between @SpringBootApplication and @EnableAutoConfiguration annotation?
-66. What is the difference between RequestMapping and GetMapping?
-67. Difference between @Controller and @RestController
-68. Can we create a non-web application in Spring Boot?
-69. Is it possible to change the port of the embedded Tomcat server in Spring Boot?
-70. What does the @SpringBootApplication annotation do internally?
-71. How does a spring application get started?
-72. What are the Spring Boot Starter Dependencies?
-73. What are the advantages of using Spring Boot?
+60. How to get the list of all the beans in your Spring boot application?
+61. What is the purpose of using @ComponentScan in the class files?
+62. What is Actuator?
+63. How to enable Actuator in the Spring boot application?
+64. What are the differences between @SpringBootApplication and @EnableAutoConfiguration annotation?
+65. What is the difference between RequestMapping and GetMapping?
+66. Can we create a non-web application in Spring Boot?
+67. Is it possible to change the port of the embedded Tomcat server in Spring Boot?
+68. What does the @SpringBootApplication annotation do internally?
+69. How does a spring application get started?
+70. What are the advantages of using Spring Boot?
 
-74. What is the N+1 problem? How do you fix it?
-75. How do you write custom queries? (@Query, derived query methods)
-76. Spring Security basics: authentication vs authorization?
-77. How does JWT authentication work?
-78. How do you write unit tests? (JUnit, Mockito, @WebMvcTest)
-79. What are microservices? Monolith vs microservices?
+71. What is the N+1 problem? How do you fix it?
+72. How do you write custom queries? (@Query, derived query methods)
+73. Spring Security basics: authentication vs authorization?
+74. How does JWT authentication work?
+75. How do you write unit tests? (JUnit, Mockito, @WebMvcTest)
