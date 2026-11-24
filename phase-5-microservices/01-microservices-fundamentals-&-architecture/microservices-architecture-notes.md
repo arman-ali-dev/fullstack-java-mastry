@@ -1,8 +1,7 @@
 # Microservices Architecture: Overview Notes
 
-Is note me sirf **architecture ka bird's-eye view** hai. Har component ki depth me padhai aage ke dedicated lectures me hogi.
-
 **Components:**
+
 1. API Gateway
 2. Services
 3. Management / Orchestration
@@ -50,10 +49,10 @@ Asynchronous (wait nahi karta):
 
 ### Diagram 3: Services ke peeche kaun sa support system hai
 
-| Layer | Kaam |
-|---|---|
-| Management / Orchestration | Services ko deploy, scale aur restart karna |
-| Observability | Logs, metrics aur tracing se dekhna ki system me kya ho raha hai |
+| Layer                      | Kaam                                                             |
+| -------------------------- | ---------------------------------------------------------------- |
+| Management / Orchestration | Services ko deploy, scale aur restart karna                      |
+| Observability              | Logs, metrics aur tracing se dekhna ki system me kya ho raha hai |
 
 Ye dono layers saari services ko cover karti hain, kisi ek service ka hissa nahi hain.
 
@@ -64,6 +63,7 @@ Ye dono layers saari services ko cover karti hain, kisi ek service ka hissa nahi
 **Kya hai:** Client aur services ke beech ka **single entry point**. Client har service ko alag-alag call nahi karta, sab requests pehle gateway pe aati hain, aur gateway unhe sahi service tak bhejta hai.
 
 **Kyu chahiye:**
+
 - Client ko 10 services ke address yaad rakhne nahi padte
 - Common kaam ek jagah ho jaata hai (jaise authentication, routing)
 
@@ -76,6 +76,7 @@ Ye dono layers saari services ko cover karti hain, kisi ek service ka hissa nahi
 **Kya hai:** Application ke **chhote, independent hisse**. Har service ek business function karti hai.
 
 **Key points:**
+
 - Har service alag Spring Boot project hai
 - Har service ka apna database hai
 - Har service independently develop, deploy aur scale hoti hai
@@ -89,6 +90,7 @@ Ye dono layers saari services ko cover karti hain, kisi ek service ka hissa nahi
 **Kya hai:** Bahut saari services ko **chalana aur sambhalna**. Services ki sankhya badhne par manually manage karna mushkil ho jaata hai, isliye ye kaam tools karte hain.
 
 **Ye kaam karta hai:**
+
 - Services ko deploy karna
 - Zaroorat ke hisaab se copies badhana ya ghatana (scaling)
 - Service crash ho toh automatically restart karna
@@ -118,13 +120,13 @@ Ye dono layers saari services ko cover karti hain, kisi ek service ka hissa nahi
 
 ### Ek nazar me fark
 
-| Point | Synchronous | Asynchronous |
-|---|---|---|
-| Wait | Response ka wait karta hai | Wait nahi karta |
-| Beech me | Koi nahi (direct call) | Message broker |
-| Example tool | Feign, RestTemplate | Kafka, RabbitMQ |
+| Point        | Synchronous                | Asynchronous    |
+| ------------ | -------------------------- | --------------- |
+| Wait         | Response ka wait karta hai | Wait nahi karta |
+| Beech me     | Koi nahi (direct call)     | Message broker  |
+| Example tool | Feign, RestTemplate        | Kafka, RabbitMQ |
 
-*(Detail aage ke dedicated lecture me.)*
+_(Detail aage ke dedicated lecture me.)_
 
 ---
 
@@ -133,10 +135,12 @@ Ye dono layers saari services ko cover karti hain, kisi ek service ka hissa nahi
 **Kya hai:** Microservices me data kaise store aur manage hota hai.
 
 **Core idea: Database per service.**
+
 - Har service ka apna database hota hai
 - Koi doosri service uska database seedha access nahi karti, sirf us service ki API se data maangti hai
 
 **Kyu:**
+
 - Services independent rehti hain
 - Ek service ka database change hone se baaki toot-te nahi
 
@@ -150,11 +154,11 @@ Ye dono layers saari services ko cover karti hain, kisi ek service ka hissa nahi
 
 **Teen cheezein:**
 
-| Cheez | Kaam |
-|---|---|
-| **Logging** | Har service ke events aur errors ka record |
-| **Monitoring / Metrics** | System ki health (CPU, memory, response time, error count) |
-| **Distributed Tracing** | Ek request kai services se guzarti hai, uska poora path track karna |
+| Cheez                    | Kaam                                                                |
+| ------------------------ | ------------------------------------------------------------------- |
+| **Logging**              | Har service ke events aur errors ka record                          |
+| **Monitoring / Metrics** | System ki health (CPU, memory, response time, error count)          |
+| **Distributed Tracing**  | Ek request kai services se guzarti hai, uska poora path track karna |
 
 **Kyu zaruri:** Monolith me log ek jagah hota hai. Microservices me log alag-alag services me bikhre hote hain, toh unhe ek jagah jodna padta hai.
 
@@ -164,12 +168,12 @@ Ye dono layers saari services ko cover karti hain, kisi ek service ka hissa nahi
 
 ## Quick Revision (ek line me)
 
-| Component | Ek line me |
-|---|---|
-| API Gateway | Client ka single entry point, requests ko sahi service tak bhejta hai |
-| Services | Chhote, independent hisse, har ek ka apna kaam aur database |
-| Management / Orchestration | Services ko deploy, scale aur restart karna |
-| Synchronous communication | Direct call, response ka wait (REST) |
-| Async communication | Message broker ke through, wait nahi (Kafka, RabbitMQ) |
-| Data Management | Database per service |
-| Observability | Logs, metrics aur tracing se system ko dekhna |
+| Component                  | Ek line me                                                            |
+| -------------------------- | --------------------------------------------------------------------- |
+| API Gateway                | Client ka single entry point, requests ko sahi service tak bhejta hai |
+| Services                   | Chhote, independent hisse, har ek ka apna kaam aur database           |
+| Management / Orchestration | Services ko deploy, scale aur restart karna                           |
+| Synchronous communication  | Direct call, response ka wait (REST)                                  |
+| Async communication        | Message broker ke through, wait nahi (Kafka, RabbitMQ)                |
+| Data Management            | Database per service                                                  |
+| Observability              | Logs, metrics aur tracing se system ko dekhna                         |
