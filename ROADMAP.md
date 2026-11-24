@@ -363,6 +363,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 - Why Monolith Fails
 - Microservices
 - When to use Microservices and When To Avoid
+- Microservices Architecture
 
 ---
 
