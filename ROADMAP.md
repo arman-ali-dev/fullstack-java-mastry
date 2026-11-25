@@ -365,6 +365,12 @@ This is usually the biggest gap. Companies check DSA before anything else.
 - When to use Microservices and When To Avoid
 - Microservices Architecture
 
+### Microservices Communication
+
+- Inter-service Communication
+- Synchronous Communication & Characteristics
+- Asynchronous Communication
+
 ---
 
 ## Phase 6 - HTML & CSS
