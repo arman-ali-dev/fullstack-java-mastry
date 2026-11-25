@@ -284,11 +284,13 @@ In Java, `hashCode()` is a method of the `Object` class that returns an integer 
 
 #### 45. What is the difference between Association, aggregation and composition?
 
-**Association:** A general relationship between two independent classes where one class uses or interacts with another.
+Association, aggregation and composition are three types of relationships between objects. The main difference is how much one object depends on the other.
 <br>
-**Aggregation:** A weak "has-a" relationship where one object contains another object, but both can exist independently.
+Association means One object uses or knows another object, but both can live independently. For example, a teacher and a student.
 <br>
-**Composition:** A strong "has-a" relationship where one object owns another object, and the contained object cannot exist independently of the owner.
+Aggregation is a "has-a" relationship. One object contains another object but both can live independently. For example, a department has teachers. If the department is closed, the teachers still exist.
+<br>
+Composition is also a "has-a" relationship. One object contains another object but both can't live independently. For example, a car and engine.
 
 ---
 
