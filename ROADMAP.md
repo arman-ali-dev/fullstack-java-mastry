@@ -370,6 +370,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 - Inter-service Communication
 - Synchronous Communication & Characteristics
 - Asynchronous Communication
+- Communication Using RestTemplate
 
 ---
 
