@@ -1,444 +1,163 @@
-#### 1. What is HTTP? What is HTTPS?
+#### 1. What is the difference between a client and a server?
 
-HTTP is a communication protocol used to transfer data between a client and a server over the internet.
+A client is an application or device that sends requests to a server and receives responses. A server is a system or application that receives client requests, processes them, and sends back responses.
+
+---
+
+#### 2. What is HTTP? What is the difference between HTTP and HTTPS?
+
+HTTP stands for HyperText Transfer Protocol. It is a communication protocol used to transfer data between a client and a server.
 <br>
-HTTPS is the secure version of HTTP. It uses TLS encryption to protect data transferred between the client and the server.
+HTTPS stands for HyperText Transfer Protocol Secure. It is the secure version of HTTP that uses TLS to encrypt communication between the client and the server.
 
 ---
 
-#### 2. What is a client-server architecture?
+#### 3. What does "HTTP is stateless" mean?
 
-Client-Server Architecture is a software architecture in which an application is divided into two main components: client and server. The client sends requests to the server, and the server processes those requests and sends responses back to the client.
-
----
-
-#### 3. What is a request and a response? What does each contain?
-
-An HTTP request is a message sent by the client to the server to access a resource or perform an operation. It contains a request line, headers, and an optional body.
-<br>
-An HTTP response is a message sent by the server to the client after processing the request. It contains a status line, headers, and an optional body
+HTTP is a stateless protocol, which means the server does not automatically remember previous requests from a client. Each HTTP request is treated independently.
 
 ---
 
-#### 4. what are HTTP methods. When do you use each?
+#### 4. What are the main parts of an HTTP request and an HTTP response?
 
-HTTP methods define the type of operation a client wants to perform on a server. GET is used to retrieve data, POST to create resources, PUT to replace a resource, PATCH to partially update it, and DELETE to remove a resource.
-
----
-
-#### 5. GET vs POST?
-
-GET is used to retrieve data from the server, whereas POST is used to send data and create a new resource on the server.
+An HTTP request mainly consists of three parts: Request Line, Headers, and Body. The Request Line contains the HTTP method, request URL or path, and HTTP version. Headers provide additional information, such as content type, authorization, and accepted response formats. The Body contains the actual data sent by the client,
 
 ---
 
-#### 6. What is idempotency? Which methods are idempotent?
+#### 5. PUT vs PATCH? (And when do you use GET, POST and DELETE?)
 
-Idempotency means if we send the same request multiple times, the result on the server remains the same as sending it once. GET, PUT, DELETE, are idempotent methods. POST is generally not idempotent.
+GET is used to retrieve data from the server. POST is used to create a new resource or perform an operation on the server. PUT is used to completely replace an existing resource. PATCH is used to partially update an existing resource. DELETE is used to remove an existing resource from the server.
+
+---
+
+#### 6. Path variable vs query parameter vs request body?
+
+@PathVariable extracts values directly from the URL path. @RequestParam extracts query parameters from the URL. @RequestBody reads data from the HTTP request body.
 
 ---
 
 #### 7. What are HTTP status codes?
 
-HTTP status codes are three-digit numbers returned by the server to indicate whether an HTTP request was successful or failed. They are divided into five categories: 1xx for informational, 2xx for success, 3xx for redirection, 4xx for client errors, and 5xx for server errors.
+HTTP status codes are three-digit numbers returned by the server to indicate the result of a client's request.
 
 ---
 
-#### 8. 401 vs 403?
+#### 8. What is REST API?
 
-401 means the user is not properly authenticated, for example, when the token is missing or invalid. 403 means the user is authenticated but does not have permission to access the requested resource.
-
----
-
-#### 9. What is REST API?
-
-REST stands for Representational State Transfer API. It allows a client to communicate with a server over HTTP using standard methods like GET, POST, PUT, and DELETE.
+REST API stands for Representational State Transfer Application Programming Interface. used for communication between clients and servers over HTTP.
 
 ---
 
-#### 10. What is an API?
+#### 9. What is an API?
 
-An API is a way that allows two applications to communicate with each other.
-
----
-
-#### 11. What is JSON? Why is it used?
-
-JSON stands for JavaScript Object Notation. It is a lightweight data format used to exchange data between applications. It is easy to read, understand, and commonly used in REST APIs to send and receive data.
+API stands for Application Programming Interface. It is a way for communication between client and server.
 
 ---
 
-#### 12. What is Path variable vs query parameter vs request body?
+#### 10. What is JSON? Why is it used?
 
-Path Variable is used to pass a value as part of the URL, usually to identify a specific resource. Query Parameter used to pass additional information through the URL, usually for filtering, searching, or pagination. Request Body Used to send data inside the request body, usually when creating or updating a resource.
-
----
-
-#### 13. What is an embedded server?
-
-An embedded server is a server that is included inside an application. In Spring Boot, an embedded Tomcat server starts automatically when we run the application, so we don't need to deploy it on a separate external server.
+JSON stands for JavaScript Object Notation. It is a lightweight, text-based data format used to store and exchange data between different applications.
 
 ---
 
-#### 14. What is Maven?
+#### 11. What is the difference between an IP address and a port number?
 
-Maven is a project management and build automation tool used in Java projects. It provides a standard project structure, manages dependencies, and automates tasks like compiling, testing, and packaging the application.
-
----
-
-#### 15. What is pom.xml?
-
-pom.xml stands for Project Object Model. It is the main configuration file in Maven where we define project information, dependencies, plugins, and build configurations.
+An IP address identifies a device. whereas a port number identifies a specific application or service running on that device.
 
 ---
 
-#### 16. What is Spring Framework? What problem does it solve?
+#### 12. What is DNS and how does it work?
 
-Spring is a Java framework used to build enterprise applications. It reduces boilerplate code and makes application development easier by providing features like Dependency Injection, Inversion of Control, and transaction management.
-
----
-
-#### 17. What is IoC (Inversion of Control)?
-
-IoC stands for Inversion of Control. It is a principle in which the Spring container takes responsibility for creating and managing objects instead of us creating and managing them manually.
-
----
-
-#### 18. What is Dependency Injection?
-
-Dependency Injection is a design pattern in which an object receives its required dependencies from outside instead of creating them itself. In Spring, the IoC container provides these dependencies automatically.
-
----
-
-#### 19. Constructor injection vs field injection: which is better and why?
-
-Constructor injection is better than field injection because it makes dependencies mandatory, supports immutability using final fields, and makes unit testing easier.
-
----
-
-#### 20. What is the difference between Constructor and Setter and Field Injection?
-
-Constructor injection provides dependencies through the constructor, setter injection provides them through setter methods, and field injection injects them directly into class fields using @Autowired.
-
----
-
-#### 21. What is a Bean?
-
-A Spring Bean is an object that is created and managed by the Spring IoC container. We can create beans using annotations like @Component, @Service, @Repository, or the @Bean annotation.
-
----
-
-#### 22. What is the ApplicationContext vs BeanFactory?
-
-ApplicationContext is an advanced version of BeanFactory. It extends the BeanFactory interface. BeanFactory and ApplicationContext are both Spring containers used to create and manage beans. BeanFactory provides basic bean management and uses lazy initialization by default, which means beans are created when they are requested. ApplicationContext provides additional features like event publishing and integration with Spring AOP. It uses eager initialization by default for singleton beans, which means beans are created when the container starts.
-
----
-
-#### 23. @Autowired, @Qualifier, @Primary: when do you use each?
-
-@Autowired is used to inject a dependency automatically by type. @Qualifier is used when multiple beans of the same type are available and we want to specify which bean to inject. @Primary is used to define a default bean when multiple beans of the same type are available.
-
----
-
-#### 24. Spring vs Spring Boot?
-
-Spring is a Java framework used to build enterprise applications. Spring Boot is built on top of the Spring Framework and makes development easier by providing auto-configuration, starter dependencies, and embedded servers. It reduces boilerplate code and manual configuration.
-
----
-
-#### 25. Bean lifecycle?
-
-The Spring Bean Lifecycle describes how Spring creates, initializes, uses, and destroys a bean. First, Spring creates the bean and injects its dependencies. Then it performs initialization callbacks and makes the bean ready to use. Finally, when the container is closed, Spring calls the destruction methods.
-
----
-
-#### 26. What does @SpringBootApplication contain?
-
-@SpringBootApplication is a combination of three annotations:
-
-1. @SpringBootConfiguration Indicates that the class is a configuration class. It allows us to define beans using @Bean.
-2. @EnableAutoConfiguration Enables Spring Boot's auto-configuration based on the dependencies available in the project.
-3. @ComponentScan Tells Spring to scan the current package and its sub-packages to find components like @Component, @Service, and @Repository.
-
----
-
-#### 27. How does auto-configuration work?
-
-Auto-configuration is a feature of Spring Boot that automatically configures the required components based on the dependencies available in our project. It reduces the need for manual configuration.
-
----
-
-#### 28. What are Spring Boot starters?
-
-Spring Boot starters are predefined dependency packages that contain commonly required libraries for specific functionalities. They help us avoid adding multiple dependencies separately and make dependency management easier.
-
----
-
-#### 29. application.properties vs application.yml?
-
-Both application.properties and application.yml are used to configure Spring Boot applications. The main difference is their format. Properties uses key-value pairs, whereas YAML uses indentation and a nested structure. Both serve the same purpose, but YAML can be more readable for complex configurations.
-
----
-
-#### 30. What are profiles? How do you use dev/prod configs?
-
-Spring Boot profiles are used to maintain different configurations for different environments, such as development and production. We can create separate configuration files like application-dev.properties and application-prod.properties and activate a profile using the spring.profiles.active property.
-
----
-
-#### 31. @Component vs @Service vs @Repository vs @Controller?
-
-All four annotations are used to register classes as Spring Beans, but they serve different purposes. `@Component` is a general-purpose annotation, `@Service` is used for business logic, `@Repository` is used for database operations, and `@Controller` is used to handle web requests. `@Service`, `@Repository`, and `@Controller` are specialized forms of `@Component`.
-
----
-
-#### 32. @Configuration and @Bean: what is the difference from @Component?
-
-`@Component` is used to register a class as a Spring Bean through component scanning. `@Configuration` is used to define a configuration class, and `@Bean` is used on methods to register the objects returned by those methods as Spring Beans. We commonly use `@Bean` when we want to configure third-party classes.
-
----
-
-#### 33. @Controller vs @RestController?
-
-`@Controller` is mainly used in MVC applications to return views like HTML pages, whereas `@RestController` is used to build REST APIs and directly return data in the response body, usually in JSON format. `@RestController` is a combination of `@Controller` and `@ResponseBody`.
-
----
-
-#### 34. @RequestParam vs @PathVariable vs @RequestBody?
-
-`@PathVariable` is used to extract values from the URL path. `@RequestParam` is used to extract query parameters. `@RequestBody` is used to receive data from the HTTP request body, usually in JSON format.
-
----
-
-#### 35. @GetMapping, @PostMapping, @PutMapping, @PatchMapping, @DeleteMapping: PUT vs PATCH?
-
-GET is used to fetch data, POST is used to create a resource, PUT is used to completely update or replace a resource, PATCH is used to partially update a resource, and DELETE is used to remove a resource.
-
----
-
-#### 36. Lazy vs Eager loading?
-
-Lazy loading fetches related data only when we access it, whereas eager loading fetches related data immediately along with the main entity. Lazy loading helps avoid unnecessary data fetching, while eager loading is useful when we always need the related data.
-
----
-
-#### 37. What is ResponseEntity? Why use it?
-
-ResponseEntity is a class in Spring that represents the complete HTTP response. We use it when we want to control the response status code, headers, and body.
-
----
-
-#### 38. How do you handle exceptions globally?
-
-In Spring Boot, we handle exceptions globally using @RestControllerAdvice and @ExceptionHandler. We create a common exception handler class and define methods to handle specific exceptions.
-
----
-
-#### 39. What are @ControllerAdvice, @ExceptionHandler?
-
-@ControllerAdvice is used to create a global exception-handling class that can handle exceptions across multiple controllers. @ExceptionHandler is used to handle specific exceptions
-
----
-
-#### 40. How do you validate request data?
-
-In Spring Boot, we validate request data using Bean Validation annotations like @NotNull, @NotBlank, @Email, and @Size. We apply these annotations to DTO fields and use @Valid in the controller method to trigger validation. If validation fails, Spring throws an exception that we can handle globally using @RestControllerAdvice.
-
----
-
-#### 41. What is a DTO? Why not expose the Entity directly?
-
-DTO stands for Data Transfer Object. It is a simple Java object used to transfer data between the client and the backend. We use DTOs instead of exposing entities directly for security, better separation, and flexibility. For example, a User entity may contain sensitive information like a password, but the User DTO can contain only the name and email.
-
----
-
-#### 42. What is Spring AOP? Where have you used it?
-
-Spring AOP stands for Aspect-Oriented Programming. It is used to separate common functionalities like logging, security, and transaction management from the main business logic.
+DNS stands for Domain Name System. It is used to translate human-readable domain names into IP addresses because computers use IP addresses to communicate over a network.
 <br>
-For example, instead of writing logging code in every service method, we can create a separate Aspect and apply logging around those methods.
-<br>
-This helps us reduce code duplication and keep our business logic clean.
+When a user enters a domain name in the browser, the browser first checks its cache. If the IP address is not available, the request goes to a DNS resolver.
 
 ---
 
-#### 43. What are filters?
+#### 13. What is Spring Initializr?
 
-Filters are components in Java web applications that intercept HTTP requests and responses. They are mainly used for tasks like authentication, logging, CORS handling, and modifying requests or responses. In Spring Boot, filters execute before the request reaches the DispatcherServlet.
-
----
-
-#### 44. What are interceptors?
-
-Interceptors are components in Spring MVC that intercept requests before and after controller execution.
-
-We use interceptors for tasks like authorization, logging, and checking request information.
+Spring Initializr is a web-based tool used to quickly generate Spring Boot projects. It allows developers to select the project type, programming language, Spring Boot version, Java version, and required dependencies. Based on these selections, it generates a ready-to-use project structure with the necessary configuration files.
 
 ---
 
-#### 45. What is the difference between filter, interceptor and spring aop?
+#### 14. What is the difference between JAR and WAR packaging?
 
-A Filter belongs to the Servlet API and intercepts HTTP requests and responses before they reach the DispatcherServlet.
+JAR stands for Java Archive, and WAR stands for Web Application Archive. Both are packaging formats used to distribute Java applications.
 <br>
-An Interceptor belongs to Spring MVC and works before and after controller execution.
+A JAR file is commonly used for standalone Java and Spring Boot applications. It can include an embedded server like Tomcat, so we can run it directly using the java -jar command.
 <br>
-Spring AOP works at the method execution level.
-<br>
-For example, we can use a Filter for JWT validation, an Interceptor for authorization checks, and Spring AOP for logging service method execution.
+A WAR file is mainly used for web applications that are deployed to an external application server like Tomcat.
 
 ---
 
-#### 46. JDBC vs JDBC Driver vs Spring JDBC?
+#### 15. What is a dependency? How are dependencies managed in a Spring Boot project?
 
-JDBC stands for Java Database Connectivity. It is a Java API used to connect and interact with databases.
-<br>
-A JDBC Driver is a database-specific implementation of the JDBC API that allows Java applications to communicate with a particular database, such as MySQL.
-<br>
-Spring JDBC is a module of the Spring Framework that simplifies JDBC operations. It provides JdbcTemplate, which handles repetitive tasks like connection management, statement execution, and resource cleanup.
+A dependency is an external library or module that our project needs to use specific functionality without implementing everything from scratch. Dependencies are managed using build tools like Maven or Gradle.
 
 ---
 
-#### 47. What is ORM? Why use it?
+#### 16. What is embedded Tomcat?
 
-ORM stands for Object-Relational Mapping. It is a technique that maps Java objects to database tables and their fields to table columns.
-<br>
-We use ORM to perform database operations using Java objects instead of writing SQL queries manually for every operation.
-<br>
-It reduces boilerplate code, improves productivity, and makes database operations easier.
+Embedded Tomcat is a web server that is included inside a Spring Boot application. Normally, we need to install Tomcat separately and deploy our web application to it. But with embedded Tomcat, we don't need to install or configure an external server. Spring Boot automatically starts Tomcat when we run the application.
 
 ---
 
-#### 48. What is JPA vs Hibernate vs Spring Data JPA?
+#### 17. What is a fat JAR, and why does Spring Boot use it?
 
-JPA, Hibernate, and Spring Data JPA are related but have different roles.
-
-JPA is a specification that defines standards for object-relational mapping in Java.
-
-Hibernate is an ORM framework that provides an implementation of the JPA specification.
-
-Spring Data JPA is a Spring module that simplifies database operations by providing interfaces like JpaRepository, so we don't have to write basic CRUD methods manually.
+A Fat JAR, also known as executable JAR file that contains the application's compiled classes, resources, and required dependencies. Spring Boot uses Fat JARs to make application deployment easier.
 
 ---
 
-#### 49. JpaRepository vs CrudRepository?
+#### 18. What is the classpath?
 
-CrudRepository and JpaRepository are interfaces provided by Spring Data. CrudRepository provides basic CRUD operations like save, findById, findAll, and deleteById. JpaRepository also provides CRUS operations along with pagination and sorting. It also provides JPA-specific methods like flush().
-
----
-
-#### 50. What does @Transactional do? Where does it not work?
-
-@Transactional is an annotation provided by Spring that is used to manage database transactions.
-<br>
-It ensures that multiple database operations are treated as a single unit. If all operations succeed, the transaction is committed. If an unchecked exception occurs, the transaction is rolled back by default.
-<br>
-It may not work in some cases like self-invocation, object created manually, private methods and also checked exceptions do not trigger rollback of transaction.
+Classpath is the path or set of locations where the Java compiler and JVM search for required classes, resources, and libraries.
 
 ---
 
-#### 51. OneToOne, OneToMany, ManyToOne, ManyToMany: how do you map them? What is mappedBy?
+#### 19. What is Maven and why do we need it?
 
-@OneToOne is used when one entity is associated to only one other entity, like User and Profile.
+Maven is a build automation and dependency management tool mainly used for Java projects. We use Maven to manage project dependencies, compile source code, run tests, and package applications into JAR or WAR files.
 <br>
-@OneToMany is used when one entity is associated to multiple entities, like one Department having many Employees.
-<br>
-@ManyToOne is used when multiple entities are associated to one entity, like many Employees belonging to one Department.
-<br>
-@ManyToMany is used when multiple entities are associated to multiple entities, like Students and Courses.
-<br>
-The mappedBy attribute is used on the inverse side of a bidirectional relationship. It specifies the field in the owning entity that manages the relationship.
+Maven uses a configuration file called pom.xml, where we define project information, dependencies, plugins, and build configurations.
 
 ---
 
-#### 52. What is a servlet? What is the DispatcherServlet in Spring MVC?
+#### 20. Maven vs Gradle?
 
-A Servlet is a Java server-side component that handles client requests and generates responses. It runs inside a Servlet Container like Tomcat.
-<br>
-DispatcherServlet is a special Servlet provided by Spring MVC. It acts as a Front Controller, receives incoming HTTP requests, finds the appropriate controller, and manages the request processing flow. So, DispatcherServlet is the central component that handles request routing in Spring MVC.
+Maven and Gradle are both build automation and dependency management tools used in Java projects. The main difference is their configuration Maven uses XML-based configuration through the pom.xml file, whereas Gradle uses Script-Based configuration through build.gradle file.
 
 ---
 
-#### 53. What is Spring Boot?
+#### 21. What is pom.xml?
 
-Spring Boot is a Java-based framework built on top of the Spring Framework. It makes application development easier by reducing manual configuration and boilerplate code. It provides features like auto-configuration, starter dependencies, and embedded servers like Tomcat.
-
----
-
-#### 54. What is Spring Initializr?
-
-Spring Initializr is a web-based tool used to quickly generate Spring Boot projects. We can select the project type, programming language, Spring Boot version, and required dependencies. It generates a ready-to-use project structure that we can download and import into an IDE like IntelliJ IDEA. It saves time and reduces manual project setup.
+POM stands for Project Object Model. The pom.xml file is the main configuration file of a Maven project. It contains project information, dependencies, plugins, and build configurations.
 
 ---
 
-#### 55. What are the basic Spring Boot Annotations?
+#### 22. What is a starter dependency?
 
-Some commonly used Spring Boot annotations are:
-
-1. `@SpringBootApplication`: Marks the main Spring Boot application class and enables auto-configuration and component scanning.
-2. `@Component`: Marks a class as a Spring-managed bean.
-3. `@Service`: Marks the service layer, where we write business logic.
-4. `@Repository`: Marks the repository layer, which handles database operations.
-5. `@Controller`: Used to create MVC controllers.
-6. `@RestController`: Used to create REST APIs. It combines `@Controller` and `@ResponseBody`.
-7. `@Autowired`: Used for dependency injection.
-8. `@Configuration`: Marks a class that contains bean configuration.
-9. `@Bean`: Registers an object as a Spring bean.
-10. `@RequestMapping`, `@GetMapping`, and `@PostMapping`: Used to map HTTP requests to controller methods.
-
-These annotations help us configure the application, manage dependencies, and handle HTTP requests.
+A starter dependency is a group of dependencies for a specific functionality. Instead of adding multiple related dependencies manually, we can add a single starter dependency, and It brings the required libraries.
 
 ---
 
-#### 56. What are the Features of Spring Boot?
+#### 23. What are transitive dependencies?
 
-Spring Boot provides several features that make application development easier and faster.
-<br>
-Auto-Configuration, Starter Dependencies, Embedded Server, Standalone Application, Production-Ready Features, Externalized Configuration, Less Boilerplate Code
+Transitive dependencies are the required dependencies of a particular dependency that are automatically included in our project.
 
 ---
 
-#### 57. What is the request flow in Spring Boot?
+#### 24. Where does Maven download dependencies from?
 
-In a Spring Boot application, the request flow starts when a client, such as React or Postman, sends an HTTP request.
+Maven downloads dependencies from repositories.
 <br>
-First, the request passes through the Filter chain, where we can perform tasks like JWT validation and logging.
-<br>
-Then, the request reaches the DispatcherServlet, which acts as the Front Controller.
-<br>
-The DispatcherServlet uses HandlerMapping to find the appropriate controller method, and HandlerAdapter invokes that method.
-<br>
-The Controller receives the request and calls the Service layer, where the business logic is executed.
-<br>
-The Service layer communicates with the Repository layer to perform database operations using JPA or Hibernate.
-<br>
-Finally, the database returns the result, and the response travels back through the application to the client, usually in JSON format.
+There are three main types of Maven repositories:
+
+1. Local Repository: It is located on our computer.
+2. Central Repository: It is the default public repository.
+3. Remote Repository: These are additional repositories, such as company-specific or third-party repositories.
 
 ---
 
-#### 58. Difference between Singleton and Prototype scope?
+#### 25. What is tight coupling?
 
-In Singleton scope, Spring creates only one instance of a bean per bean definition within a container. Whenever we request that bean, Spring provides the same instance. It is the default scope in Spring.
-
-In Prototype scope, Spring creates a new instance every time the bean is requested from the container.
-
----
-
-#### 59. What is the default bean scope in Spring?
-
-The default bean scope is Singleton.
-
----
-
-#### 60. How to get the list of all the beans in your Spring boot application?
-
-We can get the list of all bean definition names in a Spring Boot application using the ApplicationContext.
-<br>
-We can call the getBeanDefinitionNames() method, which returns an array of bean names registered in the Spring container. Then, we can use a loop to print all the bean names.
-
----
-
-#### 61. What is the purpose of using @ComponentScan in the class files?
-
-The purpose of @ComponentScan is to tell Spring which packages to scan for components.
-<br>
-It searches for classes annotated with annotations like @Component, @Service, @Repository, and @Controller, and registers them as Spring beans in the IoC container.
+Tight coupling occurs when one class is highly dependent on another specific class. For example, if a UserService directly creates an EmailService object, then UserService becomes tightly coupled to EmailService.
