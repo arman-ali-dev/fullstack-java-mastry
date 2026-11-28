@@ -106,6 +106,8 @@ Parallel streams allow us to process multiple elements of a stream simultaneousl
 
 ---
 
+x
+
 #### 16. What is the difference between `Optional.of()` and `Optional.ofNullable()`?
 
 **`Optional.of()`** is used when the value is not null. If we pass null, it throws a `NullPointerException`.

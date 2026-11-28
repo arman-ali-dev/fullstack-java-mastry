@@ -24,8 +24,8 @@
 24. Where does Maven download dependencies from?
 
 25. What is tight coupling?
-26. What is Dependency Injection? What is the difference between Dependency Injection and the Dependency Inversion Principle?
-27. What is ? What is the relationship between IoC and DI?
+26. What is Dependency Injection?
+27. What is IOC? What is the relationship between IoC and DI?
 28. What are the types of DI? which is better and why?
 29. What is the Spring IoC Container? What is ApplicationContext?
 30. ApplicationContext vs BeanFactory
@@ -51,15 +51,15 @@
 46. What is externalized configuration, and why do we need it?
 47. application.properties vs application.yml?
 48. If the same property is defined in multiple places, which one wins?
-49. What are profiles, and how do you use them for dev and prod?
+49. What are profiles?
 50. @Value vs @ConfigurationProperties: when do you use which?
 51. CommandLineRunner vs ApplicationRunner?
 
 52. What is a Servlet? Why do we need it instead of handling raw HTTP with ServerSocket?
-53. What is a Servlet Container? ?
+53. What is a Servlet Container?
 54. External Tomcat vs embedded Tomcat: what is the difference, and why does Spring Boot use embedded Tomcat?
 
-55. What is Spring MVC? ?
+55. What is Spring MVC?
 56. What is DispatcherServlet? and how does it get registered in Spring Boot?
 57. Explain the request flow in Spring MVC.
 58. What is the role of HandlerMapping, HandlerAdapter and ViewResolver?
