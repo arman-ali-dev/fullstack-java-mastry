@@ -372,6 +372,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 - Asynchronous Communication
 - Communication Using RestTemplate
 - Communication Using RestClient
+- Declarative Inter-Service Communication Using FeignClient
 
 ---
 
