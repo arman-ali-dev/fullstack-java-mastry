@@ -236,6 +236,6 @@ Switch expressions were introduced in Java 14. They allow us to use switch as an
 
 ---
 
-#### 36. What is pattern matching for instanceof, introduced in Java 16?
+#### 36. What is instanceof?
 
-Pattern matching for instanceof was introduced in Java 16. It allows us to check an object's type and declare a variable of that type in a single step, eliminating the need for explicit type casting
+It allows us to check an object's type.
