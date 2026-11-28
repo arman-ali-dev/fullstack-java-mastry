@@ -371,6 +371,7 @@ This is usually the biggest gap. Companies check DSA before anything else.
 - Synchronous Communication & Characteristics
 - Asynchronous Communication
 - Communication Using RestTemplate
+- Communication Using RestClient
 
 ---
 
